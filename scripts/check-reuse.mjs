@@ -69,14 +69,23 @@ function readPiece(name) {
 
   const md = path.join(dir, '导演稿.md');
   if (fs.existsSync(md)) {
+    let fixedTitleFromMd = null;
+    let legacyTitleFromMd = null;
     for (const line of fs.readFileSync(md, 'utf8').split('\n')) {
       const m = line.match(/^口播[：:]\s*`([^`]+)`/u);
       if (m) clauses.push(...clausesOf(m[1]));
-      if (!title) {
+
+      // New format: use the explicit whole-video title, never a per-shot internal label.
+      const fixed = line.match(/^\s*[-*]\s*本期固定标题(?:（[^）]*）)?[：:]\s*(.+?)\s*$/u);
+      if (fixed && !fixedTitleFromMd) fixedTitleFromMd = fixed[1].trim();
+
+      // Legacy fallback for older archived director drafts that lack an explicit fixed-title field.
+      if (!legacyTitleFromMd) {
         const h = line.match(/^#{2,3}\s*镜1\s*·\s*([^·]+?)\s*·/u) || line.match(/^#{2,3}\s*分镜1[：:]\s*(.+?)\s*$/u);
-        if (h) title = h[1].trim();
+        if (h) legacyTitleFromMd = h[1].trim();
       }
     }
+    if (!title) title = fixedTitleFromMd || legacyTitleFromMd;
     sources.push('导演稿.md');
   }
 
