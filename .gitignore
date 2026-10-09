@@ -21,3 +21,6 @@ quandao-video/font/LXGWWenKai-Regular.ttf
 
 # 系统垃圾
 .DS_Store
+
+# IDE 私有配置：每台机器各一份，不入库
+.idea/
