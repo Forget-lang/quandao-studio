@@ -12,8 +12,14 @@ video/public/audio
 video/public/fonts/
 video/out/
 
-# 每条片的产物（图／音频／成片／片内文档）只留本机
-pieces/
+# 每条片只入库「导演稿.md」与「发布文案.md」两份文档；
+# 图／音频／成片／工程数据等产物只留本机。
+# 写法说明：pieces/** 先整体排除，!pieces/*/ 把目录放回来让 git 愿意往里看，
+# 最后再放行那两个 md——顺序不能换，否则放行不生效。
+pieces/**
+!pieces/*/
+!pieces/*/导演稿.md
+!pieces/*/发布文案.md
 
 # 技能自带但代码从未引用的两个字体（省 51M；要入库就删掉这两行）
 quandao-video/font/LXGWWenKai-Light.ttf
