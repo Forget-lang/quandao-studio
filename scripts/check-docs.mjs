@@ -153,6 +153,9 @@ function collectVisualStyleSourceIssues(docs) {
   if (!description.includes('默认继承 mac-director 第十章的统一文字前缀')) {
     issues.push('quandao-video frontmatter 未说明统一文字前缀是默认风格来源');
   }
+  if (video.includes('- 画风是否符合参考图？')) {
+    issues.push('quandao-video 最终图片检查仍只要求对照参考图，未覆盖无图像输入时的文字回退');
+  }
 
   const rule = video.match(/## 5\.1 固定视觉参考图[\s\S]*?(?=\n## 5\.1A 主画面比例锁定)/u);
   if (!rule || !rule[0].includes('mac-director/SKILL.md') || !rule[0].includes('§10.12')) {
@@ -256,6 +259,14 @@ function selfTest() {
   if (!collectVisualStyleSourceIssues(styleBad).some((x) => x.includes('再次复制视觉风格正文'))) {
     fails.push('⑥ 没抓到制作层复制统一风格正文');
   }
+  const styleFallbackBad = {
+    ...styleGood,
+    'quandao-video/SKILL.md': styleGood['quandao-video/SKILL.md'] + '\\n- 画风是否符合参考图？'
+  };
+  if (!collectVisualStyleSourceIssues(styleFallbackBad).some((x) => x.includes('未覆盖无图像输入时的文字回退'))) {
+    fails.push('⑥ 没抓到最终图片验收清单遗漏文字风格回退');
+  }
+
   const retired = [{ term: '旧口径话头', why: '测试', instead: '新口径' }];
   const s = scanRetired(retired, [{ name: 'C.md', text: '这里还留着旧口径话头的写法\n这句也提旧口径话头，但已废\n', kind: 'hard' }]);
   if (s.length !== 1) fails.push(`④ 回流检测不对（应抓到 1 处、反面引用不计，实际 ${s.length}）`);
