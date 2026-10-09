@@ -21,10 +21,6 @@ pieces/**
 !pieces/*/导演稿.md
 !pieces/*/发布文案.md
 
-# 技能自带但代码从未引用的两个字体（省 51M；要入库就删掉这两行）
-quandao-video/font/LXGWWenKai-Light.ttf
-quandao-video/font/LXGWWenKai-Regular.ttf
-
 # 系统垃圾
 .DS_Store
 
