@@ -309,7 +309,7 @@ B. 手动模式
 检查顺序（必须按序）：
 
 1. **Remotion 工程资源**是否已有该文件，例如：
-   - `video/public/fonts/LXGWWenKai-Medium.ttf`
+   - `public/fonts/`（相对于 `video/`）目录中的 `LXGWWenKai-Medium.ttf`；该目标文件允许在首次复制前不存在
    - 或其他工程内明确会被 `FontFace` / `staticFile('fonts/…')` 加载的同名文件
 2. 若工程内没有：检查 **本技能文件夹** `font/LXGWWenKai-Medium.ttf` 是否存在
 3. 若技能 `font/` 里有、工程里没有：先把字体 **复制进工程** `public/fonts/LXGWWenKai-Medium.ttf`，再继续
