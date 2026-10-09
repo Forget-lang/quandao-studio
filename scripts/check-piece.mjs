@@ -26,6 +26,36 @@ const red = JSON.parse(fs.readFileSync(path.join(SPEC, '红线词表.json'), 'ut
 const truth = JSON.parse(fs.readFileSync(path.join(SPEC, '功能真值.json'), 'utf8'));
 
 const argv = process.argv.slice(2);
+const CODE = red.codeBanned?.tokens || [];
+const VOICE = red.voiceBanned?.tokens || [];
+const REVIEW = red.outputsReview?.tokens || [];
+const MERGED = [...new Set([...CODE, ...VOICE])];   // voiceBanned.note 规定的合并口径
+
+function scanImagePromptRows(markdown, tokens) {
+  const out = [];
+  markdown.split('\n').forEach((line, index) => {
+    if (!/^\|\s*f\d+-\d+\s*\|/u.test(line)) return;
+    const found = [...new Set(tokens.filter((token) => token && line.includes(token)))];
+    if (found.length) out.push({ line: index + 1, tokens: found, text: line.trim().slice(0, 180) });
+  });
+  return out;
+}
+
+if (argv.includes('--self-test')) {
+  const sample = [
+    '| f1-1 | 画面限制：不要出现微信、小程序码；仅作负面约束提醒 |',
+    '| f1-2 | 顾客在柜台与店员交谈，手里拿着普通优惠券 |',
+    '普通说明文字含微信，但不是图号画面描述行。',
+  ].join('\n');
+  const hits = scanImagePromptRows(sample, MERGED);
+  const pass = hits.length === 1 && hits[0].line === 1 &&
+    hits[0].tokens.includes('微信') && hits[0].tokens.includes('小程序码');
+  console.log(pass
+    ? '自检通过：图号画面描述中的禁词进入提示层；普通文字不扫描、提示层命中不会直接判硬红。'
+    : '自检失败：画面描述提示层扫描结果不符合预期。');
+  process.exit(pass ? 0 : 1);
+}
+
 let piece = argv.includes('--piece') ? argv[argv.indexOf('--piece') + 1] : null;
 if (!piece) {
   try {
@@ -36,12 +66,7 @@ if (!piece) {
   }
 }
 const DIR = path.join(ROOT, 'pieces', piece);
-if (!fs.existsSync(DIR)) { console.error(`片目录不存在：${DIR}`); process.exit(2); }
-
-const CODE = red.codeBanned?.tokens || [];
-const VOICE = red.voiceBanned?.tokens || [];
-const REVIEW = red.outputsReview?.tokens || [];
-const MERGED = [...new Set([...CODE, ...VOICE])];   // voiceBanned.note 规定的合并口径
+if (!fs.existsSync(DIR)) { console.error('片目录不存在：' + DIR); process.exit(2); }
 
 // ---- 上屏与对外内容：硬禁对象 ----
 const onScreen = [];   // 会进画面/口播的文本
@@ -92,13 +117,17 @@ const VISUAL_TRIGGERS = ['对准', '扫码', '扫一扫', '二维码', '立牌',
 const IMAGE_LINE = /^\|\s*f\d+-\d+\s*\|/u;
 const guide = [];
 const gp = path.join(DIR, '导演稿.md');
+let directorDraft = '';
 if (fs.existsSync(gp)) {
-  fs.readFileSync(gp, 'utf8').split('\n').forEach((line, i) => {
+  directorDraft = fs.readFileSync(gp, 'utf8');
+  directorDraft.split('\n').forEach((line, i) => {
     if (!IMAGE_LINE.test(line)) return;
     const hit = VISUAL_TRIGGERS.filter((w) => line.includes(w));
     if (hit.length) guide.push({ line: i + 1, words: hit, text: line.trim().slice(0, 120) });
   });
 }
+// 命中只进 ② 提示层，不进入硬禁 H：导演稿允许用否定式禁词描述“不许画什么”。
+const promptGuide = scanImagePromptRows(directorDraft, MERGED);
 
 // ---- 功能越界提示：从本线 spec/功能真值.json 的 mustNotClaim 抽触发词 ----
 const claims = [];
@@ -140,7 +169,7 @@ const C = uniq(claims, (x) => x.word + x.where);
 
 console.log(`词表版本 ${red._meta.version}（画面 ${red.codeBanned.tokens.length}／口播 ${red.voiceBanned.tokens.length}／合并 ${MERGED.length}）· 本线自己的一份，比对用 sync-redlines.mjs`);
 console.log(`扫描对象：${piece}`);
-console.log(`  上屏与对外文本 ${onScreen.length + external.length} 条 · 合并词表 ${MERGED.length} 个 · 提示层 ${REVIEW.length} 个 · 品牌口径 ${brandName ? `「${brandName}」全片零提及` : '未登记'}\n`);
+console.log(`  上屏与对外文本 ${onScreen.length + external.length} 条 · 合并词表 ${MERGED.length} 个 · 画面描述提示层 ${promptGuide.length} 行 · 品牌口径 ${brandName ? `「${brandName}」全片零提及` : '未登记'}\n`);
 
 console.log(`── ① 词面硬禁与标题门槛（${H.length + titleProblems.length + brandProblems.length}）＝必须改`);
 H.forEach((x) => console.log(`   [${x.tok}] ${x.where}\n        ${x.line}`));
@@ -149,9 +178,10 @@ brandProblems.forEach((x) => console.log(`   [品牌口径] ${x}`));
 if (!H.length && !titleProblems.length && !brandProblems.length) console.log('   无');
 console.log();
 
-console.log(`── ② 需人工确认（${R.length}）`);
-R.forEach((x) => console.log(`   [${x.tok}] ${x.where}`));
-if (!R.length) console.log('   无');
+console.log(`── ② 需人工确认（${R.length + promptGuide.length}）＝只提示，不进硬红`);
+R.forEach((x) => console.log(`   [文案复核：${x.tok}] ${x.where}`));
+promptGuide.forEach((x) => console.log(`   [提示层：${x.tokens.join('、')}] 导演稿.md:${x.line}  ${x.text}`));
+if (!R.length && !promptGuide.length) console.log('   无');
 console.log();
 
 console.log(`── ③ 功能越界提示（${C.length}）＝不是判定，要人看一眼是否讲了不存在的功能`);
@@ -170,5 +200,6 @@ if (H.length || titleProblems.length || brandProblems.length) {
   console.error(`结论：不通过。词面硬禁 ${H.length} 处、标题门槛 ${titleProblems.length} 处、品牌口径 ${brandProblems.length} 处。`);
   process.exit(1);
 }
-if (guide.length) console.log(`结论：词面无硬禁。但 ④ 的 ${guide.length} 处必须逐帧人判并补验收记录，未判完不算过。`);
-else console.log('结论：词面无硬禁，无画面待判项。');
+const manualTasks = R.length + promptGuide.length + guide.length;
+if (manualTasks) console.log(`结论：词面无硬禁；仍有 ${manualTasks} 项人工复核任务（含提示层禁词线索和画面派单），未判完不算过。`);
+else console.log('结论：词面无硬禁，无提示层待审项，无画面待判项。');
