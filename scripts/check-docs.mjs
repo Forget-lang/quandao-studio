@@ -73,6 +73,19 @@ function collectDups(docs, names) {
     .map(([tok, set]) => ({ tok, files: [...set], spots: where.get(tok) }));
 }
 
+// These paths are deliberately absent from a clean clone: .gitignore excludes
+// per-piece assets, the local secret env file, and use-piece.mjs-generated runtime files.
+const MAY_BE_ABSENT_PATHS = new Set([
+  'pieces',
+  'quandao-video/.env',
+  'video/src/project.json',
+  'video/src/voiceover-meta.json',
+  'video/public/images',
+  'video/public/audio',
+  'video/public/fonts',
+  'video/out',
+]);
+
 function collectBroken(docs, names, realRoot) {
   const heads = {};
   for (const f of names) heads[f] = new Set([...docs[f].matchAll(/^#{1,6}\s+([0-9]+(?:\.[0-9]+)*[A-Z]?)/gm)].map((m) => m[1]));
@@ -85,9 +98,13 @@ function collectBroken(docs, names, realRoot) {
         const raw = m[1].replace(/[，。、）)"'：;]+$/, '');
         if (/[{<]*\*|https?:/.test(raw) || raw.includes('{') || raw.includes('<') || raw.includes('…')) continue;
         if (!PATHISH.test(raw)) continue;
+        const normalizedPath = raw.replace(/\/+$/, '');
         const inDocs = names.some((g) => g === raw || g.endsWith(raw.replace(/^\.\.\//, '')));
-        const hit = inDocs || !realRoot ? inDocs
-          : fs.existsSync(path.resolve(path.dirname(path.join(realRoot, f)), raw)) || fs.existsSync(path.join(realRoot, raw));
+        const existsOnDisk = realRoot
+          ? fs.existsSync(path.resolve(path.dirname(path.join(realRoot, f)), raw)) || fs.existsSync(path.join(realRoot, raw))
+          : false;
+        if (MAY_BE_ABSENT_PATHS.has(normalizedPath) && !existsOnDisk) continue;
+        const hit = inDocs || !realRoot ? inDocs : existsOnDisk;
         if (!hit) paths.push(`${f}:${i + 1}  \`${raw}\``);
       }
       for (const m of line.matchAll(/§\s*([0-9]+(?:\.[0-9]+)*[A-Z]?)/g)) {
@@ -229,6 +246,12 @@ function selfTest() {
   const b = collectBroken(docs, ['A.md', 'B.md'], null);
   if (!b.secs.includes('B.md:3  §99.9')) fails.push('② 没抓到断节号');
   if (!b.paths.some((x) => x.includes('不存在.mjs'))) fails.push('② 没抓到断路径');
+  const generatedPaths = collectBroken({
+    'A.md': '`pieces/` `quandao-video/.env` `video/src/project.json` `video/public/images` `scripts/不存在.mjs`'
+  }, ['A.md'], null);
+  if (generatedPaths.paths.length !== 1 || !generatedPaths.paths[0].includes('不存在.mjs')) {
+    fails.push('② 生成物/本地密钥路径缺席时误报，或真实断路径漏报');
+  }
   if (!ledgerMismatch(docs['缺陷账.md'])) fails.push('③ 没抓到条数不符');
   const styleGood = {
     'mac-director/SKILL.md': ['## 10.12 默认生图风格前缀', '统一风格正文'].join('\n'),
