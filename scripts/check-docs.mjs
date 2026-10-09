@@ -145,6 +145,15 @@ function collectVisualStyleSourceIssues(docs) {
     issues.push('缺少统一风格真源：mac-director/SKILL.md §10.12');
   }
 
+  const frontMatter = video.match(/^---\n([\s\S]*?)\n---/u);
+  const description = frontMatter?.[1] || '';
+  if (description.includes('画面风格继承已确认参考图')) {
+    issues.push('quandao-video frontmatter 仍将参考图写成必需风格来源');
+  }
+  if (!description.includes('默认继承 mac-director 第十章的统一文字前缀')) {
+    issues.push('quandao-video frontmatter 未说明统一文字前缀是默认风格来源');
+  }
+
   const rule = video.match(/## 5\.1 固定视觉参考图[\s\S]*?(?=\n## 5\.1A 主画面比例锁定)/u);
   if (!rule || !rule[0].includes('mac-director/SKILL.md') || !rule[0].includes('§10.12')) {
     issues.push('quandao-video §5.1 未指向 mac-director §10.12 的统一风格真源');
@@ -221,6 +230,9 @@ function selfTest() {
   const styleGood = {
     'mac-director/SKILL.md': ['## 10.12 默认生图风格前缀', '统一风格正文'].join('\n'),
     'quandao-video/SKILL.md': [
+      '---',
+      'description: 默认继承 mac-director 第十章的统一文字前缀',
+      '---',
       '## 5.1 固定视觉参考图',
       '引用 mac-director/SKILL.md §10.12',
       '## 5.1A 主画面比例锁定',
@@ -232,6 +244,9 @@ function selfTest() {
   const styleBad = {
     'mac-director/SKILL.md': styleGood['mac-director/SKILL.md'],
     'quandao-video/SKILL.md': [
+      '---',
+      'description: 默认继承 mac-director 第十章的统一文字前缀',
+      '---',
       '## 5.1 固定视觉参考图',
       '引用 mac-director/SKILL.md §10.12',
       '## 5.1A 主画面比例锁定',
