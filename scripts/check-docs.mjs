@@ -293,7 +293,7 @@ selfRep.prose.forEach((x) => console.log(`   同一句说两遍  ${x.file}:${x.r
 if (!selfN) console.log('   无');
 
 const styleIssues = collectVisualStyleSourceIssues(docs);
-console.log(`\\n── ⑥ 统一画风单一来源（${styleIssues.length}）＝制作层不得复制导演层的统一风格正文`);
+console.log(`\n── ⑥ 统一画风单一来源（${styleIssues.length}）＝制作层不得复制导演层的统一风格正文`);
 styleIssues.forEach((x) => console.log(`   ${x}`));
 if (!styleIssues.length) console.log('   无');
 
