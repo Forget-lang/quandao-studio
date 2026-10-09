@@ -145,12 +145,12 @@ function collectVisualStyleSourceIssues(docs) {
     issues.push('缺少统一风格真源：mac-director/SKILL.md §10.12');
   }
 
-  const rule = video.match(/## 5\\.1 固定视觉参考图[\\s\\S]*?(?=\\n## 5\\.1A 主画面比例锁定)/u);
+  const rule = video.match(/## 5\.1 固定视觉参考图[\s\S]*?(?=\n## 5\.1A 主画面比例锁定)/u);
   if (!rule || !rule[0].includes('mac-director/SKILL.md') || !rule[0].includes('§10.12')) {
     issues.push('quandao-video §5.1 未指向 mac-director §10.12 的统一风格真源');
   }
 
-  const template = video.match(/【视觉风格】([\\s\\S]*?)【禁止】/u);
+  const template = video.match(/【视觉风格】([\s\S]*?)【禁止】/u);
   if (!template) {
     issues.push('quandao-video §5.6 缺少【视觉风格】模板段');
   } else {
@@ -219,26 +219,35 @@ function selfTest() {
   if (!b.paths.some((x) => x.includes('不存在.mjs'))) fails.push('② 没抓到断路径');
   if (!ledgerMismatch(docs['缺陷账.md'])) fails.push('③ 没抓到条数不符');
   const styleGood = {
-    'mac-director/SKILL.md': '## 10.12 默认生图风格前缀\\n统一风格正文',
-    'quandao-video/SKILL.md': '## 5.1 固定视觉参考图\\n引用 mac-director/SKILL.md §10.12\\n## 5.1A 主画面比例锁定\\n【视觉风格】统一继承 mac-director/SKILL.md §10.12 的视觉前缀【禁止】'
+    'mac-director/SKILL.md': ['## 10.12 默认生图风格前缀', '统一风格正文'].join('\n'),
+    'quandao-video/SKILL.md': [
+      '## 5.1 固定视觉参考图',
+      '引用 mac-director/SKILL.md §10.12',
+      '## 5.1A 主画面比例锁定',
+      '【视觉风格】统一继承 mac-director/SKILL.md §10.12 的视觉前缀【禁止】'
+    ].join('\n')
   };
   if (collectVisualStyleSourceIssues(styleGood).length) fails.push('⑥ 合规的统一画风引用被误判');
 
   const styleBad = {
     'mac-director/SKILL.md': styleGood['mac-director/SKILL.md'],
-    'quandao-video/SKILL.md': '## 5.1 固定视觉参考图\\n引用 mac-director/SKILL.md §10.12\\n## 5.1A 主画面比例锁定\\n【视觉风格】现代中国生活题材数字二维动画截帧，清晰轮廓线【禁止】'
+    'quandao-video/SKILL.md': [
+      '## 5.1 固定视觉参考图',
+      '引用 mac-director/SKILL.md §10.12',
+      '## 5.1A 主画面比例锁定',
+      '【视觉风格】现代中国生活题材数字二维动画截帧，清晰轮廓线【禁止】'
+    ].join('\n')
   };
   if (!collectVisualStyleSourceIssues(styleBad).some((x) => x.includes('再次复制视觉风格正文'))) {
     fails.push('⑥ 没抓到制作层复制统一风格正文');
   }
-
   const retired = [{ term: '旧口径话头', why: '测试', instead: '新口径' }];
   const s = scanRetired(retired, [{ name: 'C.md', text: '这里还留着旧口径话头的写法\n这句也提旧口径话头，但已废\n', kind: 'hard' }]);
   if (s.length !== 1) fails.push(`④ 回流检测不对（应抓到 1 处、反面引用不计，实际 ${s.length}）`);
   const dupCode = '```ts\nconst A = 1;\nconst B = 2;\nconst C = 3;\nconst D = 4;\n```\n\n正文一句\n\n```ts\nconst A = 1;\nconst B = 2;\nconst C = 3;\nconst D = 4;\nconst E = 5;\n```\n';
   const rep = collectSelfRepeats({ 'D.md': dupCode }, ['D.md']);
   if (!rep.blocks.length) fails.push('⑤ 没抓到"同一套参数抄了两份"');
-  console.log(fails.length ? '自检失败：\n  ' + fails.join('\n  ') : '自检通过：判红的四个检测器都会红，⑤ 也能抓到重复参数段。');
+  console.log(fails.length ? '自检失败：\n  ' + fails.join('\n  ') : '自检通过：所有判红检测器都能识别对应问题，⑤ 也能列出重复参数段。');
   process.exit(fails.length ? 1 : 0);
 }
 
