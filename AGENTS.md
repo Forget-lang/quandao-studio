@@ -34,8 +34,8 @@
 | 步 | 干什么 | 谁把关 | 细则在哪 |
 |---|---|---|---|
 | 1 开工 | 读功能真值表、定题材 | 人（查得到才讲） | §五 |
-| 2 导演稿 | 标题／口播／分镜／逐图信息设计与精准文字 | `mac-director` §十四 文案 Gate ＋ §10.9 信息画面设计 ＋ §6.6 跨片查重 `node scripts/check-reuse.mjs` | §一 |
-| 3 出图 | 首验启用时先验样图，再逐张出图、逐张查 | 人眼 | `quandao-video` §4.8 ＋本文件 §六 |
+| 2 导演稿 | 观众认知、内容逻辑与口播审核，再做分镜和逐图信息设计 | `mac-director` §6.8 内容逻辑 ＋ §十四 双 Gate ＋ §10.8–10.9 视觉主次与整体信息画面 ＋ §6.6 跨片查重 `node scripts/check-reuse.mjs` | §一 |
+| 3 出图 | 首验启用时先验样图；检查主叙事、辅助信息、融合与逐字准确性后再批量 | 人眼 | `quandao-video` §4.8、§9.0、§十九 ＋本文件 §六 |
 | 4 素材齐 | 图／音频／字幕时间轴对账 | `node quandao-video/scripts/preflight.mjs` | §七 开头 |
 | 5 渲染 | 出片并直接归档进本片目录 | `node scripts/render-piece.mjs` | §四 |
 | 6 验收 | 词面机检＋文档漂移＋画面人判 | `node scripts/check-piece.mjs` ＋ `node scripts/check-docs.mjs` | §七 |
