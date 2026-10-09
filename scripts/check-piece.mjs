@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
  *   voiceBanned.scanAs = 「本层实际扫描 token = codeBanned ∪ voiceBanned」→ 口播与对外文案按合并表扫
  *   graphicPolicy.internalTermsNotOnScreen = 内部文档与取证记录**允许**写违禁词 → 导演稿不按对外内容判，只作提示
  *   graphicPolicy.enforcement = 「不可辨识」只能人判，须逐帧看并留验收记录
- *   brandDisplay     = 品牌口径（2026-10-08 用户拍板）：全片零提及——口播／顶部固定标题／字幕任一处出现品牌名即硬红
+ *   brandDisplay     = 品牌口径（spec 唯一真源）：画内相关功能场景可轻度露出；口播／固定标题／字幕／发布文案中出现即硬红
  *
  * 用法：node scripts/check-piece.mjs [--piece <片名>]
  */
@@ -144,17 +144,19 @@ for (const t of onScreen.concat(external)) for (const g of trig) {
 const uniq = (a, k) => [...new Map(a.map((x) => [k(x), x])).values()];
 const H = uniq(hits.filter((x) => x.verdict === 'HIT'), (x) => x.tok + x.where);
 
-// 品牌口径门槛（判据本体＝spec/红线词表.json 的 brandDisplay，2026-10-08 用户拍板）：
-//   全片零提及：全片固定标题、任一镜口播、任一条字幕，任一处出现品牌名即硬红。
-//   品牌名本体也取自词表，脚本里不另写一份，改口径只改 spec。
+// 品牌口径门槛（判据本体＝spec/红线词表.json 的 brandDisplay）：
+//   固定标题、口播、底部字幕与发布文案不得出现品牌名；相关功能画面内的低调露出由最终图片人判。
+//   画面像素无法靠本机词面脚本可靠验字与判断视觉层级，品牌名本体从词表读取，不另写一份。
 const brandName = red.brandDisplay?.name || null;
 const brandProblems = [];
 if (brandName) {
   const screenText = [pj.pieceTitle || '', ...(pj.shots || []).flatMap((s) => s.captions || [])].join('\n');
-  if (screenText.includes(brandName)) brandProblems.push(`画面层（顶部固定标题／字幕）出现品牌名「${brandName}」——全片零提及`);
+  if (screenText.includes(brandName)) brandProblems.push(`画面层（顶部固定标题／底部字幕）出现品牌名「${brandName}」——品牌仅可按规范在相关功能画面内轻度露出`);
   const voices = (pj.shots || []).map((s) => s.voice || '').join('\n');
   const n = voices.split(brandName).length - 1;
-  if (n > 0) brandProblems.push(`口播出现品牌名「${brandName}」${n} 次——全片零提及，一处都不许有`);
+  if (n > 0) brandProblems.push(`口播出现品牌名「${brandName}」${n} 次——口播不得出现品牌`);
+  const publishedText = external.map((x) => x.text).join('\n');
+  if (publishedText.includes(brandName)) brandProblems.push(`发布文案或话题标签出现品牌名「${brandName}」——对外发布文本不得出现品牌`);
 }
 
 // 标题硬门槛（口径本体在 mac-director §八）：必须有全片固定标题、不超过 16 字，且显式换行最多两行。
@@ -169,7 +171,7 @@ const C = uniq(claims, (x) => x.word + x.where);
 
 console.log(`词表版本 ${red._meta.version}（画面 ${red.codeBanned.tokens.length}／口播 ${red.voiceBanned.tokens.length}／合并 ${MERGED.length}）· 本线自己的一份，比对用 sync-redlines.mjs`);
 console.log(`扫描对象：${piece}`);
-console.log(`  上屏与对外文本 ${onScreen.length + external.length} 条 · 合并词表 ${MERGED.length} 个 · 画面描述提示层 ${promptGuide.length} 行 · 品牌口径 ${brandName ? `「${brandName}」全片零提及` : '未登记'}\n`);
+console.log(`  上屏与对外文本 ${onScreen.length + external.length} 条 · 合并词表 ${MERGED.length} 个 · 画面描述提示层 ${promptGuide.length} 行 · 品牌口径 ${brandName ? '相关功能画面可轻度露出；口播/固定标题/字幕/发布文案禁用，画内像素需人判' : '未登记'}\n`);
 
 console.log(`── ① 词面硬禁与标题门槛（${H.length + titleProblems.length + brandProblems.length}）＝必须改`);
 H.forEach((x) => console.log(`   [${x.tok}] ${x.where}\n        ${x.line}`));
