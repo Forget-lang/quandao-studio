@@ -1017,7 +1017,7 @@ const stageBottom = stageTop + STAGE_H; // = 1317
 `scripts/generate_voiceover.py` 已支持第一镜分段合成：前缀以较快语速单独合成，其余口播按正常语速合成，再按 PCM 顺序拼接；各段的字级时间戳先统一为秒，再按片段起始偏移合并用于字幕对位。
 
 - 正常语速读取本线 `.env` 的 `VOLC_TTS_SPEECH_RATE`。
-- 黄金三秒语速读取 `VOLC_TTS_GOLDEN3S_SPEECH_RATE`；未配置时默认取正常语速 + 30，最高不超过 100。黄金三秒语速必须高于正常语速，否则脚本明确报错，避免假装已提速。
+- 黄金三秒语速读取 `VOLC_TTS_GOLDEN3S_SPEECH_RATE`；未配置时默认取正常语速参数 + 10，最高不超过 100，作为约 1.1 倍的初始调参值；参数增量不等于精确倍率，必须试听确认。黄金三秒语速必须高于正常语速，否则脚本明确报错，避免假装已提速。
 - 前缀长度按目标时长与语速比例估算，优先在标点处切分；它不是对波形做精准 3.00 秒切片，故仍须执行 §8.1.5 的实际听感 Gate。
 - 离线自检（不调用 TTS API、不需要密钥）：`python quandao-video/scripts/voiceover_utils.py --self-test`。
 
