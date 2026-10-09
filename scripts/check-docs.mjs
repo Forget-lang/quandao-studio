@@ -247,7 +247,7 @@ function selfTest() {
   if (!b.secs.includes('B.md:3  §99.9')) fails.push('② 没抓到断节号');
   if (!b.paths.some((x) => x.includes('不存在.mjs'))) fails.push('② 没抓到断路径');
   const generatedPaths = collectBroken({
-    'A.md': '`pieces/` `quandao-video/.env` `video/src/project.json` `video/public/images` `scripts/不存在.mjs`'
+    'A.md': '`pieces/` `quandao-video/.env` `video/src/project.json` `video/src/voiceover-meta.json` `video/public/images` `video/public/audio` `video/public/fonts/` `video/out/` `scripts/不存在.mjs`'
   }, ['A.md'], null);
   if (generatedPaths.paths.length !== 1 || !generatedPaths.paths[0].includes('不存在.mjs')) {
     fails.push('② 生成物/本地密钥路径缺席时误报，或真实断路径漏报');
