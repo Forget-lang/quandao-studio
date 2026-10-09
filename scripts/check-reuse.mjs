@@ -140,7 +140,7 @@ function selfTest() {
   if (short.length) fails.push(`阈值失效：4 字重合也被算进来了（${short[0].frag}）`);
 
   const fixedTitle = '朋友用了券，老客怎么拿奖励？';
-  const newDraft = `- 本期固定标题（唯一上屏标题）：${fixedTitle}\n\n## 分镜1：内部信息标签（不上屏）`;
+  const newDraft = `- 本期固定标题（唯一上屏标题；从第一帧持续显示到最后一帧）：${fixedTitle}\n\n## 分镜1：内部信息标签（不上屏）`;
   if (extractDirectorTitle(newDraft) !== fixedTitle) fails.push('没有优先读取导演稿中的本期固定标题，或错误拿了分镜内部标签');
   if (extractDirectorTitle('## 分镜1：旧稿标题') !== '旧稿标题') fails.push('旧稿缺少固定标题字段时，兼容回退失败');
 
