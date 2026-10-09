@@ -10,12 +10,10 @@ import {
   delayRender,
   continueRender,
 } from 'remotion';
-import { OverlayLayer } from './Overlays';
 import {
   captionsOf,
   framesOf,
   imageSegments,
-  overlaysOf,
   pieceTitle,
   shotDurationSec,
   stripCuePunctuation,
@@ -153,8 +151,6 @@ export const ShotScene: React.FC<{ shot: Shot }> = ({ shot }) => {
                 transformOrigin: 'top center',
               }}
             />
-            {/* 券名／字段名／标签等精确内容：真实字体＋矢量图标叠加，不让生图模型写字画图 */}
-            <OverlayLayer overlays={overlaysOf(seg.img)} />
           </Sequence>
         ))}
       </div>

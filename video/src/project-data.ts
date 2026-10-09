@@ -67,28 +67,7 @@ export const imageSegments = (s: Shot) => {
   });
 };
 
-/**
- * 叠加层：券名、字段名、图标等"必须逐字准确"的内容不交给生图模型，
- * 由这里按坐标叠在空白卡面上（依据 mac-director §10.9/§7.5 与 SKILL.md:104）。
- */
-export type Overlay = {
-  kind: string;
-  text: string;
-  x: number;
-  y: number;
-  w: number;
-  h: number;
-  rotate?: number;
-  fontSize?: number;
-  color?: string;
-  icon?: 'grape' | 'clock' | 'limit';
-  iconSize?: number;
-  iconX?: number;
-  iconY?: number;
-  chips?: { text: string; fontSize?: number; color?: string; bg?: string }[];
-};
-const overlayMap: Record<string, Overlay[]> = ((projectJson as any).overlayMap ?? {}) as Record<string, Overlay[]>;
-export const overlaysOf = (img: string): Overlay[] => overlayMap[img] ?? [];
+
 
 /** §9.1：单条字幕句末不显示标点 */
 export const stripCuePunctuation = (text: string) =>
