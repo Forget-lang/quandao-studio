@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """Pure helpers for piecewise TTS; --self-test runs offline and needs no API credentials."""
 import re
 import sys
