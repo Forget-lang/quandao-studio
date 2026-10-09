@@ -3,19 +3,20 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 /**
- * check-docs.mjs —— 本线（quandao-studio）的文档漂移机检（四条铁律的兜底，见 AGENTS.md §〇）
+ * check-docs.mjs —— 本线（quandao-studio）的文档漂移机检（文档架构约束与统一画风单源的兜底，见 AGENTS.md §〇）
  *
- * 判红的四件事＋一件只报清单：
+ * 判红的五件事＋一件只报清单：
  *   ① 同一个「口径型读数」出现在两个以上的文档 —— 一条事实只能有一个家
  *   ② 文档点名的路径或节号在盘上不存在 —— 删过的东西不许继续被引用
  *   ③ 缺陷账标题的条数与表格实际行数不符
  *   ④ 退役话头回流（spec/退役.json）—— 新方案顶掉旧方案后，旧描述不许留在现行文档里
  *      ④ 分两个面：规则文档命中＝硬红；当前片产物命中＝提示（已发布片按档案处理，不挡门）
  *   ⑤ 同一份文件里重复的实质行 —— 只报清单（多是技能原文自带的老账，逐条收敛时再判红）
+ *   ⑥ 统一画风单一来源 —— 制作技能引用 mac-director §10.12，不得另抄近似风格正文
  *
  * 用法：
  *   node scripts/check-docs.mjs                  正式扫
- *   node scripts/check-docs.mjs --self-test      拿假文档验证四个检测器真的会红（防假绿灯）
+ *   node scripts/check-docs.mjs --self-test      拿假文档验证所有判红检测器真的会红，且⑤能列出重复项（防假绿灯）
  */
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -134,6 +135,40 @@ function scanRetired(retired, targets) {
   return out;
 }
 
+/** 制作层不得复制导演层的视觉风格正文；统一前缀只有一个出处。 */
+function collectVisualStyleSourceIssues(docs) {
+  const issues = [];
+  const director = docs['mac-director/SKILL.md'] || '';
+  const video = docs['quandao-video/SKILL.md'] || '';
+
+  if (!director.includes('## 10.12 默认生图风格前缀')) {
+    issues.push('缺少统一风格真源：mac-director/SKILL.md §10.12');
+  }
+
+  const rule = video.match(/## 5\\.1 固定视觉参考图[\\s\\S]*?(?=\\n## 5\\.1A 主画面比例锁定)/u);
+  if (!rule || !rule[0].includes('mac-director/SKILL.md') || !rule[0].includes('§10.12')) {
+    issues.push('quandao-video §5.1 未指向 mac-director §10.12 的统一风格真源');
+  }
+
+  const template = video.match(/【视觉风格】([\\s\\S]*?)【禁止】/u);
+  if (!template) {
+    issues.push('quandao-video §5.6 缺少【视觉风格】模板段');
+  } else {
+    const duplicateMarkers = [
+      '现代中国生活题材数字二维动画截帧',
+      '中国本土现代数字二维动画截帧风',
+      '清晰粗细适中的深色闭合轮廓线，干净数字平涂'
+    ];
+    if (duplicateMarkers.some((marker) => template[1].includes(marker))) {
+      issues.push('quandao-video §5.6 再次复制视觉风格正文；应改为引用 mac-director §10.12');
+    }
+    if (!template[1].includes('mac-director/SKILL.md') || !template[1].includes('§10.12')) {
+      issues.push('quandao-video §5.6 未引用 mac-director §10.12 的统一文字前缀');
+    }
+  }
+  return issues;
+}
+
 /** 文件内重复。两类分开算，否则会把"合法的同名"当成账：
  *  · 正文行逐字相同 —— 同一句话说了两遍
  *  · 代码块之间共享 ≥4 行 —— 同一套参数抄了两份（改一处漏一处的那种真事故）
@@ -169,7 +204,7 @@ function collectSelfRepeats(docs, names) {
   return { prose, blocks };
 }
 
-// ---- 自检：四个检测器都必须真的会红，否则这个脚本就是一盏假绿灯 ----
+// ---- 自检：所有判红检测器都必须真的会红；⑤ 也必须能列出重复项，否则就是假绿灯 ----
 function selfTest() {
   const docs = {
     'A.md': '甲文件里写 6.5%\n\n## 3.1 标题\n',
@@ -183,6 +218,20 @@ function selfTest() {
   if (!b.secs.includes('B.md:3  §99.9')) fails.push('② 没抓到断节号');
   if (!b.paths.some((x) => x.includes('不存在.mjs'))) fails.push('② 没抓到断路径');
   if (!ledgerMismatch(docs['缺陷账.md'])) fails.push('③ 没抓到条数不符');
+  const styleGood = {
+    'mac-director/SKILL.md': '## 10.12 默认生图风格前缀\\n统一风格正文',
+    'quandao-video/SKILL.md': '## 5.1 固定视觉参考图\\n引用 mac-director/SKILL.md §10.12\\n## 5.1A 主画面比例锁定\\n【视觉风格】统一继承 mac-director/SKILL.md §10.12 的视觉前缀【禁止】'
+  };
+  if (collectVisualStyleSourceIssues(styleGood).length) fails.push('⑥ 合规的统一画风引用被误判');
+
+  const styleBad = {
+    'mac-director/SKILL.md': styleGood['mac-director/SKILL.md'],
+    'quandao-video/SKILL.md': '## 5.1 固定视觉参考图\\n引用 mac-director/SKILL.md §10.12\\n## 5.1A 主画面比例锁定\\n【视觉风格】现代中国生活题材数字二维动画截帧，清晰轮廓线【禁止】'
+  };
+  if (!collectVisualStyleSourceIssues(styleBad).some((x) => x.includes('再次复制视觉风格正文'))) {
+    fails.push('⑥ 没抓到制作层复制统一风格正文');
+  }
+
   const retired = [{ term: '旧口径话头', why: '测试', instead: '新口径' }];
   const s = scanRetired(retired, [{ name: 'C.md', text: '这里还留着旧口径话头的写法\n这句也提旧口径话头，但已废\n', kind: 'hard' }]);
   if (s.length !== 1) fails.push(`④ 回流检测不对（应抓到 1 处、反面引用不计，实际 ${s.length}）`);
@@ -234,6 +283,11 @@ selfRep.blocks.forEach((x) => console.log(`   参数抄了两份  ${x.file} 代�
 selfRep.prose.forEach((x) => console.log(`   同一句说两遍  ${x.file}:${x.rows.join('、')}  ${x.text.slice(0, 52)}`));
 if (!selfN) console.log('   无');
 
-const red = dups.length || broken.paths.length + broken.secs.length || ledger || hardFlow.length;
+const styleIssues = collectVisualStyleSourceIssues(docs);
+console.log(`\\n── ⑥ 统一画风单一来源（${styleIssues.length}）＝制作层不得复制导演层的统一风格正文`);
+styleIssues.forEach((x) => console.log(`   ${x}`));
+if (!styleIssues.length) console.log('   无');
+
+const red = dups.length || broken.paths.length + broken.secs.length || ledger || hardFlow.length || styleIssues.length;
 console.log(red ? '\n结论：不通过——以上都是"改一处、到处口径不一"的种子。' : '\n结论：零漂移。');
 process.exit(red ? 1 : 0);
