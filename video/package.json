@@ -1,0 +1,23 @@
+{
+  "name": "quandao-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "正式视频产线：mac-director 导演稿 → quandao-video 制作。与 promotion 工作区运行时零耦合。",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "render": "node ../scripts/render-piece.mjs",
+    "tts": "python3 ../quandao-video/scripts/generate_voiceover.py",
+    "preflight": "node ../quandao-video/scripts/preflight.mjs",
+    "tsc": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.530",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.530"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.4.5"
+  }
+}

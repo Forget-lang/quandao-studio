@@ -1,0 +1,23 @@
+# 依赖：npm install 可重建（Remotion 版本钉在 video/package.json）
+video/node_modules/
+
+# 密钥：永不入库。每台机器自备一份 quandao-video/.env（.env.example 是模板，要入库）
+quandao-video/.env
+
+# 生成物：由 scripts/use-piece.mjs 从 pieces/ 重建，不入库
+video/src/project.json
+video/src/voiceover-meta.json
+video/public/images
+video/public/audio
+video/public/fonts/
+video/out/
+
+# 每条片的产物（图／音频／成片／片内文档）只留本机
+pieces/
+
+# 技能自带但代码从未引用的两个字体（省 51M；要入库就删掉这两行）
+quandao-video/font/LXGWWenKai-Light.ttf
+quandao-video/font/LXGWWenKai-Regular.ttf
+
+# 系统垃圾
+.DS_Store
