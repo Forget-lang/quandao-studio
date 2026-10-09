@@ -128,10 +128,13 @@ if (brandName) {
   if (n > 0) brandProblems.push(`口播出现品牌名「${brandName}」${n} 次——全片零提及，一处都不许有`);
 }
 
-// 标题硬门槛（2026-10-08 放宽，口径本体在 mac-director §八）：必须有全片固定标题，且不超过 16 字。
+// 标题硬门槛（口径本体在 mac-director §八）：必须有全片固定标题、不超过 16 字，且显式换行最多两行。
 const titleProblems = [];
 if (!pj.pieceTitle) titleProblems.push('project.json 缺 pieceTitle（全片固定标题）');
-else if (pj.pieceTitle.length > 16) titleProblems.push(`pieceTitle「${pj.pieceTitle}」共 ${pj.pieceTitle.length} 字，超过 16 字硬上限`);
+else {
+  if (pj.pieceTitle.length > 16) titleProblems.push(`pieceTitle「${pj.pieceTitle}」共 ${pj.pieceTitle.length} 字，超过 16 字硬上限`);
+  if (pj.pieceTitle.split(/\r?\n/u).length > 2) titleProblems.push('pieceTitle 显式换行超过 2 行；全片固定标题最多两行');
+}
 const R = uniq(hits.filter((x) => x.verdict === 'REVIEW'), (x) => x.tok + x.where);
 const C = uniq(claims, (x) => x.word + x.where);
 

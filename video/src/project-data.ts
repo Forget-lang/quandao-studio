@@ -16,13 +16,13 @@ export const FPS: number = (projectJson as any).fps ?? 30;
 export const shots: Shot[] = (projectJson as any).shots;
 
 /**
- * 全片固定标题（≤10 字的一句痛点），顶部标题区从头到尾只显示它，不随分镜变。
- * 2026-09-30 用户反馈定：「标题就是一直展示此视频要说的痛点」「10 个字要抓痛点」。
+ * 全片固定标题（≤16 字的一句痛点，最多两行），顶部标题区从头到尾只显示它，不随分镜变。
+ * 当前硬门槛见 mac-director 的标题口径与 scripts/check-piece.mjs；顶部标题样式见 ThreeBarScene.tsx。
  * 缺失即报错——它是硬门槛，不允许静默渲染出一条没有痛点标题的片子。
  */
 export const pieceTitle: string = String((projectJson as any).pieceTitle ?? '');
 if (!pieceTitle) {
-  throw new Error('project.json 缺 pieceTitle（全片固定标题，≤10 字）。先在片数据里补上这一句再渲染。');
+  throw new Error('project.json 缺 pieceTitle（全片固定标题，≤16 字、最多两行）。先在片数据里补上这一句再渲染。');
 }
 const metaShots: Record<string, MetaShot> = ((metaJson as any).shots ?? {}) as Record<string, MetaShot>;
 
