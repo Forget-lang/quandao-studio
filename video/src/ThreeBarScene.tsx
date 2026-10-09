@@ -61,7 +61,7 @@ const subtitleStyle: React.CSSProperties = {
 };
 
 /**
- * §4.4 字体硬门槛：加载失败时故意不 continueRender，
+ * §4.7 字体硬门槛：加载失败时故意不 continueRender，
  * 让渲染超时报错，而不是静默回退到系统黑体出片。
  */
 export const FontGate: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -107,7 +107,7 @@ export const ShotScene: React.FC<{ shot: Shot }> = ({ shot }) => {
   const segments = imageSegments(shot);
 
   // 生图通道把角标烧进像素、提示词去不掉，故放大裁角把它推到画面外。
-  // 放大倍率、裁掉的比例与构图安全边距：唯一数字口径见 quandao-video/SKILL.md §4.1B。
+  // 放大倍率、裁掉的比例与构图安全边距：唯一数字口径见 quandao-video/SKILL.md §5.1B。
   return (
     <AbsoluteFill style={{ backgroundColor: '#000000' }}>
       <Audio src={staticFile(shot.audio)} startFrom={0} endAt={durationInFrames} />

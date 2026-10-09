@@ -47,9 +47,9 @@ for (const need of ['project.json', 'voiceover-meta.json', 'images', 'audio']) {
 fs.mkdirSync(PUB, { recursive: true });
 fs.mkdirSync(path.join(PUB, 'fonts'), { recursive: true });
 if (!fs.existsSync(FONT_DST)) {
-  if (!fs.existsSync(FONT_SRC)) { console.error(`缺字体 ${FONT_SRC}，技能 §4.4 是硬门槛，停。`); process.exit(1); }
+  if (!fs.existsSync(FONT_SRC)) { console.error(`缺字体 ${FONT_SRC}，技能 §4.7 是硬门槛，停。`); process.exit(1); }
   fs.copyFileSync(FONT_SRC, FONT_DST);
-  console.log('字体已按 §4.4 第 3 步拷入工程 public/fonts/');
+  console.log('字体已按 §4.7 第 3 步拷入工程 public/fonts/');
 }
 
 for (const [sub, dst] of [
