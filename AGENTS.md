@@ -35,7 +35,7 @@
 | 步 | 干什么 | 谁把关 | 细则在哪 |
 |---|---|---|---|
 | 1 开工 | 读功能真值表、研究经营场景与相关功能组合、定题材 | 人（查得到才讲） | §五 ＋ `reference/官网创作资源地图.md` |
-| 2 导演稿 | 先研究经营问题与相关能力组合，再做内容逻辑、口播和分镜 | `mac-director` §6.8–6.9 ＋ §十四 双 Gate ＋ §10.8–10.9 视觉主次与整体信息画面 ＋ §6.6 跨片查重 `node scripts/check-reuse.mjs` | §一 |
+| 2 导演稿 | 先研究经营问题与相关能力组合，再做内容逻辑、口播和分镜 | `mac-director` §6.8（含 §6.8.1 口播／画面／辅助信息协同）–§6.9 ＋ §十四 双 Gate ＋ §10.8–10.9 视觉主次与整体信息画面 ＋ §6.6 跨片查重 `node scripts/check-reuse.mjs` | §一 |
 | 3 出图 | 按风险挑选代表性样图；每张图逐张验收并记录 | 人眼 | `quandao-video` §4.8–§4.9、§5.10A、§9.0、§十九 ＋本文件 §六 |
 | 4 素材齐 | 素材路径、图片真实格式／比例、词级时间戳与口播逐字对齐、时间轴与真实音频时长对账 | `node quandao-video/scripts/preflight.mjs` | §七 开头 |
 | 5 渲染 | 逐图视觉验收记录完整且无待办／失败后，才允许渲染 | `node scripts/check-visual-review.mjs --piece <片名>`；`node scripts/render-piece.mjs --piece <片名>` | `quandao-video` §4.9 |
