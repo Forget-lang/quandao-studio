@@ -131,7 +131,7 @@ if (fs.existsSync(gp)) directorDraft = fs.readFileSync(gp, 'utf8');
 // 正式输出格式是「【AI画面提示词N】」标题与其正文；这里只派人工复核，不以词面命中直接定违规。
 const guide = scanImagePromptRows(directorDraft, VISUAL_TRIGGERS)
   .map((x) => ({ line:x.line, image:x.image, words:x.tokens, text:x.text }));
-const promptGuide = scanImagePromptRows(directorDraft, MERGED);const promptGuide = scanImagePromptRows(directorDraft, MERGED);
+const promptGuide = scanImagePromptRows(directorDraft, MERGED);
 
 // ---- 功能越界提示：从本线 spec/功能真值.json 的 mustNotClaim 抽触发词 ----
 const claims = [];
