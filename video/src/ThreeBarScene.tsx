@@ -106,7 +106,7 @@ export const ShotScene: React.FC<{ shot: Shot }> = ({ shot }) => {
   const durationInFrames = framesOf(shotDurationSec(shot));
   const segments = imageSegments(shot);
 
-  // 生图通道把角标烧进像素、提示词去不掉，故放大裁角把它推到画面外。
+  // 仅对 project.json 中 imageCrop 为 true 的素材裁角；false 时保留完整主画面。
   // 放大倍率、裁掉的比例与构图安全边距：唯一数字口径见 quandao-video/SKILL.md §5.1B。
   return (
     <AbsoluteFill style={{ backgroundColor: '#000000' }}>
@@ -147,7 +147,7 @@ export const ShotScene: React.FC<{ shot: Shot }> = ({ shot }) => {
                 width: 1080,
                 height: STAGE_H,
                 objectFit: 'cover',
-                transform: 'scale(1.07)',
+                transform: seg.crop ? 'scale(1.07)' : 'none',
                 transformOrigin: 'top center',
               }}
             />
