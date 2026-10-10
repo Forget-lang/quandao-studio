@@ -381,12 +381,12 @@ node scripts/render-piece.mjs --piece <片名>
 
 ### 允许的状态与拦截规则
 
-- `pass`：8 个检查项全部填写有效结论，不能含任何 `fail`；同时必须填写 `reviewer`、`reviewedAt`（`YYYY-MM-DD`）、`evidence` 与 `notes`。
+- `pass`：8 个检查项全部填写有效结论，不能含任何 `fail`；同时必须填写 `sha256`（被验收图片文件的 SHA-256）、`reviewer`、`reviewedAt`（`YYYY-MM-DD`）、`evidence` 与 `notes`。渲染前会重新计算图片哈希；文件字节有变化就必须重新验收。
 - `fail`：不符合设计或存在硬性冲突，必须修图、重生或先修改并重新确认导演设计。失败项不能进入渲染。
 - `pending`：还没完成检查，不能渲染；不能因为时间紧或用户以前接受过相似图片而自动通过。
-- `approved_exception`：只用于用户明确接受的单张具体偏差；必须在 `exception` 中写 `acceptedDeviation`、`approvalEvidence`，并把 `scope` 固定为 `current-piece-only`。对应检查项仍须如实标为 `fail`，不能把失败改写成 `pass`。
+- `approved_exception`：只用于用户明确接受的单张具体偏差；必须在 `exception` 中写 `acceptedDeviation`、`approvalEvidence`，并把 `scope` 固定为 `current-piece-only`。对应检查项仍须如实标为 `fail`，不能把失败改写成 `pass`；例外记录同样必须绑定该图的 `sha256`。
 
-图片清单须按 `project.json` 中各镜 `images` 的展开顺序逐项记录，路径必须完全相同。检查器只验证记录、路径、状态和例外依据字段是否齐全；它不会自动看懂图像。人眼验收不能省略，也不能由 `check-piece.mjs` 的文字扫描或 GitHub Actions 的绿色结果替代。
+图片清单须按 `project.json` 中各镜 `images` 的展开顺序逐项记录，路径必须完全相同。检查器验证记录、路径、状态、例外依据和图片 SHA-256；文件更换会导致验收失效。它不会自动看懂图像。人眼验收不能省略，也不能由 `check-piece.mjs` 的文字扫描或 GitHub Actions 的绿色结果替代。
 
 样例结构如下，示例字段仅用于说明结构，不可将它直接复制成真实通过记录：
 

@@ -1,5 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import os from 'node:os';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -12,7 +14,7 @@ const CHECK_STATES = new Set(['pass', 'fail', 'not_applicable']);
 const REVIEW_STATUSES = new Set(['pending', 'pass', 'fail', 'approved_exception']);
 
 export function inspectVisualReview(pieceName, project, manifest) {
-  const result = { errors: [], pending: [], failed: [], exceptions: [] };
+  const result = { errors: [], pending: [], failed: [], exceptions: [], hashes: {} };
   if (!manifest) {
     result.pending.push('缺少 ' + VISUAL_REVIEW_FILENAME + '：逐图视觉验收未完成，禁止渲染');
     return result;
@@ -56,6 +58,7 @@ export function inspectVisualReview(pieceName, project, manifest) {
       continue;
     }
 
+    if (!/^[a-f0-9]{64}$/iu.test(String(item.sha256 || ''))) result.errors.push(name + ': 缺有效 sha256；验收记录必须绑定到具体图片文件内容');
     if (!item.checks || typeof item.checks !== 'object') {
       result.errors.push(name + ': 通过或例外放行必须填写 checks');
       continue;
@@ -99,7 +102,7 @@ export function validateVisualReview(pieceDir, providedProject = null) {
     try { project = JSON.parse(fs.readFileSync(projectPath, 'utf8')); }
     catch (error) {
       errors.push('无法读取 project.json：' + error.message);
-      return { errors: errors, pending: [], failed: [], exceptions: [] };
+      return { errors: errors, pending: [], failed: [], exceptions: [], hashes: {} };
     }
   }
   try { manifest = JSON.parse(fs.readFileSync(reviewPath, 'utf8')); }
@@ -109,6 +112,29 @@ export function validateVisualReview(pieceDir, providedProject = null) {
   }
   const result = inspectVisualReview(pieceName, project, manifest);
   result.errors.unshift(...errors);
+  if (manifest && Array.isArray(manifest.images)) {
+    const root = path.resolve(pieceDir);
+    for (const item of manifest.images) {
+      if (!item || typeof item.path !== 'string') continue;
+      const file = path.resolve(root, item.path);
+      const relative = path.relative(root, file);
+      if (relative.startsWith('..') || path.isAbsolute(relative)) {
+        result.errors.push(item.path + ': 验收图片路径越出本片目录');
+        continue;
+      }
+      if (!fs.existsSync(file) || !fs.statSync(file).isFile()) {
+        result.errors.push(item.path + ': 验收图片文件不存在');
+        continue;
+      }
+      const actualHash = createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+      result.hashes[item.path] = actualHash;
+      if (item.status === 'pass' || item.status === 'approved_exception') {
+        if (!/^[a-f0-9]{64}$/iu.test(String(item.sha256 || '')) || actualHash !== String(item.sha256).toLowerCase()) {
+          result.errors.push(item.path + ': 图片文件 SHA-256 与验收记录不一致；图片更改后必须重新验收');
+        }
+      }
+    }
+  }
   return result;
 }
 
@@ -116,7 +142,7 @@ function selfTest() {
   const project = { shots: [{ id: 1, images: ['images/a.jpg'] }] };
   const goodChecks = Object.fromEntries(VISUAL_CRITERIA.map((key) => [key, 'pass']));
   const baseRecord = {
-    path: 'images/a.jpg', status: 'pass', reviewer: '验收人角色', reviewedAt: '2026-10-10',
+    path: 'images/a.jpg', status: 'pass', sha256: 'a'.repeat(64), reviewer: '验收人角色', reviewedAt: '2026-10-10',
     evidence: '原图全尺寸逐项复核', notes: '画面与当前提示词一致', checks: { ...goodChecks },
   };
   const manifest = (images) => ({ schemaVersion: 1, piece: 'sample-piece', images: images });
@@ -148,6 +174,26 @@ function selfTest() {
   tests.push(['缺少任一检查项会被拦截', missingCheck.errors.length > 0]);
   const mismatchedPath = inspectVisualReview('sample-piece', project, manifest([{ ...baseRecord, path: 'images/other.jpg' }]));
   tests.push(['验收路径必须和工程图片顺序一致', mismatchedPath.errors.some((x) => x.includes('顺序必须完全一致'))]);
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'quandao-visual-review-'));
+  try {
+    fs.mkdirSync(path.join(tmp, 'images'), { recursive: true });
+    const img = path.join(tmp, 'images', 'a.jpg');
+    fs.writeFileSync(img, Buffer.from('sample-image-bytes'));
+    fs.writeFileSync(path.join(tmp, 'project.json'), JSON.stringify(project));
+    const hash = createHash('sha256').update(fs.readFileSync(img)).digest('hex');
+    const boundManifest = {
+      schemaVersion: 1, piece: path.basename(tmp),
+      images: [{ ...baseRecord, sha256: hash }],
+    };
+    fs.writeFileSync(path.join(tmp, VISUAL_REVIEW_FILENAME), JSON.stringify(boundManifest));
+    const matched = validateVisualReview(tmp);
+    tests.push(['验收记录能与实际图片哈希匹配', !matched.errors.length && matched.hashes['images/a.jpg'] === hash]);
+    fs.writeFileSync(img, Buffer.from('changed-image-bytes'));
+    const drifted = validateVisualReview(tmp);
+    tests.push(['图片更换后旧验收记录会失效', drifted.errors.some((x) => x.includes('SHA-256 与验收记录不一致'))]);
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
   const pass = tests.every(([, ok]) => ok);
   for (const [name, ok] of tests) console.log((ok ? 'PASS' : 'FAIL') + ' · ' + name);
   console.log('视觉验收闸门自检：' + tests.filter(([, ok]) => ok).length + '/' + tests.length);
@@ -176,6 +222,7 @@ else if (isDirectExecution) {
   result.failed.forEach((x) => console.error('  [未通过] ' + x));
   result.pending.forEach((x) => console.error('  [待验收] ' + x));
   result.exceptions.forEach((x) => console.warn('  [本片例外放行] ' + x.path + ': ' + x.deviation));
+  Object.entries(result.hashes).forEach(([name, hash]) => console.log('  [当前图片 SHA-256] ' + name + ': ' + hash));
   if (result.errors.length || result.failed.length || result.pending.length) {
     console.error('结论：逐图视觉验收未通过，禁止渲染。');
     process.exit(1);
