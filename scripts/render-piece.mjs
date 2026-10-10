@@ -36,17 +36,31 @@ if (fs.existsSync(OUT) && !argv.includes('--force')) {
 }
 
 // 目标片必须就是当前加载到 Remotion 的片，避免 --piece 与运行时工程错配。
-const activeImagesLink = path.join(VIDEO, 'public', 'images');
-let activeImagesReal;
-try {
-  activeImagesReal = fs.realpathSync(activeImagesLink);
-} catch {
-  console.error('运行时图片目录尚未连接。先运行 node scripts/use-piece.mjs ' + piece + '。');
-  process.exit(2);
+for (const sub of ['images', 'audio']) {
+  let activeReal;
+  try {
+    activeReal = fs.realpathSync(path.join(VIDEO, 'public', sub));
+  } catch {
+    console.error('运行时 public/' + sub + ' 目录尚未连接。先运行 node scripts/use-piece.mjs ' + piece + '。');
+    process.exit(2);
+  }
+  if (path.resolve(activeReal) !== path.resolve(DIR, sub)) {
+    console.error('当前 Remotion 的 public/' + sub + ' 与目标片不一致。先运行 node scripts/use-piece.mjs ' + piece + '，再渲染。');
+    process.exit(2);
+  }
 }
-if (path.resolve(activeImagesReal) !== path.resolve(DIR, 'images')) {
-  console.error('当前 Remotion 工程与目标归档目录不是同一条片。先运行 node scripts/use-piece.mjs ' + piece + '，再渲染。');
-  process.exit(2);
+for (const name of ['project.json', 'voiceover-meta.json']) {
+  try {
+    const source = fs.readFileSync(path.join(DIR, name), 'utf8');
+    const runtime = fs.readFileSync(path.join(VIDEO, 'src', name), 'utf8');
+    if (source !== runtime) {
+      console.error('运行时 video/src/' + name + ' 与 pieces/' + piece + '/' + name + ' 不一致。请先运行 node scripts/use-piece.mjs ' + piece + '。');
+      process.exit(2);
+    }
+  } catch (error) {
+    console.error('无法核对所选片与运行时 ' + name + '：' + error.message);
+    process.exit(2);
+  }
 }
 
 // 正式渲染入口必须重跑素材技术预检，不能依赖操作者记得提前运行。

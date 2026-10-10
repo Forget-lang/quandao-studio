@@ -362,7 +362,7 @@ node scripts/check-visual-review.mjs --piece <片名>
 node scripts/render-piece.mjs --piece <片名>
 ```
 
-`render-piece.mjs` 会先确认当前加载的 Remotion 工程与目标片一致，再重跑素材技术预检，最后调用视觉验收检查器。缺少记录、路径与工程不一致、任一图片仍为 `pending` 或 `fail`，都会停止渲染。已有归档成片不会因此被改写；若要重渲历史项目，必须先完成该项目的逐图验收。不得以直接调用 Remotion 绕过正式渲染门槛。
+`render-piece.mjs` 会核对图片／音频目录链接及运行时两个 JSON 与目标片完全一致，再重跑素材技术预检，最后调用视觉验收检查器。缺少记录、路径与工程不一致、任一图片仍为 `pending` 或 `fail`，都会停止渲染。已有归档成片不会因此被改写；若要重渲历史项目，必须先完成该项目的逐图验收。不得以直接调用 Remotion 绕过正式渲染门槛。
 
 ### 每张图必须检查的项目
 
