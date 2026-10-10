@@ -9,7 +9,6 @@ video/src/project.json
 video/src/voiceover-meta.json
 video/public/images
 video/public/audio
-video/public/fonts/
 video/out/
 
 # 每条片的产物整目录入库（图／音频／成片／片内文档），作完整备份；
