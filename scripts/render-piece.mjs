@@ -35,6 +35,29 @@ if (fs.existsSync(OUT) && !argv.includes('--force')) {
   process.exit(2);
 }
 
+// 目标片必须就是当前加载到 Remotion 的片，避免 --piece 与运行时工程错配。
+const activeImagesLink = path.join(VIDEO, 'public', 'images');
+let activeImagesReal;
+try {
+  activeImagesReal = fs.realpathSync(activeImagesLink);
+} catch {
+  console.error('运行时图片目录尚未连接。先运行 node scripts/use-piece.mjs ' + piece + '。');
+  process.exit(2);
+}
+if (path.resolve(activeImagesReal) !== path.resolve(DIR, 'images')) {
+  console.error('当前 Remotion 工程与目标归档目录不是同一条片。先运行 node scripts/use-piece.mjs ' + piece + '，再渲染。');
+  process.exit(2);
+}
+
+// 正式渲染入口必须重跑素材技术预检，不能依赖操作者记得提前运行。
+const preflightGate = spawnSync(process.execPath, [path.join(ROOT, 'quandao-video', 'scripts', 'preflight.mjs')], {
+  cwd: ROOT, stdio: 'inherit',
+});
+if (preflightGate.status !== 0) {
+  console.error('素材技术预检未通过，停止渲染。');
+  process.exit(preflightGate.status || 1);
+}
+
 // 逐图视觉验收必须先通过；--confirm-manual-review 不能替代这道闸门。
 const visualGate = spawnSync(process.execPath, [path.join(ROOT, 'scripts', 'check-visual-review.mjs'), '--piece', piece], {
   cwd: ROOT, stdio: 'inherit',
