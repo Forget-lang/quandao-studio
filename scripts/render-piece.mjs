@@ -49,7 +49,7 @@ for (const sub of ['images', 'audio']) {
     process.exit(2);
   }
 }
-for (const name of ['project.json', 'voiceover-meta.json']) {
+for (const name of ['project.json']) {
   try {
     const source = fs.readFileSync(path.join(DIR, name), 'utf8');
     const runtime = fs.readFileSync(path.join(VIDEO, 'src', name), 'utf8');
