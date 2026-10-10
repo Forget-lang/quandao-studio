@@ -366,7 +366,7 @@ node scripts/render-piece.mjs --piece <片名>
 
 ### 每张图必须检查的项目
 
-验收项在 JSON 中使用固定键名；每项只能写 `pass`、`fail` 或 `not_applicable`：
+验收项在 JSON 中使用固定键名；每项都必须明确判为 `pass` 或 `fail`；8 项全部适用，不允许用“not applicable／不适用”绕过检查：
 
 | 键 | 人工需要判断的内容 |
 |---|---|

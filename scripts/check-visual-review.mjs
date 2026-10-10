@@ -10,7 +10,7 @@ export const VISUAL_CRITERIA = [
   'singleScene', 'aspectRatio', 'style', 'characters',
   'action', 'props', 'text', 'composition',
 ];
-const CHECK_STATES = new Set(['pass', 'fail', 'not_applicable']);
+const CHECK_STATES = new Set(['pass', 'fail']);
 const REVIEW_STATUSES = new Set(['pending', 'pass', 'fail', 'approved_exception']);
 
 export function inspectVisualReview(pieceName, project, manifest) {
