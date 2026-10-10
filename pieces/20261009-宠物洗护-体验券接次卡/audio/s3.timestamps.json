@@ -1,0 +1,832 @@
+{
+  "duration": 14.030708333333333,
+  "wordTimelineUnit": "seconds",
+  "segments": [
+    {
+      "segment": 1,
+      "kind": "normal",
+      "speech_rate": 0,
+      "start": 0.0,
+      "end": 14.030708333333333,
+      "text": "第一次洗完后，如果你想邀请顾客再来，可以另设一张用于下次洗护的优惠券，把适用服务、有效期和使用条件写清楚。它要有单独目的，不是把次卡提前发出去。"
+    }
+  ],
+  "providerSentencesRaw": [
+    {
+      "segment": 1,
+      "data": [
+        {
+          "phonemes": [],
+          "text": "第一次洗完后，如果你想邀请顾客再来，",
+          "words": [
+            {
+              "confidence": 0.9517771,
+              "endTime": 0.485,
+              "startTime": 0.295,
+              "word": "第"
+            },
+            {
+              "confidence": 0.941174,
+              "endTime": 0.535,
+              "startTime": 0.485,
+              "word": "一"
+            },
+            {
+              "confidence": 0.9634118,
+              "endTime": 0.675,
+              "startTime": 0.535,
+              "word": "次"
+            },
+            {
+              "confidence": 0.82090604,
+              "endTime": 0.855,
+              "startTime": 0.675,
+              "word": "洗"
+            },
+            {
+              "confidence": 0.7078734,
+              "endTime": 1.005,
+              "startTime": 0.855,
+              "word": "完"
+            },
+            {
+              "confidence": 0.9376571,
+              "endTime": 1.375,
+              "startTime": 1.005,
+              "word": "后，"
+            },
+            {
+              "confidence": 0.96609634,
+              "endTime": 1.645,
+              "startTime": 1.475,
+              "word": "如"
+            },
+            {
+              "confidence": 0.96959287,
+              "endTime": 1.755,
+              "startTime": 1.645,
+              "word": "果"
+            },
+            {
+              "confidence": 0.9835578,
+              "endTime": 1.875,
+              "startTime": 1.755,
+              "word": "你"
+            },
+            {
+              "confidence": 0.97919035,
+              "endTime": 2.065,
+              "startTime": 1.875,
+              "word": "想"
+            },
+            {
+              "confidence": 0.9068873,
+              "endTime": 2.195,
+              "startTime": 2.065,
+              "word": "邀"
+            },
+            {
+              "confidence": 0.9388204,
+              "endTime": 2.395,
+              "startTime": 2.195,
+              "word": "请"
+            },
+            {
+              "confidence": 0.9428695,
+              "endTime": 2.525,
+              "startTime": 2.395,
+              "word": "顾"
+            },
+            {
+              "confidence": 0.96660143,
+              "endTime": 2.685,
+              "startTime": 2.525,
+              "word": "客"
+            },
+            {
+              "confidence": 0.887544,
+              "endTime": 2.875,
+              "startTime": 2.685,
+              "word": "再"
+            },
+            {
+              "confidence": 0.9494005,
+              "endTime": 3.165,
+              "startTime": 2.875,
+              "word": "来，"
+            }
+          ]
+        },
+        {
+          "phonemes": [],
+          "text": "可以另设一张用于下次洗护的优惠券，",
+          "words": [
+            {
+              "confidence": 0.8077149,
+              "endTime": 3.4850416,
+              "startTime": 3.3800416,
+              "word": "可"
+            },
+            {
+              "confidence": 0.845828,
+              "endTime": 3.6850417,
+              "startTime": 3.4850416,
+              "word": "以"
+            },
+            {
+              "confidence": 0.8804433,
+              "endTime": 3.8250415,
+              "startTime": 3.6850417,
+              "word": "另"
+            },
+            {
+              "confidence": 0.9175253,
+              "endTime": 4.035042,
+              "startTime": 3.8250415,
+              "word": "设"
+            },
+            {
+              "confidence": 0.9199301,
+              "endTime": 4.1550417,
+              "startTime": 4.035042,
+              "word": "一"
+            },
+            {
+              "confidence": 0.961111,
+              "endTime": 4.4250417,
+              "startTime": 4.1550417,
+              "word": "张"
+            },
+            {
+              "confidence": 0.972458,
+              "endTime": 4.6250415,
+              "startTime": 4.4250417,
+              "word": "用"
+            },
+            {
+              "confidence": 0.9502097,
+              "endTime": 4.7550416,
+              "startTime": 4.6250415,
+              "word": "于"
+            },
+            {
+              "confidence": 0.8954911,
+              "endTime": 4.9750414,
+              "startTime": 4.7550416,
+              "word": "下"
+            },
+            {
+              "confidence": 0.9705183,
+              "endTime": 5.1150417,
+              "startTime": 4.9750414,
+              "word": "次"
+            },
+            {
+              "confidence": 0.9540633,
+              "endTime": 5.3150415,
+              "startTime": 5.1150417,
+              "word": "洗"
+            },
+            {
+              "confidence": 0.91062915,
+              "endTime": 5.4750414,
+              "startTime": 5.3150415,
+              "word": "护"
+            },
+            {
+              "confidence": 0.8425359,
+              "endTime": 5.575042,
+              "startTime": 5.4750414,
+              "word": "的"
+            },
+            {
+              "confidence": 0.9588924,
+              "endTime": 5.705042,
+              "startTime": 5.575042,
+              "word": "优"
+            },
+            {
+              "confidence": 0.9831094,
+              "endTime": 5.8750415,
+              "startTime": 5.705042,
+              "word": "惠"
+            },
+            {
+              "confidence": 0.9826149,
+              "endTime": 6.1350417,
+              "startTime": 5.8750415,
+              "word": "券，"
+            }
+          ]
+        },
+        {
+          "phonemes": [],
+          "text": "把适用服务、有效期和使用条件写清楚。",
+          "words": [
+            {
+              "confidence": 0.8497042,
+              "endTime": 6.805083,
+              "startTime": 6.585083,
+              "word": "把"
+            },
+            {
+              "confidence": 0.83340967,
+              "endTime": 7.005083,
+              "startTime": 6.805083,
+              "word": "适"
+            },
+            {
+              "confidence": 0.98643786,
+              "endTime": 7.135083,
+              "startTime": 7.005083,
+              "word": "用"
+            },
+            {
+              "confidence": 0.77201945,
+              "endTime": 7.6150827,
+              "startTime": 7.135083,
+              "word": "服"
+            },
+            {
+              "confidence": 0.24961247,
+              "endTime": 7.6950827,
+              "startTime": 7.665083,
+              "word": "务、"
+            },
+            {
+              "confidence": 0.9589202,
+              "endTime": 7.935083,
+              "startTime": 7.805083,
+              "word": "有"
+            },
+            {
+              "confidence": 0.9330834,
+              "endTime": 8.155083,
+              "startTime": 7.935083,
+              "word": "效"
+            },
+            {
+              "confidence": 0.9030134,
+              "endTime": 8.495083,
+              "startTime": 8.155083,
+              "word": "期"
+            },
+            {
+              "confidence": 0.9449199,
+              "endTime": 8.685083,
+              "startTime": 8.495083,
+              "word": "和"
+            },
+            {
+              "confidence": 0.91069597,
+              "endTime": 8.855083,
+              "startTime": 8.685083,
+              "word": "使"
+            },
+            {
+              "confidence": 0.9825055,
+              "endTime": 8.995083,
+              "startTime": 8.855083,
+              "word": "用"
+            },
+            {
+              "confidence": 0.9743593,
+              "endTime": 9.215083,
+              "startTime": 8.995083,
+              "word": "条"
+            },
+            {
+              "confidence": 0.9659363,
+              "endTime": 9.425083,
+              "startTime": 9.215083,
+              "word": "件"
+            },
+            {
+              "confidence": 0.8316361,
+              "endTime": 9.595083,
+              "startTime": 9.425083,
+              "word": "写"
+            },
+            {
+              "confidence": 0.9506859,
+              "endTime": 9.825083,
+              "startTime": 9.595083,
+              "word": "清"
+            },
+            {
+              "confidence": 0.93444616,
+              "endTime": 10.075083,
+              "startTime": 9.825083,
+              "word": "楚。"
+            }
+          ]
+        },
+        {
+          "phonemes": [],
+          "text": "第一次洗完后，如果你想邀请顾客再来，可以另设一张用于下次洗护的优惠券，把适用服务、有效期和使用条件写清楚。它要有单独目的，不是把次卡提前发出去。",
+          "words": []
+        },
+        {
+          "phonemes": [],
+          "text": "它要有单独目的，不是把次卡提前发出去。",
+          "words": [
+            {
+              "confidence": 0.97908944,
+              "endTime": 10.615125,
+              "startTime": 10.455125,
+              "word": "它"
+            },
+            {
+              "confidence": 0.95028335,
+              "endTime": 10.755125,
+              "startTime": 10.615125,
+              "word": "要"
+            },
+            {
+              "confidence": 0.91859055,
+              "endTime": 10.945125,
+              "startTime": 10.755125,
+              "word": "有"
+            },
+            {
+              "confidence": 0.9378601,
+              "endTime": 11.135125,
+              "startTime": 10.945125,
+              "word": "单"
+            },
+            {
+              "confidence": 0.9622446,
+              "endTime": 11.285125,
+              "startTime": 11.135125,
+              "word": "独"
+            },
+            {
+              "confidence": 0.94712085,
+              "endTime": 11.475125,
+              "startTime": 11.285125,
+              "word": "目"
+            },
+            {
+              "confidence": 0.9379701,
+              "endTime": 11.715125,
+              "startTime": 11.475125,
+              "word": "的，"
+            },
+            {
+              "confidence": 0.8848127,
+              "endTime": 12.055125,
+              "startTime": 11.945126,
+              "word": "不"
+            },
+            {
+              "confidence": 0.91619915,
+              "endTime": 12.215125,
+              "startTime": 12.055125,
+              "word": "是"
+            },
+            {
+              "confidence": 0.9412038,
+              "endTime": 12.405125,
+              "startTime": 12.215125,
+              "word": "把"
+            },
+            {
+              "confidence": 0.9032747,
+              "endTime": 12.605125,
+              "startTime": 12.405125,
+              "word": "次"
+            },
+            {
+              "confidence": 0.87411606,
+              "endTime": 12.865125,
+              "startTime": 12.605125,
+              "word": "卡"
+            },
+            {
+              "confidence": 0.8869223,
+              "endTime": 13.015125,
+              "startTime": 12.865125,
+              "word": "提"
+            },
+            {
+              "confidence": 0.25819543,
+              "endTime": 13.075125,
+              "startTime": 13.015125,
+              "word": "前"
+            },
+            {
+              "confidence": 0.121073246,
+              "endTime": 13.135125,
+              "startTime": 13.075125,
+              "word": "发"
+            },
+            {
+              "confidence": 0.2024618,
+              "endTime": 13.195126,
+              "startTime": 13.135125,
+              "word": "出"
+            },
+            {
+              "confidence": 0.27595007,
+              "endTime": 13.255125,
+              "startTime": 13.195126,
+              "word": "去。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "confidence": 0.9517771,
+      "endTime": 0.485,
+      "startTime": 0.295,
+      "word": "第"
+    },
+    {
+      "confidence": 0.941174,
+      "endTime": 0.535,
+      "startTime": 0.485,
+      "word": "一"
+    },
+    {
+      "confidence": 0.9634118,
+      "endTime": 0.675,
+      "startTime": 0.535,
+      "word": "次"
+    },
+    {
+      "confidence": 0.82090604,
+      "endTime": 0.855,
+      "startTime": 0.675,
+      "word": "洗"
+    },
+    {
+      "confidence": 0.7078734,
+      "endTime": 1.005,
+      "startTime": 0.855,
+      "word": "完"
+    },
+    {
+      "confidence": 0.9376571,
+      "endTime": 1.375,
+      "startTime": 1.005,
+      "word": "后，"
+    },
+    {
+      "confidence": 0.96609634,
+      "endTime": 1.645,
+      "startTime": 1.475,
+      "word": "如"
+    },
+    {
+      "confidence": 0.96959287,
+      "endTime": 1.755,
+      "startTime": 1.645,
+      "word": "果"
+    },
+    {
+      "confidence": 0.9835578,
+      "endTime": 1.875,
+      "startTime": 1.755,
+      "word": "你"
+    },
+    {
+      "confidence": 0.97919035,
+      "endTime": 2.065,
+      "startTime": 1.875,
+      "word": "想"
+    },
+    {
+      "confidence": 0.9068873,
+      "endTime": 2.195,
+      "startTime": 2.065,
+      "word": "邀"
+    },
+    {
+      "confidence": 0.9388204,
+      "endTime": 2.395,
+      "startTime": 2.195,
+      "word": "请"
+    },
+    {
+      "confidence": 0.9428695,
+      "endTime": 2.525,
+      "startTime": 2.395,
+      "word": "顾"
+    },
+    {
+      "confidence": 0.96660143,
+      "endTime": 2.685,
+      "startTime": 2.525,
+      "word": "客"
+    },
+    {
+      "confidence": 0.887544,
+      "endTime": 2.875,
+      "startTime": 2.685,
+      "word": "再"
+    },
+    {
+      "confidence": 0.9494005,
+      "endTime": 3.165,
+      "startTime": 2.875,
+      "word": "来，"
+    },
+    {
+      "confidence": 0.8077149,
+      "endTime": 3.4850416,
+      "startTime": 3.3800416,
+      "word": "可"
+    },
+    {
+      "confidence": 0.845828,
+      "endTime": 3.6850417,
+      "startTime": 3.4850416,
+      "word": "以"
+    },
+    {
+      "confidence": 0.8804433,
+      "endTime": 3.8250415,
+      "startTime": 3.6850417,
+      "word": "另"
+    },
+    {
+      "confidence": 0.9175253,
+      "endTime": 4.035042,
+      "startTime": 3.8250415,
+      "word": "设"
+    },
+    {
+      "confidence": 0.9199301,
+      "endTime": 4.1550417,
+      "startTime": 4.035042,
+      "word": "一"
+    },
+    {
+      "confidence": 0.961111,
+      "endTime": 4.4250417,
+      "startTime": 4.1550417,
+      "word": "张"
+    },
+    {
+      "confidence": 0.972458,
+      "endTime": 4.6250415,
+      "startTime": 4.4250417,
+      "word": "用"
+    },
+    {
+      "confidence": 0.9502097,
+      "endTime": 4.7550416,
+      "startTime": 4.6250415,
+      "word": "于"
+    },
+    {
+      "confidence": 0.8954911,
+      "endTime": 4.9750414,
+      "startTime": 4.7550416,
+      "word": "下"
+    },
+    {
+      "confidence": 0.9705183,
+      "endTime": 5.1150417,
+      "startTime": 4.9750414,
+      "word": "次"
+    },
+    {
+      "confidence": 0.9540633,
+      "endTime": 5.3150415,
+      "startTime": 5.1150417,
+      "word": "洗"
+    },
+    {
+      "confidence": 0.91062915,
+      "endTime": 5.4750414,
+      "startTime": 5.3150415,
+      "word": "护"
+    },
+    {
+      "confidence": 0.8425359,
+      "endTime": 5.575042,
+      "startTime": 5.4750414,
+      "word": "的"
+    },
+    {
+      "confidence": 0.9588924,
+      "endTime": 5.705042,
+      "startTime": 5.575042,
+      "word": "优"
+    },
+    {
+      "confidence": 0.9831094,
+      "endTime": 5.8750415,
+      "startTime": 5.705042,
+      "word": "惠"
+    },
+    {
+      "confidence": 0.9826149,
+      "endTime": 6.1350417,
+      "startTime": 5.8750415,
+      "word": "券，"
+    },
+    {
+      "confidence": 0.8497042,
+      "endTime": 6.805083,
+      "startTime": 6.585083,
+      "word": "把"
+    },
+    {
+      "confidence": 0.83340967,
+      "endTime": 7.005083,
+      "startTime": 6.805083,
+      "word": "适"
+    },
+    {
+      "confidence": 0.98643786,
+      "endTime": 7.135083,
+      "startTime": 7.005083,
+      "word": "用"
+    },
+    {
+      "confidence": 0.77201945,
+      "endTime": 7.6150827,
+      "startTime": 7.135083,
+      "word": "服"
+    },
+    {
+      "confidence": 0.24961247,
+      "endTime": 7.6950827,
+      "startTime": 7.665083,
+      "word": "务、"
+    },
+    {
+      "confidence": 0.9589202,
+      "endTime": 7.935083,
+      "startTime": 7.805083,
+      "word": "有"
+    },
+    {
+      "confidence": 0.9330834,
+      "endTime": 8.155083,
+      "startTime": 7.935083,
+      "word": "效"
+    },
+    {
+      "confidence": 0.9030134,
+      "endTime": 8.495083,
+      "startTime": 8.155083,
+      "word": "期"
+    },
+    {
+      "confidence": 0.9449199,
+      "endTime": 8.685083,
+      "startTime": 8.495083,
+      "word": "和"
+    },
+    {
+      "confidence": 0.91069597,
+      "endTime": 8.855083,
+      "startTime": 8.685083,
+      "word": "使"
+    },
+    {
+      "confidence": 0.9825055,
+      "endTime": 8.995083,
+      "startTime": 8.855083,
+      "word": "用"
+    },
+    {
+      "confidence": 0.9743593,
+      "endTime": 9.215083,
+      "startTime": 8.995083,
+      "word": "条"
+    },
+    {
+      "confidence": 0.9659363,
+      "endTime": 9.425083,
+      "startTime": 9.215083,
+      "word": "件"
+    },
+    {
+      "confidence": 0.8316361,
+      "endTime": 9.595083,
+      "startTime": 9.425083,
+      "word": "写"
+    },
+    {
+      "confidence": 0.9506859,
+      "endTime": 9.825083,
+      "startTime": 9.595083,
+      "word": "清"
+    },
+    {
+      "confidence": 0.93444616,
+      "endTime": 10.075083,
+      "startTime": 9.825083,
+      "word": "楚。"
+    },
+    {
+      "confidence": 0.97908944,
+      "endTime": 10.615125,
+      "startTime": 10.455125,
+      "word": "它"
+    },
+    {
+      "confidence": 0.95028335,
+      "endTime": 10.755125,
+      "startTime": 10.615125,
+      "word": "要"
+    },
+    {
+      "confidence": 0.91859055,
+      "endTime": 10.945125,
+      "startTime": 10.755125,
+      "word": "有"
+    },
+    {
+      "confidence": 0.9378601,
+      "endTime": 11.135125,
+      "startTime": 10.945125,
+      "word": "单"
+    },
+    {
+      "confidence": 0.9622446,
+      "endTime": 11.285125,
+      "startTime": 11.135125,
+      "word": "独"
+    },
+    {
+      "confidence": 0.94712085,
+      "endTime": 11.475125,
+      "startTime": 11.285125,
+      "word": "目"
+    },
+    {
+      "confidence": 0.9379701,
+      "endTime": 11.715125,
+      "startTime": 11.475125,
+      "word": "的，"
+    },
+    {
+      "confidence": 0.8848127,
+      "endTime": 12.055125,
+      "startTime": 11.945126,
+      "word": "不"
+    },
+    {
+      "confidence": 0.91619915,
+      "endTime": 12.215125,
+      "startTime": 12.055125,
+      "word": "是"
+    },
+    {
+      "confidence": 0.9412038,
+      "endTime": 12.405125,
+      "startTime": 12.215125,
+      "word": "把"
+    },
+    {
+      "confidence": 0.9032747,
+      "endTime": 12.605125,
+      "startTime": 12.405125,
+      "word": "次"
+    },
+    {
+      "confidence": 0.87411606,
+      "endTime": 12.865125,
+      "startTime": 12.605125,
+      "word": "卡"
+    },
+    {
+      "confidence": 0.8869223,
+      "endTime": 13.015125,
+      "startTime": 12.865125,
+      "word": "提"
+    },
+    {
+      "confidence": 0.25819543,
+      "endTime": 13.075125,
+      "startTime": 13.015125,
+      "word": "前"
+    },
+    {
+      "confidence": 0.121073246,
+      "endTime": 13.135125,
+      "startTime": 13.075125,
+      "word": "发"
+    },
+    {
+      "confidence": 0.2024618,
+      "endTime": 13.195126,
+      "startTime": 13.135125,
+      "word": "出"
+    },
+    {
+      "confidence": 0.27595007,
+      "endTime": 13.255125,
+      "startTime": 13.195126,
+      "word": "去。"
+    }
+  ]
+}

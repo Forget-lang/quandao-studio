@@ -1,0 +1,505 @@
+[
+  {
+    "phonemes": [],
+    "text": "发券和打折，差的不是有没有优惠，是优惠给在什么时间。",
+    "words": [
+      {
+        "confidence": 0.87004036,
+        "endTime": 0.545,
+        "startTime": 0.285,
+        "word": "发"
+      },
+      {
+        "confidence": 0.7051591,
+        "endTime": 0.745,
+        "startTime": 0.545,
+        "word": "券"
+      },
+      {
+        "confidence": 0.8834414,
+        "endTime": 0.895,
+        "startTime": 0.745,
+        "word": "和"
+      },
+      {
+        "confidence": 0.9514905,
+        "endTime": 1.095,
+        "startTime": 0.895,
+        "word": "打"
+      },
+      {
+        "confidence": 0.9128382,
+        "endTime": 1.485,
+        "startTime": 1.095,
+        "word": "折，"
+      },
+      {
+        "confidence": 0.9558301,
+        "endTime": 1.865,
+        "startTime": 1.625,
+        "word": "差"
+      },
+      {
+        "confidence": 0.8177211,
+        "endTime": 1.955,
+        "startTime": 1.865,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9302156,
+        "endTime": 2.085,
+        "startTime": 1.955,
+        "word": "不"
+      },
+      {
+        "confidence": 0.9466091,
+        "endTime": 2.315,
+        "startTime": 2.085,
+        "word": "是"
+      },
+      {
+        "confidence": 0.9391385,
+        "endTime": 2.445,
+        "startTime": 2.315,
+        "word": "有"
+      },
+      {
+        "confidence": 0.9843565,
+        "endTime": 2.645,
+        "startTime": 2.445,
+        "word": "没"
+      },
+      {
+        "confidence": 0.8968712,
+        "endTime": 2.735,
+        "startTime": 2.645,
+        "word": "有"
+      },
+      {
+        "confidence": 0.926153,
+        "endTime": 2.895,
+        "startTime": 2.735,
+        "word": "优"
+      },
+      {
+        "confidence": 0.9656194,
+        "endTime": 3.195,
+        "startTime": 2.895,
+        "word": "惠，"
+      },
+      {
+        "confidence": 0.89327455,
+        "endTime": 3.675,
+        "startTime": 3.425,
+        "word": "是"
+      },
+      {
+        "confidence": 0.84771836,
+        "endTime": 3.825,
+        "startTime": 3.675,
+        "word": "优"
+      },
+      {
+        "confidence": 0.9641455,
+        "endTime": 4.105,
+        "startTime": 3.825,
+        "word": "惠"
+      },
+      {
+        "confidence": 0.9899059,
+        "endTime": 4.265,
+        "startTime": 4.105,
+        "word": "给"
+      },
+      {
+        "confidence": 0.98304033,
+        "endTime": 4.395,
+        "startTime": 4.265,
+        "word": "在"
+      },
+      {
+        "confidence": 0.98023677,
+        "endTime": 4.545,
+        "startTime": 4.395,
+        "word": "什"
+      },
+      {
+        "confidence": 0.9825521,
+        "endTime": 4.625,
+        "startTime": 4.545,
+        "word": "么"
+      },
+      {
+        "confidence": 0.971804,
+        "endTime": 4.795,
+        "startTime": 4.625,
+        "word": "时"
+      },
+      {
+        "confidence": 0.97414786,
+        "endTime": 5.085,
+        "startTime": 4.795,
+        "word": "间。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "打折是不分时段都便宜，人照样都挤在周末。",
+    "words": [
+      {
+        "confidence": 0.9630711,
+        "endTime": 5.7350416,
+        "startTime": 5.5650415,
+        "word": "打"
+      },
+      {
+        "confidence": 0.90119386,
+        "endTime": 6.015042,
+        "startTime": 5.7350416,
+        "word": "折"
+      },
+      {
+        "confidence": 0.8778699,
+        "endTime": 6.205042,
+        "startTime": 6.015042,
+        "word": "是"
+      },
+      {
+        "confidence": 0.96634287,
+        "endTime": 6.3450418,
+        "startTime": 6.205042,
+        "word": "不"
+      },
+      {
+        "confidence": 0.8810982,
+        "endTime": 6.5050416,
+        "startTime": 6.3450418,
+        "word": "分"
+      },
+      {
+        "confidence": 0.9137904,
+        "endTime": 6.6950417,
+        "startTime": 6.5050416,
+        "word": "时"
+      },
+      {
+        "confidence": 0.939676,
+        "endTime": 6.8650417,
+        "startTime": 6.6950417,
+        "word": "段"
+      },
+      {
+        "confidence": 0.9087714,
+        "endTime": 7.035042,
+        "startTime": 6.8650417,
+        "word": "都"
+      },
+      {
+        "confidence": 0.91809213,
+        "endTime": 7.3650417,
+        "startTime": 7.035042,
+        "word": "便"
+      },
+      {
+        "confidence": 0.6210431,
+        "endTime": 7.475042,
+        "startTime": 7.3650417,
+        "word": "宜，"
+      },
+      {
+        "confidence": 0.94608563,
+        "endTime": 7.975042,
+        "startTime": 7.745042,
+        "word": "人"
+      },
+      {
+        "confidence": 0.9396283,
+        "endTime": 8.265041,
+        "startTime": 7.975042,
+        "word": "照"
+      },
+      {
+        "confidence": 0.9337538,
+        "endTime": 8.415042,
+        "startTime": 8.265041,
+        "word": "样"
+      },
+      {
+        "confidence": 0.92200184,
+        "endTime": 8.555042,
+        "startTime": 8.415042,
+        "word": "都"
+      },
+      {
+        "confidence": 0.93306726,
+        "endTime": 8.725042,
+        "startTime": 8.555042,
+        "word": "挤"
+      },
+      {
+        "confidence": 0.97641456,
+        "endTime": 8.8550415,
+        "startTime": 8.725042,
+        "word": "在"
+      },
+      {
+        "confidence": 0.8617701,
+        "endTime": 9.025042,
+        "startTime": 8.8550415,
+        "word": "周"
+      },
+      {
+        "confidence": 0.95925534,
+        "endTime": 9.305042,
+        "startTime": 9.025042,
+        "word": "末。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "他动的是券能用的时间——工作日白天管用，别的时候不行。",
+    "words": [
+      {
+        "confidence": 0.8615258,
+        "endTime": 9.8150835,
+        "startTime": 9.630083,
+        "word": "他"
+      },
+      {
+        "confidence": 0.9480153,
+        "endTime": 10.035083,
+        "startTime": 9.8150835,
+        "word": "动"
+      },
+      {
+        "confidence": 0.9622495,
+        "endTime": 10.175083,
+        "startTime": 10.035083,
+        "word": "的"
+      },
+      {
+        "confidence": 0.94729614,
+        "endTime": 10.425083,
+        "startTime": 10.175083,
+        "word": "是"
+      },
+      {
+        "confidence": 0.9097691,
+        "endTime": 10.695084,
+        "startTime": 10.425083,
+        "word": "券"
+      },
+      {
+        "confidence": 0.9518914,
+        "endTime": 10.835083,
+        "startTime": 10.695084,
+        "word": "能"
+      },
+      {
+        "confidence": 0.9837629,
+        "endTime": 10.985083,
+        "startTime": 10.835083,
+        "word": "用"
+      },
+      {
+        "confidence": 0.9278254,
+        "endTime": 11.075083,
+        "startTime": 10.985083,
+        "word": "的"
+      },
+      {
+        "confidence": 0.92609435,
+        "endTime": 11.275084,
+        "startTime": 11.075083,
+        "word": "时"
+      },
+      {
+        "confidence": 0.98640454,
+        "endTime": 11.575083,
+        "startTime": 11.275084,
+        "word": "间"
+      },
+      {
+        "confidence": 0.22557282,
+        "endTime": 11.655083,
+        "startTime": 11.625083,
+        "word": "—"
+      },
+      {
+        "confidence": 0.30609947,
+        "endTime": 11.715083,
+        "startTime": 11.685083,
+        "word": "—"
+      },
+      {
+        "confidence": 0.9858155,
+        "endTime": 12.075083,
+        "startTime": 11.885083,
+        "word": "工"
+      },
+      {
+        "confidence": 0.9403731,
+        "endTime": 12.245083,
+        "startTime": 12.075083,
+        "word": "作"
+      },
+      {
+        "confidence": 0.8569615,
+        "endTime": 12.435083,
+        "startTime": 12.245083,
+        "word": "日"
+      },
+      {
+        "confidence": 0.95555884,
+        "endTime": 12.645083,
+        "startTime": 12.435083,
+        "word": "白"
+      },
+      {
+        "confidence": 0.9502202,
+        "endTime": 12.835083,
+        "startTime": 12.645083,
+        "word": "天"
+      },
+      {
+        "confidence": 0.944306,
+        "endTime": 13.015083,
+        "startTime": 12.835083,
+        "word": "管"
+      },
+      {
+        "confidence": 0.9639391,
+        "endTime": 13.265083,
+        "startTime": 13.015083,
+        "word": "用，"
+      },
+      {
+        "confidence": 0.9395835,
+        "endTime": 13.575083,
+        "startTime": 13.415083,
+        "word": "别"
+      },
+      {
+        "confidence": 0.89726764,
+        "endTime": 13.665083,
+        "startTime": 13.575083,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9388239,
+        "endTime": 13.785084,
+        "startTime": 13.665083,
+        "word": "时"
+      },
+      {
+        "confidence": 0.748742,
+        "endTime": 13.915083,
+        "startTime": 13.785084,
+        "word": "候"
+      },
+      {
+        "confidence": 0.96239156,
+        "endTime": 14.025084,
+        "startTime": 13.915083,
+        "word": "不"
+      },
+      {
+        "confidence": 0.96622694,
+        "endTime": 14.335083,
+        "startTime": 14.025084,
+        "word": "行。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "发券和打折，差的不是有没有优惠，是优惠给在什么时间。打折是不分时段都便宜，人照样都挤在周末。他动的是券能用的时间——工作日白天管用，别的时候不行。价目表一分没动，动的只是时间。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "价目表一分没动，动的只是时间。",
+    "words": [
+      {
+        "confidence": 0.82983774,
+        "endTime": 14.915125,
+        "startTime": 14.710125,
+        "word": "价"
+      },
+      {
+        "confidence": 0.9643084,
+        "endTime": 15.055125,
+        "startTime": 14.915125,
+        "word": "目"
+      },
+      {
+        "confidence": 0.96580255,
+        "endTime": 15.355125,
+        "startTime": 15.055125,
+        "word": "表"
+      },
+      {
+        "confidence": 0.8733908,
+        "endTime": 15.465125,
+        "startTime": 15.355125,
+        "word": "一"
+      },
+      {
+        "confidence": 0.95432574,
+        "endTime": 15.635125,
+        "startTime": 15.465125,
+        "word": "分"
+      },
+      {
+        "confidence": 0.9133355,
+        "endTime": 15.805125,
+        "startTime": 15.635125,
+        "word": "没"
+      },
+      {
+        "confidence": 0.97794455,
+        "endTime": 16.045124,
+        "startTime": 15.805125,
+        "word": "动，"
+      },
+      {
+        "confidence": 0.9475748,
+        "endTime": 16.415125,
+        "startTime": 16.215124,
+        "word": "动"
+      },
+      {
+        "confidence": 0.96531874,
+        "endTime": 16.595125,
+        "startTime": 16.415125,
+        "word": "的"
+      },
+      {
+        "confidence": 0.8778799,
+        "endTime": 16.705126,
+        "startTime": 16.595125,
+        "word": "只"
+      },
+      {
+        "confidence": 0.3090402,
+        "endTime": 16.765125,
+        "startTime": 16.705126,
+        "word": "是"
+      },
+      {
+        "confidence": 0.4311975,
+        "endTime": 16.825125,
+        "startTime": 16.765125,
+        "word": "时"
+      },
+      {
+        "confidence": 0.23425058,
+        "endTime": 16.885124,
+        "startTime": 16.825125,
+        "word": "间。"
+      }
+    ]
+  }
+]

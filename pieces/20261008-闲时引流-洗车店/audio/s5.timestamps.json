@@ -1,0 +1,409 @@
+[
+  {
+    "phonemes": [],
+    "text": "真正定成败的，是那张券的时间范围。",
+    "words": [
+      {
+        "confidence": 0.91107136,
+        "endTime": 0.495,
+        "startTime": 0.295,
+        "word": "真"
+      },
+      {
+        "confidence": 0.9801099,
+        "endTime": 0.685,
+        "startTime": 0.495,
+        "word": "正"
+      },
+      {
+        "confidence": 0.81181055,
+        "endTime": 0.855,
+        "startTime": 0.685,
+        "word": "定"
+      },
+      {
+        "confidence": 0.9175743,
+        "endTime": 1.105,
+        "startTime": 0.855,
+        "word": "成"
+      },
+      {
+        "confidence": 0.92656416,
+        "endTime": 1.335,
+        "startTime": 1.105,
+        "word": "败"
+      },
+      {
+        "confidence": 0.98200023,
+        "endTime": 1.595,
+        "startTime": 1.335,
+        "word": "的，"
+      },
+      {
+        "confidence": 0.97014683,
+        "endTime": 1.855,
+        "startTime": 1.675,
+        "word": "是"
+      },
+      {
+        "confidence": 0.95203114,
+        "endTime": 1.995,
+        "startTime": 1.855,
+        "word": "那"
+      },
+      {
+        "confidence": 0.912853,
+        "endTime": 2.145,
+        "startTime": 1.995,
+        "word": "张"
+      },
+      {
+        "confidence": 0.8268817,
+        "endTime": 2.375,
+        "startTime": 2.145,
+        "word": "券"
+      },
+      {
+        "confidence": 0.91699857,
+        "endTime": 2.485,
+        "startTime": 2.375,
+        "word": "的"
+      },
+      {
+        "confidence": 0.98062664,
+        "endTime": 2.665,
+        "startTime": 2.485,
+        "word": "时"
+      },
+      {
+        "confidence": 0.970626,
+        "endTime": 2.835,
+        "startTime": 2.665,
+        "word": "间"
+      },
+      {
+        "confidence": 0.6902964,
+        "endTime": 3.065,
+        "startTime": 2.835,
+        "word": "范"
+      },
+      {
+        "confidence": 0.9387197,
+        "endTime": 3.285,
+        "startTime": 3.065,
+        "word": "围。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "设成全天都能用，顾客照样挑周末上门，闲时依旧没人。",
+    "words": [
+      {
+        "confidence": 0.6817642,
+        "endTime": 3.8350418,
+        "startTime": 3.7600417,
+        "word": "设"
+      },
+      {
+        "confidence": 0.9154511,
+        "endTime": 4.055042,
+        "startTime": 3.8350418,
+        "word": "成"
+      },
+      {
+        "confidence": 0.945021,
+        "endTime": 4.265042,
+        "startTime": 4.055042,
+        "word": "全"
+      },
+      {
+        "confidence": 0.96212566,
+        "endTime": 4.435042,
+        "startTime": 4.265042,
+        "word": "天"
+      },
+      {
+        "confidence": 0.8989371,
+        "endTime": 4.5650415,
+        "startTime": 4.435042,
+        "word": "都"
+      },
+      {
+        "confidence": 0.9796933,
+        "endTime": 4.6950417,
+        "startTime": 4.5650415,
+        "word": "能"
+      },
+      {
+        "confidence": 0.9871742,
+        "endTime": 4.9450417,
+        "startTime": 4.6950417,
+        "word": "用，"
+      },
+      {
+        "confidence": 0.9606914,
+        "endTime": 5.3550415,
+        "startTime": 5.205042,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.97389126,
+        "endTime": 5.5650415,
+        "startTime": 5.3550415,
+        "word": "客"
+      },
+      {
+        "confidence": 0.96392,
+        "endTime": 5.8450418,
+        "startTime": 5.5650415,
+        "word": "照"
+      },
+      {
+        "confidence": 0.85632306,
+        "endTime": 5.9850416,
+        "startTime": 5.8450418,
+        "word": "样"
+      },
+      {
+        "confidence": 0.9396151,
+        "endTime": 6.1950417,
+        "startTime": 5.9850416,
+        "word": "挑"
+      },
+      {
+        "confidence": 0.85429436,
+        "endTime": 6.3550415,
+        "startTime": 6.1950417,
+        "word": "周"
+      },
+      {
+        "confidence": 0.93737644,
+        "endTime": 6.4650416,
+        "startTime": 6.3550415,
+        "word": "末"
+      },
+      {
+        "confidence": 0.947614,
+        "endTime": 6.6950417,
+        "startTime": 6.4650416,
+        "word": "上"
+      },
+      {
+        "confidence": 0.90106845,
+        "endTime": 6.9450417,
+        "startTime": 6.6950417,
+        "word": "门，"
+      },
+      {
+        "confidence": 0.91750884,
+        "endTime": 7.4450417,
+        "startTime": 7.1950417,
+        "word": "闲"
+      },
+      {
+        "confidence": 0.93155336,
+        "endTime": 7.6950417,
+        "startTime": 7.4450417,
+        "word": "时"
+      },
+      {
+        "confidence": 0.78396976,
+        "endTime": 7.8150415,
+        "startTime": 7.6950417,
+        "word": "依"
+      },
+      {
+        "confidence": 0.9223466,
+        "endTime": 7.9850416,
+        "startTime": 7.8150415,
+        "word": "旧"
+      },
+      {
+        "confidence": 0.9526043,
+        "endTime": 8.135042,
+        "startTime": 7.9850416,
+        "word": "没"
+      },
+      {
+        "confidence": 0.98272294,
+        "endTime": 8.405042,
+        "startTime": 8.135042,
+        "word": "人。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "真正定成败的，是那张券的时间范围。设成全天都能用，顾客照样挑周末上门，闲时依旧没人。把时间卡在工作日白天，顾客才会真的挪到你想要的那段闲时来。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "把时间卡在工作日白天，顾客才会真的挪到你想要的那段闲时来。",
+    "words": [
+      {
+        "confidence": 0.92576396,
+        "endTime": 8.945084,
+        "startTime": 8.825083,
+        "word": "把"
+      },
+      {
+        "confidence": 0.96126485,
+        "endTime": 9.135083,
+        "startTime": 8.945084,
+        "word": "时"
+      },
+      {
+        "confidence": 0.97872686,
+        "endTime": 9.345083,
+        "startTime": 9.135083,
+        "word": "间"
+      },
+      {
+        "confidence": 0.87945056,
+        "endTime": 9.555083,
+        "startTime": 9.345083,
+        "word": "卡"
+      },
+      {
+        "confidence": 0.9558554,
+        "endTime": 9.735084,
+        "startTime": 9.555083,
+        "word": "在"
+      },
+      {
+        "confidence": 0.982865,
+        "endTime": 9.905083,
+        "startTime": 9.735084,
+        "word": "工"
+      },
+      {
+        "confidence": 0.9500559,
+        "endTime": 10.045083,
+        "startTime": 9.905083,
+        "word": "作"
+      },
+      {
+        "confidence": 0.89605916,
+        "endTime": 10.165083,
+        "startTime": 10.045083,
+        "word": "日"
+      },
+      {
+        "confidence": 0.9657698,
+        "endTime": 10.335083,
+        "startTime": 10.165083,
+        "word": "白"
+      },
+      {
+        "confidence": 0.9408021,
+        "endTime": 10.595083,
+        "startTime": 10.335083,
+        "word": "天，"
+      },
+      {
+        "confidence": 0.9452323,
+        "endTime": 11.045083,
+        "startTime": 10.905083,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.96207905,
+        "endTime": 11.265083,
+        "startTime": 11.045083,
+        "word": "客"
+      },
+      {
+        "confidence": 0.9632745,
+        "endTime": 11.425083,
+        "startTime": 11.265083,
+        "word": "才"
+      },
+      {
+        "confidence": 0.9808794,
+        "endTime": 11.5650835,
+        "startTime": 11.425083,
+        "word": "会"
+      },
+      {
+        "confidence": 0.9783186,
+        "endTime": 11.755083,
+        "startTime": 11.5650835,
+        "word": "真"
+      },
+      {
+        "confidence": 0.9750424,
+        "endTime": 11.875083,
+        "startTime": 11.755083,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9136279,
+        "endTime": 12.025084,
+        "startTime": 11.875083,
+        "word": "挪"
+      },
+      {
+        "confidence": 0.95765907,
+        "endTime": 12.205083,
+        "startTime": 12.025084,
+        "word": "到"
+      },
+      {
+        "confidence": 0.9782603,
+        "endTime": 12.325083,
+        "startTime": 12.205083,
+        "word": "你"
+      },
+      {
+        "confidence": 0.97852093,
+        "endTime": 12.555083,
+        "startTime": 12.325083,
+        "word": "想"
+      },
+      {
+        "confidence": 0.94372934,
+        "endTime": 12.715083,
+        "startTime": 12.555083,
+        "word": "要"
+      },
+      {
+        "confidence": 0.96030116,
+        "endTime": 12.835083,
+        "startTime": 12.715083,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9171284,
+        "endTime": 12.955084,
+        "startTime": 12.835083,
+        "word": "那"
+      },
+      {
+        "confidence": 0.8099899,
+        "endTime": 13.095083,
+        "startTime": 12.955084,
+        "word": "段"
+      },
+      {
+        "confidence": 0.84721434,
+        "endTime": 13.285084,
+        "startTime": 13.095083,
+        "word": "闲"
+      },
+      {
+        "confidence": 0.94881713,
+        "endTime": 13.495083,
+        "startTime": 13.285084,
+        "word": "时"
+      },
+      {
+        "confidence": 0.86166084,
+        "endTime": 13.675083,
+        "startTime": 13.495083,
+        "word": "来。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,457 @@
+[
+  {
+    "phonemes": [],
+    "text": "跑起来就四步。",
+    "words": [
+      {
+        "confidence": 0.852185,
+        "endTime": 0.535,
+        "startTime": 0.295,
+        "word": "跑"
+      },
+      {
+        "confidence": 0.9609191,
+        "endTime": 0.745,
+        "startTime": 0.535,
+        "word": "起"
+      },
+      {
+        "confidence": 0.96998954,
+        "endTime": 0.875,
+        "startTime": 0.745,
+        "word": "来"
+      },
+      {
+        "confidence": 0.9488778,
+        "endTime": 1.005,
+        "startTime": 0.875,
+        "word": "就"
+      },
+      {
+        "confidence": 0.8532528,
+        "endTime": 1.325,
+        "startTime": 1.005,
+        "word": "四"
+      },
+      {
+        "confidence": 0.9369385,
+        "endTime": 1.605,
+        "startTime": 1.325,
+        "word": "步。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "先做券，把能用的时间定在工作日白天；",
+    "words": [
+      {
+        "confidence": 0.54540986,
+        "endTime": 2.2950418,
+        "startTime": 2.2200418,
+        "word": "先"
+      },
+      {
+        "confidence": 0.8679109,
+        "endTime": 2.4050417,
+        "startTime": 2.2950418,
+        "word": "做"
+      },
+      {
+        "confidence": 0.91141164,
+        "endTime": 2.6950417,
+        "startTime": 2.4050417,
+        "word": "券，"
+      },
+      {
+        "confidence": 0.9248725,
+        "endTime": 3.1850417,
+        "startTime": 3.0150418,
+        "word": "把"
+      },
+      {
+        "confidence": 0.9427907,
+        "endTime": 3.3950417,
+        "startTime": 3.1850417,
+        "word": "能"
+      },
+      {
+        "confidence": 0.9797739,
+        "endTime": 3.5550418,
+        "startTime": 3.3950417,
+        "word": "用"
+      },
+      {
+        "confidence": 0.9608771,
+        "endTime": 3.6550417,
+        "startTime": 3.5550418,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9475141,
+        "endTime": 3.8350418,
+        "startTime": 3.6550417,
+        "word": "时"
+      },
+      {
+        "confidence": 0.9198182,
+        "endTime": 4.0950418,
+        "startTime": 3.8350418,
+        "word": "间"
+      },
+      {
+        "confidence": 0.95659244,
+        "endTime": 4.305042,
+        "startTime": 4.0950418,
+        "word": "定"
+      },
+      {
+        "confidence": 0.9485076,
+        "endTime": 4.5650415,
+        "startTime": 4.305042,
+        "word": "在"
+      },
+      {
+        "confidence": 0.96229327,
+        "endTime": 4.745042,
+        "startTime": 4.5650415,
+        "word": "工"
+      },
+      {
+        "confidence": 0.93909645,
+        "endTime": 4.875042,
+        "startTime": 4.745042,
+        "word": "作"
+      },
+      {
+        "confidence": 0.91938674,
+        "endTime": 5.0250416,
+        "startTime": 4.875042,
+        "word": "日"
+      },
+      {
+        "confidence": 0.94915736,
+        "endTime": 5.245042,
+        "startTime": 5.0250416,
+        "word": "白"
+      },
+      {
+        "confidence": 0.9562051,
+        "endTime": 5.555042,
+        "startTime": 5.245042,
+        "word": "天；"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "再定领取时间，比如每天上午九点放出来，领取页上挂着倒计时；",
+    "words": [
+      {
+        "confidence": 0.93326414,
+        "endTime": 6.0650835,
+        "startTime": 5.9000835,
+        "word": "再"
+      },
+      {
+        "confidence": 0.9211462,
+        "endTime": 6.3150835,
+        "startTime": 6.0650835,
+        "word": "定"
+      },
+      {
+        "confidence": 0.91227037,
+        "endTime": 6.4650836,
+        "startTime": 6.3150835,
+        "word": "领"
+      },
+      {
+        "confidence": 0.98106116,
+        "endTime": 6.6350837,
+        "startTime": 6.4650836,
+        "word": "取"
+      },
+      {
+        "confidence": 0.93484706,
+        "endTime": 6.8250837,
+        "startTime": 6.6350837,
+        "word": "时"
+      },
+      {
+        "confidence": 0.94205993,
+        "endTime": 7.0750837,
+        "startTime": 6.8250837,
+        "word": "间，"
+      },
+      {
+        "confidence": 0.9228949,
+        "endTime": 7.5550833,
+        "startTime": 7.4450836,
+        "word": "比"
+      },
+      {
+        "confidence": 0.9686138,
+        "endTime": 7.8650837,
+        "startTime": 7.5550833,
+        "word": "如"
+      },
+      {
+        "confidence": 0.90507525,
+        "endTime": 7.995084,
+        "startTime": 7.8650837,
+        "word": "每"
+      },
+      {
+        "confidence": 0.99174726,
+        "endTime": 8.155084,
+        "startTime": 7.995084,
+        "word": "天"
+      },
+      {
+        "confidence": 0.93388957,
+        "endTime": 8.345083,
+        "startTime": 8.155084,
+        "word": "上"
+      },
+      {
+        "confidence": 0.97268003,
+        "endTime": 8.485084,
+        "startTime": 8.345083,
+        "word": "午"
+      },
+      {
+        "confidence": 0.9629925,
+        "endTime": 8.705084,
+        "startTime": 8.485084,
+        "word": "九"
+      },
+      {
+        "confidence": 0.91202533,
+        "endTime": 8.835083,
+        "startTime": 8.705084,
+        "word": "点"
+      },
+      {
+        "confidence": 0.9558697,
+        "endTime": 9.035084,
+        "startTime": 8.835083,
+        "word": "放"
+      },
+      {
+        "confidence": 0.9556979,
+        "endTime": 9.205084,
+        "startTime": 9.035084,
+        "word": "出"
+      },
+      {
+        "confidence": 0.9799302,
+        "endTime": 9.435083,
+        "startTime": 9.205084,
+        "word": "来，"
+      },
+      {
+        "confidence": 0.799127,
+        "endTime": 9.875084,
+        "startTime": 9.735084,
+        "word": "领"
+      },
+      {
+        "confidence": 0.9604429,
+        "endTime": 10.075084,
+        "startTime": 9.875084,
+        "word": "取"
+      },
+      {
+        "confidence": 0.942264,
+        "endTime": 10.235084,
+        "startTime": 10.075084,
+        "word": "页"
+      },
+      {
+        "confidence": 0.9627106,
+        "endTime": 10.505083,
+        "startTime": 10.235084,
+        "word": "上"
+      },
+      {
+        "confidence": 0.8842581,
+        "endTime": 10.695084,
+        "startTime": 10.505083,
+        "word": "挂"
+      },
+      {
+        "confidence": 0.86777127,
+        "endTime": 10.795084,
+        "startTime": 10.695084,
+        "word": "着"
+      },
+      {
+        "confidence": 0.96572864,
+        "endTime": 10.945084,
+        "startTime": 10.795084,
+        "word": "倒"
+      },
+      {
+        "confidence": 0.9400424,
+        "endTime": 11.085083,
+        "startTime": 10.945084,
+        "word": "计"
+      },
+      {
+        "confidence": 0.96661085,
+        "endTime": 11.455084,
+        "startTime": 11.085083,
+        "word": "时；"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "顾客把券领走；",
+    "words": [
+      {
+        "confidence": 0.7027319,
+        "endTime": 11.855124,
+        "startTime": 11.780125,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.9204311,
+        "endTime": 12.095124,
+        "startTime": 11.855124,
+        "word": "客"
+      },
+      {
+        "confidence": 0.92949724,
+        "endTime": 12.245125,
+        "startTime": 12.095124,
+        "word": "把"
+      },
+      {
+        "confidence": 0.9016719,
+        "endTime": 12.435124,
+        "startTime": 12.245125,
+        "word": "券"
+      },
+      {
+        "confidence": 0.899521,
+        "endTime": 12.605124,
+        "startTime": 12.435124,
+        "word": "领"
+      },
+      {
+        "confidence": 0.95447254,
+        "endTime": 12.875125,
+        "startTime": 12.605124,
+        "word": "走；"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "跑起来就四步。先做券，把能用的时间定在工作日白天；再定领取时间，比如每天上午九点放出来，领取页上挂着倒计时；顾客把券领走；到店出示，店员核销，这张券就算用掉了。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "到店出示，店员核销，这张券就算用掉了。",
+    "words": [
+      {
+        "confidence": 0.6959491,
+        "endTime": 13.265166,
+        "startTime": 13.180166,
+        "word": "到"
+      },
+      {
+        "confidence": 0.93419373,
+        "endTime": 13.425166,
+        "startTime": 13.265166,
+        "word": "店"
+      },
+      {
+        "confidence": 0.99295694,
+        "endTime": 13.605166,
+        "startTime": 13.425166,
+        "word": "出"
+      },
+      {
+        "confidence": 0.9432984,
+        "endTime": 13.925166,
+        "startTime": 13.605166,
+        "word": "示，"
+      },
+      {
+        "confidence": 0.887551,
+        "endTime": 14.205166,
+        "startTime": 14.075167,
+        "word": "店"
+      },
+      {
+        "confidence": 0.967192,
+        "endTime": 14.345166,
+        "startTime": 14.205166,
+        "word": "员"
+      },
+      {
+        "confidence": 0.9778843,
+        "endTime": 14.5251665,
+        "startTime": 14.345166,
+        "word": "核"
+      },
+      {
+        "confidence": 0.9273466,
+        "endTime": 14.785166,
+        "startTime": 14.5251665,
+        "word": "销，"
+      },
+      {
+        "confidence": 0.9702694,
+        "endTime": 15.245167,
+        "startTime": 15.115166,
+        "word": "这"
+      },
+      {
+        "confidence": 0.968647,
+        "endTime": 15.395166,
+        "startTime": 15.245167,
+        "word": "张"
+      },
+      {
+        "confidence": 0.90795344,
+        "endTime": 15.665166,
+        "startTime": 15.395166,
+        "word": "券"
+      },
+      {
+        "confidence": 0.95351523,
+        "endTime": 15.805166,
+        "startTime": 15.665166,
+        "word": "就"
+      },
+      {
+        "confidence": 0.17473067,
+        "endTime": 15.865166,
+        "startTime": 15.805166,
+        "word": "算"
+      },
+      {
+        "confidence": 0.10323139,
+        "endTime": 15.895166,
+        "startTime": 15.865166,
+        "word": "用"
+      },
+      {
+        "confidence": 0.14843157,
+        "endTime": 15.955166,
+        "startTime": 15.895166,
+        "word": "掉"
+      },
+      {
+        "confidence": 0.38043728,
+        "endTime": 16.015167,
+        "startTime": 15.955166,
+        "word": "了。"
+      }
+    ]
+  }
+]

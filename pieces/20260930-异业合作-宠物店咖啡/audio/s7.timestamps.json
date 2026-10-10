@@ -1,0 +1,553 @@
+[
+  {
+    "phonemes": [],
+    "text": "另外，两家各做各的券、各核各的账。",
+    "words": [
+      {
+        "confidence": 0.73308206,
+        "endTime": 0.435,
+        "startTime": 0.315,
+        "word": "另"
+      },
+      {
+        "confidence": 0.8516242,
+        "endTime": 0.705,
+        "startTime": 0.435,
+        "word": "外，"
+      },
+      {
+        "confidence": 0.969751,
+        "endTime": 1.105,
+        "startTime": 0.925,
+        "word": "两"
+      },
+      {
+        "confidence": 0.9526644,
+        "endTime": 1.375,
+        "startTime": 1.105,
+        "word": "家"
+      },
+      {
+        "confidence": 0.87019247,
+        "endTime": 1.535,
+        "startTime": 1.375,
+        "word": "各"
+      },
+      {
+        "confidence": 0.96616673,
+        "endTime": 1.695,
+        "startTime": 1.535,
+        "word": "做"
+      },
+      {
+        "confidence": 0.9131099,
+        "endTime": 1.835,
+        "startTime": 1.695,
+        "word": "各"
+      },
+      {
+        "confidence": 0.8290009,
+        "endTime": 1.945,
+        "startTime": 1.835,
+        "word": "的"
+      },
+      {
+        "confidence": 0.22013445,
+        "endTime": 2.215,
+        "startTime": 2.185,
+        "word": "券、"
+      },
+      {
+        "confidence": 0.9338501,
+        "endTime": 2.585,
+        "startTime": 2.415,
+        "word": "各"
+      },
+      {
+        "confidence": 0.9414462,
+        "endTime": 2.775,
+        "startTime": 2.585,
+        "word": "核"
+      },
+      {
+        "confidence": 0.83165854,
+        "endTime": 2.915,
+        "startTime": 2.775,
+        "word": "各"
+      },
+      {
+        "confidence": 0.9107945,
+        "endTime": 3.005,
+        "startTime": 2.915,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9386051,
+        "endTime": 3.245,
+        "startTime": 3.005,
+        "word": "账。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "但券想在隔壁被发出去、被核掉，",
+    "words": [
+      {
+        "confidence": 0.7209827,
+        "endTime": 3.8650417,
+        "startTime": 3.7700417,
+        "word": "但"
+      },
+      {
+        "confidence": 0.80220497,
+        "endTime": 4.185042,
+        "startTime": 3.8650417,
+        "word": "券"
+      },
+      {
+        "confidence": 0.7009657,
+        "endTime": 4.375042,
+        "startTime": 4.185042,
+        "word": "想"
+      },
+      {
+        "confidence": 0.9395843,
+        "endTime": 4.555042,
+        "startTime": 4.375042,
+        "word": "在"
+      },
+      {
+        "confidence": 0.9661557,
+        "endTime": 4.7550416,
+        "startTime": 4.555042,
+        "word": "隔"
+      },
+      {
+        "confidence": 0.9525981,
+        "endTime": 4.9250417,
+        "startTime": 4.7550416,
+        "word": "壁"
+      },
+      {
+        "confidence": 0.9766696,
+        "endTime": 5.0650415,
+        "startTime": 4.9250417,
+        "word": "被"
+      },
+      {
+        "confidence": 0.9857467,
+        "endTime": 5.2550416,
+        "startTime": 5.0650415,
+        "word": "发"
+      },
+      {
+        "confidence": 0.824435,
+        "endTime": 5.4050417,
+        "startTime": 5.2550416,
+        "word": "出"
+      },
+      {
+        "confidence": 0.20186974,
+        "endTime": 5.625042,
+        "startTime": 5.5950418,
+        "word": "去、"
+      },
+      {
+        "confidence": 0.841394,
+        "endTime": 5.785042,
+        "startTime": 5.625042,
+        "word": "被"
+      },
+      {
+        "confidence": 0.9665903,
+        "endTime": 6.0150414,
+        "startTime": 5.785042,
+        "word": "核"
+      },
+      {
+        "confidence": 0.973475,
+        "endTime": 6.285042,
+        "startTime": 6.0150414,
+        "word": "掉，"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "需要在这张券的设置里，",
+    "words": [
+      {
+        "confidence": 0.9229798,
+        "endTime": 6.7450833,
+        "startTime": 6.550083,
+        "word": "需"
+      },
+      {
+        "confidence": 0.9638107,
+        "endTime": 6.885083,
+        "startTime": 6.7450833,
+        "word": "要"
+      },
+      {
+        "confidence": 0.9622441,
+        "endTime": 7.095083,
+        "startTime": 6.885083,
+        "word": "在"
+      },
+      {
+        "confidence": 0.9887166,
+        "endTime": 7.205083,
+        "startTime": 7.095083,
+        "word": "这"
+      },
+      {
+        "confidence": 0.95443887,
+        "endTime": 7.375083,
+        "startTime": 7.205083,
+        "word": "张"
+      },
+      {
+        "confidence": 0.8584805,
+        "endTime": 7.5750833,
+        "startTime": 7.375083,
+        "word": "券"
+      },
+      {
+        "confidence": 0.9441687,
+        "endTime": 7.675083,
+        "startTime": 7.5750833,
+        "word": "的"
+      },
+      {
+        "confidence": 0.95787245,
+        "endTime": 7.8950834,
+        "startTime": 7.675083,
+        "word": "设"
+      },
+      {
+        "confidence": 0.939981,
+        "endTime": 8.085083,
+        "startTime": 7.8950834,
+        "word": "置"
+      },
+      {
+        "confidence": 0.97411746,
+        "endTime": 8.285083,
+        "startTime": 8.085083,
+        "word": "里，"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "把对方门店加进适用门店，",
+    "words": [
+      {
+        "confidence": 0.79795694,
+        "endTime": 8.615125,
+        "startTime": 8.490125,
+        "word": "把"
+      },
+      {
+        "confidence": 0.87902224,
+        "endTime": 8.805124,
+        "startTime": 8.615125,
+        "word": "对"
+      },
+      {
+        "confidence": 0.9631934,
+        "endTime": 9.005125,
+        "startTime": 8.805124,
+        "word": "方"
+      },
+      {
+        "confidence": 0.79592943,
+        "endTime": 9.165125,
+        "startTime": 9.005125,
+        "word": "门"
+      },
+      {
+        "confidence": 0.94867074,
+        "endTime": 9.425125,
+        "startTime": 9.165125,
+        "word": "店"
+      },
+      {
+        "confidence": 0.95097655,
+        "endTime": 9.655125,
+        "startTime": 9.425125,
+        "word": "加"
+      },
+      {
+        "confidence": 0.86378825,
+        "endTime": 9.875125,
+        "startTime": 9.655125,
+        "word": "进"
+      },
+      {
+        "confidence": 0.9531786,
+        "endTime": 10.095125,
+        "startTime": 9.875125,
+        "word": "适"
+      },
+      {
+        "confidence": 0.903694,
+        "endTime": 10.265124,
+        "startTime": 10.095125,
+        "word": "用"
+      },
+      {
+        "confidence": 0.7944243,
+        "endTime": 10.405125,
+        "startTime": 10.265124,
+        "word": "门"
+      },
+      {
+        "confidence": 0.9448158,
+        "endTime": 10.645124,
+        "startTime": 10.405125,
+        "word": "店，"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "再把对方的店员加进你的发券员和核销员名单。",
+    "words": [
+      {
+        "confidence": 0.9602503,
+        "endTime": 11.145166,
+        "startTime": 10.995167,
+        "word": "再"
+      },
+      {
+        "confidence": 0.8816567,
+        "endTime": 11.335167,
+        "startTime": 11.145166,
+        "word": "把"
+      },
+      {
+        "confidence": 0.93213314,
+        "endTime": 11.505167,
+        "startTime": 11.335167,
+        "word": "对"
+      },
+      {
+        "confidence": 0.98211133,
+        "endTime": 11.665167,
+        "startTime": 11.505167,
+        "word": "方"
+      },
+      {
+        "confidence": 0.92761254,
+        "endTime": 11.7751665,
+        "startTime": 11.665167,
+        "word": "的"
+      },
+      {
+        "confidence": 0.945428,
+        "endTime": 11.945167,
+        "startTime": 11.7751665,
+        "word": "店"
+      },
+      {
+        "confidence": 0.94811267,
+        "endTime": 12.225166,
+        "startTime": 11.945167,
+        "word": "员"
+      },
+      {
+        "confidence": 0.9483123,
+        "endTime": 12.445167,
+        "startTime": 12.225166,
+        "word": "加"
+      },
+      {
+        "confidence": 0.9012324,
+        "endTime": 12.615167,
+        "startTime": 12.445167,
+        "word": "进"
+      },
+      {
+        "confidence": 0.9271443,
+        "endTime": 12.7751665,
+        "startTime": 12.615167,
+        "word": "你"
+      },
+      {
+        "confidence": 0.9510369,
+        "endTime": 12.955167,
+        "startTime": 12.7751665,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9835981,
+        "endTime": 13.155167,
+        "startTime": 12.955167,
+        "word": "发"
+      },
+      {
+        "confidence": 0.92142004,
+        "endTime": 13.335167,
+        "startTime": 13.155167,
+        "word": "券"
+      },
+      {
+        "confidence": 0.96505624,
+        "endTime": 13.615167,
+        "startTime": 13.335167,
+        "word": "员"
+      },
+      {
+        "confidence": 0.9427323,
+        "endTime": 13.825167,
+        "startTime": 13.615167,
+        "word": "和"
+      },
+      {
+        "confidence": 0.97556466,
+        "endTime": 14.0251665,
+        "startTime": 13.825167,
+        "word": "核"
+      },
+      {
+        "confidence": 0.9540747,
+        "endTime": 14.205167,
+        "startTime": 14.0251665,
+        "word": "销"
+      },
+      {
+        "confidence": 0.94181234,
+        "endTime": 14.335167,
+        "startTime": 14.205167,
+        "word": "员"
+      },
+      {
+        "confidence": 0.93211144,
+        "endTime": 14.5251665,
+        "startTime": 14.335167,
+        "word": "名"
+      },
+      {
+        "confidence": 0.8971361,
+        "endTime": 14.705167,
+        "startTime": 14.5251665,
+        "word": "单。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "另外，两家各做各的券、各核各的账。但券想在隔壁被发出去、被核掉，需要在这张券的设置里，把对方门店加进适用门店，再把对方的店员加进你的发券员和核销员名单。这样他那边推荐、他那边核销，账各算各的。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "这样他那边推荐、他那边核销，账各算各的。",
+    "words": [
+      {
+        "confidence": 0.97973555,
+        "endTime": 15.325209,
+        "startTime": 15.155209,
+        "word": "这"
+      },
+      {
+        "confidence": 0.9738056,
+        "endTime": 15.4852085,
+        "startTime": 15.325209,
+        "word": "样"
+      },
+      {
+        "confidence": 0.96212816,
+        "endTime": 15.675209,
+        "startTime": 15.4852085,
+        "word": "他"
+      },
+      {
+        "confidence": 0.9244728,
+        "endTime": 15.795209,
+        "startTime": 15.675209,
+        "word": "那"
+      },
+      {
+        "confidence": 0.8910679,
+        "endTime": 15.935209,
+        "startTime": 15.795209,
+        "word": "边"
+      },
+      {
+        "confidence": 0.8769817,
+        "endTime": 16.145208,
+        "startTime": 15.935209,
+        "word": "推"
+      },
+      {
+        "confidence": 0.20993835,
+        "endTime": 16.34521,
+        "startTime": 16.315208,
+        "word": "荐、"
+      },
+      {
+        "confidence": 0.9693926,
+        "endTime": 16.675209,
+        "startTime": 16.495209,
+        "word": "他"
+      },
+      {
+        "confidence": 0.8839868,
+        "endTime": 16.77521,
+        "startTime": 16.675209,
+        "word": "那"
+      },
+      {
+        "confidence": 0.88629526,
+        "endTime": 16.925209,
+        "startTime": 16.77521,
+        "word": "边"
+      },
+      {
+        "confidence": 0.9639103,
+        "endTime": 17.12521,
+        "startTime": 16.925209,
+        "word": "核"
+      },
+      {
+        "confidence": 0.94018686,
+        "endTime": 17.44521,
+        "startTime": 17.12521,
+        "word": "销，"
+      },
+      {
+        "confidence": 0.72258556,
+        "endTime": 17.87521,
+        "startTime": 17.62521,
+        "word": "账"
+      },
+      {
+        "confidence": 0.8089541,
+        "endTime": 18.02521,
+        "startTime": 17.87521,
+        "word": "各"
+      },
+      {
+        "confidence": 0.8376804,
+        "endTime": 18.205208,
+        "startTime": 18.02521,
+        "word": "算"
+      },
+      {
+        "confidence": 0.8583886,
+        "endTime": 18.405209,
+        "startTime": 18.205208,
+        "word": "各"
+      },
+      {
+        "confidence": 0.94744205,
+        "endTime": 18.505209,
+        "startTime": 18.405209,
+        "word": "的。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,427 @@
+[
+  {
+    "phonemes": [],
+    "text": "这里真正关键的是为什么只让选一种。",
+    "words": [
+      {
+        "confidence": 0.9604943,
+        "endTime": 0.425,
+        "startTime": 0.275,
+        "word": "这"
+      },
+      {
+        "confidence": 0.9619583,
+        "endTime": 0.565,
+        "startTime": 0.425,
+        "word": "里"
+      },
+      {
+        "confidence": 0.96697193,
+        "endTime": 0.735,
+        "startTime": 0.565,
+        "word": "真"
+      },
+      {
+        "confidence": 0.9680335,
+        "endTime": 0.895,
+        "startTime": 0.735,
+        "word": "正"
+      },
+      {
+        "confidence": 0.97456175,
+        "endTime": 1.095,
+        "startTime": 0.895,
+        "word": "关"
+      },
+      {
+        "confidence": 0.9522591,
+        "endTime": 1.275,
+        "startTime": 1.095,
+        "word": "键"
+      },
+      {
+        "confidence": 0.8598573,
+        "endTime": 1.395,
+        "startTime": 1.275,
+        "word": "的"
+      },
+      {
+        "confidence": 0.8209961,
+        "endTime": 1.755,
+        "startTime": 1.395,
+        "word": "是"
+      },
+      {
+        "confidence": 0.8536432,
+        "endTime": 1.915,
+        "startTime": 1.795,
+        "word": "为"
+      },
+      {
+        "confidence": 0.98374766,
+        "endTime": 2.055,
+        "startTime": 1.915,
+        "word": "什"
+      },
+      {
+        "confidence": 0.99340904,
+        "endTime": 2.135,
+        "startTime": 2.055,
+        "word": "么"
+      },
+      {
+        "confidence": 0.9345232,
+        "endTime": 2.315,
+        "startTime": 2.135,
+        "word": "只"
+      },
+      {
+        "confidence": 0.640291,
+        "endTime": 2.405,
+        "startTime": 2.315,
+        "word": "让"
+      },
+      {
+        "confidence": 0.975324,
+        "endTime": 2.595,
+        "startTime": 2.405,
+        "word": "选"
+      },
+      {
+        "confidence": 0.89486605,
+        "endTime": 2.795,
+        "startTime": 2.595,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9793685,
+        "endTime": 3.055,
+        "startTime": 2.795,
+        "word": "种。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "三种全给，顾客很可能一种都不带，反而显得你在清库存。",
+    "words": [
+      {
+        "confidence": 0.87953967,
+        "endTime": 3.6950417,
+        "startTime": 3.4600418,
+        "word": "三"
+      },
+      {
+        "confidence": 0.9566124,
+        "endTime": 3.8750417,
+        "startTime": 3.6950417,
+        "word": "种"
+      },
+      {
+        "confidence": 0.96661067,
+        "endTime": 4.165042,
+        "startTime": 3.8750417,
+        "word": "全"
+      },
+      {
+        "confidence": 0.9363729,
+        "endTime": 4.415042,
+        "startTime": 4.165042,
+        "word": "给，"
+      },
+      {
+        "confidence": 0.9608161,
+        "endTime": 4.7550416,
+        "startTime": 4.6150417,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.9781283,
+        "endTime": 4.9250417,
+        "startTime": 4.7550416,
+        "word": "客"
+      },
+      {
+        "confidence": 0.89702594,
+        "endTime": 5.1150417,
+        "startTime": 4.9250417,
+        "word": "很"
+      },
+      {
+        "confidence": 0.9612256,
+        "endTime": 5.305042,
+        "startTime": 5.1150417,
+        "word": "可"
+      },
+      {
+        "confidence": 0.9820324,
+        "endTime": 5.455042,
+        "startTime": 5.305042,
+        "word": "能"
+      },
+      {
+        "confidence": 0.8890455,
+        "endTime": 5.6150417,
+        "startTime": 5.455042,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9753084,
+        "endTime": 5.7750416,
+        "startTime": 5.6150417,
+        "word": "种"
+      },
+      {
+        "confidence": 0.97447526,
+        "endTime": 5.8950415,
+        "startTime": 5.7750416,
+        "word": "都"
+      },
+      {
+        "confidence": 0.97084564,
+        "endTime": 6.015042,
+        "startTime": 5.8950415,
+        "word": "不"
+      },
+      {
+        "confidence": 0.96530133,
+        "endTime": 6.285042,
+        "startTime": 6.015042,
+        "word": "带，"
+      },
+      {
+        "confidence": 0.7952453,
+        "endTime": 6.6950417,
+        "startTime": 6.505042,
+        "word": "反"
+      },
+      {
+        "confidence": 0.8826944,
+        "endTime": 6.835042,
+        "startTime": 6.6950417,
+        "word": "而"
+      },
+      {
+        "confidence": 0.9190559,
+        "endTime": 7.0650415,
+        "startTime": 6.835042,
+        "word": "显"
+      },
+      {
+        "confidence": 0.94823176,
+        "endTime": 7.165042,
+        "startTime": 7.0650415,
+        "word": "得"
+      },
+      {
+        "confidence": 0.94805735,
+        "endTime": 7.305042,
+        "startTime": 7.165042,
+        "word": "你"
+      },
+      {
+        "confidence": 0.95477027,
+        "endTime": 7.4450417,
+        "startTime": 7.305042,
+        "word": "在"
+      },
+      {
+        "confidence": 0.9587185,
+        "endTime": 7.635042,
+        "startTime": 7.4450417,
+        "word": "清"
+      },
+      {
+        "confidence": 0.8886395,
+        "endTime": 7.795042,
+        "startTime": 7.635042,
+        "word": "库"
+      },
+      {
+        "confidence": 0.69459814,
+        "endTime": 8.085042,
+        "startTime": 7.795042,
+        "word": "存。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "这里真正关键的是为什么只让选一种。三种全给，顾客很可能一种都不带，反而显得你在清库存。让他自己挑最想去的那一家，至少他选出来的这张，是他真打算用的。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "让他自己挑最想去的那一家，至少他选出来的这张，是他真打算用的。",
+    "words": [
+      {
+        "confidence": 0.7894324,
+        "endTime": 8.645083,
+        "startTime": 8.525083,
+        "word": "让"
+      },
+      {
+        "confidence": 0.9340373,
+        "endTime": 8.8150835,
+        "startTime": 8.645083,
+        "word": "他"
+      },
+      {
+        "confidence": 0.9722664,
+        "endTime": 8.975083,
+        "startTime": 8.8150835,
+        "word": "自"
+      },
+      {
+        "confidence": 0.97407967,
+        "endTime": 9.155083,
+        "startTime": 8.975083,
+        "word": "己"
+      },
+      {
+        "confidence": 0.9120157,
+        "endTime": 9.355083,
+        "startTime": 9.155083,
+        "word": "挑"
+      },
+      {
+        "confidence": 0.97055227,
+        "endTime": 9.515083,
+        "startTime": 9.355083,
+        "word": "最"
+      },
+      {
+        "confidence": 0.89755714,
+        "endTime": 9.685083,
+        "startTime": 9.515083,
+        "word": "想"
+      },
+      {
+        "confidence": 0.9520817,
+        "endTime": 9.875083,
+        "startTime": 9.685083,
+        "word": "去"
+      },
+      {
+        "confidence": 0.86062706,
+        "endTime": 9.985083,
+        "startTime": 9.875083,
+        "word": "的"
+      },
+      {
+        "confidence": 0.8911745,
+        "endTime": 10.095083,
+        "startTime": 9.985083,
+        "word": "那"
+      },
+      {
+        "confidence": 0.8997079,
+        "endTime": 10.215083,
+        "startTime": 10.095083,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9417176,
+        "endTime": 10.495083,
+        "startTime": 10.215083,
+        "word": "家，"
+      },
+      {
+        "confidence": 0.9283363,
+        "endTime": 10.915083,
+        "startTime": 10.785083,
+        "word": "至"
+      },
+      {
+        "confidence": 0.93710244,
+        "endTime": 11.115083,
+        "startTime": 10.915083,
+        "word": "少"
+      },
+      {
+        "confidence": 0.95069414,
+        "endTime": 11.245083,
+        "startTime": 11.115083,
+        "word": "他"
+      },
+      {
+        "confidence": 0.95336753,
+        "endTime": 11.455083,
+        "startTime": 11.245083,
+        "word": "选"
+      },
+      {
+        "confidence": 0.9819305,
+        "endTime": 11.615083,
+        "startTime": 11.455083,
+        "word": "出"
+      },
+      {
+        "confidence": 0.9790281,
+        "endTime": 11.745083,
+        "startTime": 11.615083,
+        "word": "来"
+      },
+      {
+        "confidence": 0.96925086,
+        "endTime": 11.835083,
+        "startTime": 11.745083,
+        "word": "的"
+      },
+      {
+        "confidence": 0.96459454,
+        "endTime": 12.005083,
+        "startTime": 11.835083,
+        "word": "这"
+      },
+      {
+        "confidence": 0.97276443,
+        "endTime": 12.285083,
+        "startTime": 12.005083,
+        "word": "张，"
+      },
+      {
+        "confidence": 0.97268164,
+        "endTime": 12.545083,
+        "startTime": 12.365083,
+        "word": "是"
+      },
+      {
+        "confidence": 0.9664741,
+        "endTime": 12.705083,
+        "startTime": 12.545083,
+        "word": "他"
+      },
+      {
+        "confidence": 0.9772375,
+        "endTime": 12.895082,
+        "startTime": 12.705083,
+        "word": "真"
+      },
+      {
+        "confidence": 0.51204765,
+        "endTime": 12.965083,
+        "startTime": 12.895082,
+        "word": "打"
+      },
+      {
+        "confidence": 0.15884587,
+        "endTime": 13.025084,
+        "startTime": 12.965083,
+        "word": "算"
+      },
+      {
+        "confidence": 0.1072888,
+        "endTime": 13.055083,
+        "startTime": 13.025084,
+        "word": "用"
+      },
+      {
+        "confidence": 0.41800737,
+        "endTime": 13.115084,
+        "startTime": 13.055083,
+        "word": "的。"
+      }
+    ]
+  }
+]

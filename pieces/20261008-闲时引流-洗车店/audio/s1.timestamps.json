@@ -1,0 +1,433 @@
+[
+  {
+    "phonemes": [],
+    "text": "洗车店老周碰到个难题：工作日白天工位全空着，",
+    "words": [
+      {
+        "confidence": 0.92961293,
+        "endTime": 0.535,
+        "startTime": 0.285,
+        "word": "洗"
+      },
+      {
+        "confidence": 0.9550761,
+        "endTime": 0.695,
+        "startTime": 0.535,
+        "word": "车"
+      },
+      {
+        "confidence": 0.8365282,
+        "endTime": 0.865,
+        "startTime": 0.695,
+        "word": "店"
+      },
+      {
+        "confidence": 0.9287803,
+        "endTime": 1.055,
+        "startTime": 0.865,
+        "word": "老"
+      },
+      {
+        "confidence": 0.83878785,
+        "endTime": 1.255,
+        "startTime": 1.055,
+        "word": "周"
+      },
+      {
+        "confidence": 0.9317017,
+        "endTime": 1.445,
+        "startTime": 1.255,
+        "word": "碰"
+      },
+      {
+        "confidence": 0.9757788,
+        "endTime": 1.575,
+        "startTime": 1.445,
+        "word": "到"
+      },
+      {
+        "confidence": 0.8477099,
+        "endTime": 1.665,
+        "startTime": 1.575,
+        "word": "个"
+      },
+      {
+        "confidence": 0.9361174,
+        "endTime": 1.795,
+        "startTime": 1.665,
+        "word": "难"
+      },
+      {
+        "confidence": 0.18478066,
+        "endTime": 1.825,
+        "startTime": 1.795,
+        "word": "题："
+      },
+      {
+        "confidence": 0.9807973,
+        "endTime": 2.805,
+        "startTime": 2.625,
+        "word": "工"
+      },
+      {
+        "confidence": 0.9560872,
+        "endTime": 2.945,
+        "startTime": 2.805,
+        "word": "作"
+      },
+      {
+        "confidence": 0.941756,
+        "endTime": 3.115,
+        "startTime": 2.945,
+        "word": "日"
+      },
+      {
+        "confidence": 0.9505179,
+        "endTime": 3.285,
+        "startTime": 3.115,
+        "word": "白"
+      },
+      {
+        "confidence": 0.90058786,
+        "endTime": 3.545,
+        "startTime": 3.285,
+        "word": "天"
+      },
+      {
+        "confidence": 0.96284986,
+        "endTime": 3.755,
+        "startTime": 3.545,
+        "word": "工"
+      },
+      {
+        "confidence": 0.9690753,
+        "endTime": 3.875,
+        "startTime": 3.755,
+        "word": "位"
+      },
+      {
+        "confidence": 0.9649451,
+        "endTime": 4.105,
+        "startTime": 3.875,
+        "word": "全"
+      },
+      {
+        "confidence": 0.9298369,
+        "endTime": 4.365,
+        "startTime": 4.105,
+        "word": "空"
+      },
+      {
+        "confidence": 0.9468926,
+        "endTime": 4.545,
+        "startTime": 4.365,
+        "word": "着，"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "一到周末反倒排长队。",
+    "words": [
+      {
+        "confidence": 0.5565605,
+        "endTime": 4.955042,
+        "startTime": 4.910042,
+        "word": "一"
+      },
+      {
+        "confidence": 0.45855522,
+        "endTime": 5.0250416,
+        "startTime": 4.955042,
+        "word": "到"
+      },
+      {
+        "confidence": 0.72248447,
+        "endTime": 5.205042,
+        "startTime": 5.0250416,
+        "word": "周"
+      },
+      {
+        "confidence": 0.92477316,
+        "endTime": 5.475042,
+        "startTime": 5.205042,
+        "word": "末"
+      },
+      {
+        "confidence": 0.8337467,
+        "endTime": 5.645042,
+        "startTime": 5.475042,
+        "word": "反"
+      },
+      {
+        "confidence": 0.8669129,
+        "endTime": 5.765042,
+        "startTime": 5.645042,
+        "word": "倒"
+      },
+      {
+        "confidence": 0.9440338,
+        "endTime": 5.9250417,
+        "startTime": 5.765042,
+        "word": "排"
+      },
+      {
+        "confidence": 0.9318334,
+        "endTime": 6.1350417,
+        "startTime": 5.9250417,
+        "word": "长"
+      },
+      {
+        "confidence": 0.91759104,
+        "endTime": 6.395042,
+        "startTime": 6.1350417,
+        "word": "队。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "他没打算打折，而是发了一张只在工作日白天能用的券。",
+    "words": [
+      {
+        "confidence": 0.9801411,
+        "endTime": 6.9150834,
+        "startTime": 6.7750835,
+        "word": "他"
+      },
+      {
+        "confidence": 0.9727137,
+        "endTime": 7.0350833,
+        "startTime": 6.9150834,
+        "word": "没"
+      },
+      {
+        "confidence": 0.9690273,
+        "endTime": 7.1750836,
+        "startTime": 7.0350833,
+        "word": "打"
+      },
+      {
+        "confidence": 0.9329479,
+        "endTime": 7.3350835,
+        "startTime": 7.1750836,
+        "word": "算"
+      },
+      {
+        "confidence": 0.93376535,
+        "endTime": 7.4950833,
+        "startTime": 7.3350835,
+        "word": "打"
+      },
+      {
+        "confidence": 0.9128347,
+        "endTime": 7.8550835,
+        "startTime": 7.4950833,
+        "word": "折，"
+      },
+      {
+        "confidence": 0.7735484,
+        "endTime": 8.055083,
+        "startTime": 8.015083,
+        "word": "而"
+      },
+      {
+        "confidence": 0.9388727,
+        "endTime": 8.225083,
+        "startTime": 8.055083,
+        "word": "是"
+      },
+      {
+        "confidence": 0.9688432,
+        "endTime": 8.395083,
+        "startTime": 8.225083,
+        "word": "发"
+      },
+      {
+        "confidence": 0.63364196,
+        "endTime": 8.465083,
+        "startTime": 8.395083,
+        "word": "了"
+      },
+      {
+        "confidence": 0.8999001,
+        "endTime": 8.605083,
+        "startTime": 8.465083,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9544476,
+        "endTime": 8.865084,
+        "startTime": 8.605083,
+        "word": "张"
+      },
+      {
+        "confidence": 0.96040404,
+        "endTime": 9.0650835,
+        "startTime": 8.865084,
+        "word": "只"
+      },
+      {
+        "confidence": 0.97089136,
+        "endTime": 9.235084,
+        "startTime": 9.0650835,
+        "word": "在"
+      },
+      {
+        "confidence": 0.9787777,
+        "endTime": 9.435083,
+        "startTime": 9.235084,
+        "word": "工"
+      },
+      {
+        "confidence": 0.9460222,
+        "endTime": 9.585083,
+        "startTime": 9.435083,
+        "word": "作"
+      },
+      {
+        "confidence": 0.92193776,
+        "endTime": 9.735084,
+        "startTime": 9.585083,
+        "word": "日"
+      },
+      {
+        "confidence": 0.9556261,
+        "endTime": 9.945084,
+        "startTime": 9.735084,
+        "word": "白"
+      },
+      {
+        "confidence": 0.9719769,
+        "endTime": 10.135083,
+        "startTime": 9.945084,
+        "word": "天"
+      },
+      {
+        "confidence": 0.9449257,
+        "endTime": 10.285084,
+        "startTime": 10.135083,
+        "word": "能"
+      },
+      {
+        "confidence": 0.9835546,
+        "endTime": 10.415083,
+        "startTime": 10.285084,
+        "word": "用"
+      },
+      {
+        "confidence": 0.903497,
+        "endTime": 10.515083,
+        "startTime": 10.415083,
+        "word": "的"
+      },
+      {
+        "confidence": 0.95266706,
+        "endTime": 10.735084,
+        "startTime": 10.515083,
+        "word": "券。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "洗车店老周碰到个难题：工作日白天工位全空着，一到周末反倒排长队。他没打算打折，而是发了一张只在工作日白天能用的券。那空着的这段时间，怎么让人愿意来？",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "那空着的这段时间，怎么让人愿意来？",
+    "words": [
+      {
+        "confidence": 0.9027242,
+        "endTime": 11.355125,
+        "startTime": 11.225125,
+        "word": "那"
+      },
+      {
+        "confidence": 0.9174747,
+        "endTime": 11.615126,
+        "startTime": 11.355125,
+        "word": "空"
+      },
+      {
+        "confidence": 0.80724275,
+        "endTime": 11.725125,
+        "startTime": 11.615126,
+        "word": "着"
+      },
+      {
+        "confidence": 0.9334591,
+        "endTime": 11.835126,
+        "startTime": 11.725125,
+        "word": "的"
+      },
+      {
+        "confidence": 0.88837945,
+        "endTime": 11.945126,
+        "startTime": 11.835126,
+        "word": "这"
+      },
+      {
+        "confidence": 0.955303,
+        "endTime": 12.095125,
+        "startTime": 11.945126,
+        "word": "段"
+      },
+      {
+        "confidence": 0.9822865,
+        "endTime": 12.285126,
+        "startTime": 12.095125,
+        "word": "时"
+      },
+      {
+        "confidence": 0.9852497,
+        "endTime": 12.595125,
+        "startTime": 12.285126,
+        "word": "间，"
+      },
+      {
+        "confidence": 0.9378695,
+        "endTime": 12.925125,
+        "startTime": 12.755125,
+        "word": "怎"
+      },
+      {
+        "confidence": 0.9383973,
+        "endTime": 13.0251255,
+        "startTime": 12.925125,
+        "word": "么"
+      },
+      {
+        "confidence": 0.94276005,
+        "endTime": 13.175125,
+        "startTime": 13.0251255,
+        "word": "让"
+      },
+      {
+        "confidence": 0.8783422,
+        "endTime": 13.285126,
+        "startTime": 13.175125,
+        "word": "人"
+      },
+      {
+        "confidence": 0.2847678,
+        "endTime": 13.315125,
+        "startTime": 13.285126,
+        "word": "愿"
+      },
+      {
+        "confidence": 0.38711226,
+        "endTime": 13.345125,
+        "startTime": 13.315125,
+        "word": "意"
+      },
+      {
+        "confidence": 0.23860005,
+        "endTime": 13.405126,
+        "startTime": 13.345125,
+        "word": "来？"
+      }
+    ]
+  }
+]

@@ -1,0 +1,463 @@
+[
+  {
+    "phonemes": [],
+    "text": "但这个地方很容易想当然。",
+    "words": [
+      {
+        "confidence": 0.92694485,
+        "endTime": 0.445,
+        "startTime": 0.285,
+        "word": "但"
+      },
+      {
+        "confidence": 0.9473351,
+        "endTime": 0.585,
+        "startTime": 0.445,
+        "word": "这"
+      },
+      {
+        "confidence": 0.6290006,
+        "endTime": 0.655,
+        "startTime": 0.585,
+        "word": "个"
+      },
+      {
+        "confidence": 0.971951,
+        "endTime": 0.785,
+        "startTime": 0.655,
+        "word": "地"
+      },
+      {
+        "confidence": 0.90746903,
+        "endTime": 0.925,
+        "startTime": 0.785,
+        "word": "方"
+      },
+      {
+        "confidence": 0.94032806,
+        "endTime": 1.095,
+        "startTime": 0.925,
+        "word": "很"
+      },
+      {
+        "confidence": 0.97613853,
+        "endTime": 1.245,
+        "startTime": 1.095,
+        "word": "容"
+      },
+      {
+        "confidence": 0.96339405,
+        "endTime": 1.315,
+        "startTime": 1.245,
+        "word": "易"
+      },
+      {
+        "confidence": 0.9472323,
+        "endTime": 1.495,
+        "startTime": 1.315,
+        "word": "想"
+      },
+      {
+        "confidence": 0.7929834,
+        "endTime": 1.645,
+        "startTime": 1.495,
+        "word": "当"
+      },
+      {
+        "confidence": 0.9625177,
+        "endTime": 1.985,
+        "startTime": 1.645,
+        "word": "然。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "券发出去就完事，没人盯核销。",
+    "words": [
+      {
+        "confidence": 0.6694131,
+        "endTime": 2.6150417,
+        "startTime": 2.4400418,
+        "word": "券"
+      },
+      {
+        "confidence": 0.9659833,
+        "endTime": 2.8450418,
+        "startTime": 2.6150417,
+        "word": "发"
+      },
+      {
+        "confidence": 0.98680997,
+        "endTime": 2.955042,
+        "startTime": 2.8450418,
+        "word": "出"
+      },
+      {
+        "confidence": 0.9794992,
+        "endTime": 3.0850418,
+        "startTime": 2.955042,
+        "word": "去"
+      },
+      {
+        "confidence": 0.938655,
+        "endTime": 3.185042,
+        "startTime": 3.0850418,
+        "word": "就"
+      },
+      {
+        "confidence": 0.9439482,
+        "endTime": 3.3350418,
+        "startTime": 3.185042,
+        "word": "完"
+      },
+      {
+        "confidence": 0.9099543,
+        "endTime": 3.665042,
+        "startTime": 3.3350418,
+        "word": "事，"
+      },
+      {
+        "confidence": 0.8927491,
+        "endTime": 4.0250416,
+        "startTime": 3.8350418,
+        "word": "没"
+      },
+      {
+        "confidence": 0.93146884,
+        "endTime": 4.185042,
+        "startTime": 4.0250416,
+        "word": "人"
+      },
+      {
+        "confidence": 0.8765079,
+        "endTime": 4.335042,
+        "startTime": 4.185042,
+        "word": "盯"
+      },
+      {
+        "confidence": 0.9136881,
+        "endTime": 4.515042,
+        "startTime": 4.335042,
+        "word": "核"
+      },
+      {
+        "confidence": 0.9321927,
+        "endTime": 4.7750416,
+        "startTime": 4.515042,
+        "word": "销。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "稳妥的做法是先各发五十张，盯着数据看有没有人真去核。",
+    "words": [
+      {
+        "confidence": 0.60916615,
+        "endTime": 5.415084,
+        "startTime": 5.3550835,
+        "word": "稳"
+      },
+      {
+        "confidence": 0.8312294,
+        "endTime": 5.5550838,
+        "startTime": 5.415084,
+        "word": "妥"
+      },
+      {
+        "confidence": 0.9407497,
+        "endTime": 5.665084,
+        "startTime": 5.5550838,
+        "word": "的"
+      },
+      {
+        "confidence": 0.97370225,
+        "endTime": 5.8150835,
+        "startTime": 5.665084,
+        "word": "做"
+      },
+      {
+        "confidence": 0.8597288,
+        "endTime": 6.0250835,
+        "startTime": 5.8150835,
+        "word": "法"
+      },
+      {
+        "confidence": 0.8953549,
+        "endTime": 6.3350835,
+        "startTime": 6.0250835,
+        "word": "是"
+      },
+      {
+        "confidence": 0.87695694,
+        "endTime": 6.5750837,
+        "startTime": 6.3350835,
+        "word": "先"
+      },
+      {
+        "confidence": 0.95789254,
+        "endTime": 6.8250837,
+        "startTime": 6.6550837,
+        "word": "各"
+      },
+      {
+        "confidence": 0.96237904,
+        "endTime": 7.0050836,
+        "startTime": 6.8250837,
+        "word": "发"
+      },
+      {
+        "confidence": 0.97042257,
+        "endTime": 7.1450834,
+        "startTime": 7.0050836,
+        "word": "五"
+      },
+      {
+        "confidence": 0.94153583,
+        "endTime": 7.3150835,
+        "startTime": 7.1450834,
+        "word": "十"
+      },
+      {
+        "confidence": 0.942095,
+        "endTime": 7.5750837,
+        "startTime": 7.3150835,
+        "word": "张，"
+      },
+      {
+        "confidence": 0.93319744,
+        "endTime": 7.995084,
+        "startTime": 7.835084,
+        "word": "盯"
+      },
+      {
+        "confidence": 0.88778836,
+        "endTime": 8.075084,
+        "startTime": 7.995084,
+        "word": "着"
+      },
+      {
+        "confidence": 0.87115854,
+        "endTime": 8.245084,
+        "startTime": 8.075084,
+        "word": "数"
+      },
+      {
+        "confidence": 0.9555006,
+        "endTime": 8.385084,
+        "startTime": 8.245084,
+        "word": "据"
+      },
+      {
+        "confidence": 0.9593745,
+        "endTime": 8.665084,
+        "startTime": 8.385084,
+        "word": "看"
+      },
+      {
+        "confidence": 0.93256605,
+        "endTime": 8.825084,
+        "startTime": 8.665084,
+        "word": "有"
+      },
+      {
+        "confidence": 0.99000674,
+        "endTime": 9.005083,
+        "startTime": 8.825084,
+        "word": "没"
+      },
+      {
+        "confidence": 0.97277653,
+        "endTime": 9.0650835,
+        "startTime": 9.005083,
+        "word": "有"
+      },
+      {
+        "confidence": 0.98366654,
+        "endTime": 9.235084,
+        "startTime": 9.0650835,
+        "word": "人"
+      },
+      {
+        "confidence": 0.9677113,
+        "endTime": 9.395083,
+        "startTime": 9.235084,
+        "word": "真"
+      },
+      {
+        "confidence": 0.8772495,
+        "endTime": 9.5650835,
+        "startTime": 9.395083,
+        "word": "去"
+      },
+      {
+        "confidence": 0.97845435,
+        "endTime": 9.885084,
+        "startTime": 9.5650835,
+        "word": "核。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "有人核，再谈长期互换；",
+    "words": [
+      {
+        "confidence": 0.9573237,
+        "endTime": 10.375125,
+        "startTime": 10.225125,
+        "word": "有"
+      },
+      {
+        "confidence": 0.96746457,
+        "endTime": 10.535125,
+        "startTime": 10.375125,
+        "word": "人"
+      },
+      {
+        "confidence": 0.97785425,
+        "endTime": 10.885125,
+        "startTime": 10.535125,
+        "word": "核，"
+      },
+      {
+        "confidence": 0.9631446,
+        "endTime": 11.165125,
+        "startTime": 10.975125,
+        "word": "再"
+      },
+      {
+        "confidence": 0.9330714,
+        "endTime": 11.405126,
+        "startTime": 11.165125,
+        "word": "谈"
+      },
+      {
+        "confidence": 0.9592289,
+        "endTime": 11.675125,
+        "startTime": 11.405126,
+        "word": "长"
+      },
+      {
+        "confidence": 0.9065713,
+        "endTime": 11.865126,
+        "startTime": 11.675125,
+        "word": "期"
+      },
+      {
+        "confidence": 0.9146171,
+        "endTime": 12.035126,
+        "startTime": 11.865126,
+        "word": "互"
+      },
+      {
+        "confidence": 0.90252316,
+        "endTime": 12.255125,
+        "startTime": 12.035126,
+        "word": "换；"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "但这个地方很容易想当然。券发出去就完事，没人盯核销。稳妥的做法是先各发五十张，盯着数据看有没有人真去核。有人核，再谈长期互换；没人核，就换项目、换合作对象，别硬撑。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "没人核，就换项目、换合作对象，别硬撑。",
+    "words": [
+      {
+        "confidence": 0.82603365,
+        "endTime": 12.735167,
+        "startTime": 12.600166,
+        "word": "没"
+      },
+      {
+        "confidence": 0.8972373,
+        "endTime": 12.915166,
+        "startTime": 12.735167,
+        "word": "人"
+      },
+      {
+        "confidence": 0.973916,
+        "endTime": 13.255166,
+        "startTime": 12.915166,
+        "word": "核，"
+      },
+      {
+        "confidence": 0.9228785,
+        "endTime": 13.5251665,
+        "startTime": 13.345166,
+        "word": "就"
+      },
+      {
+        "confidence": 0.91006577,
+        "endTime": 13.755166,
+        "startTime": 13.5251665,
+        "word": "换"
+      },
+      {
+        "confidence": 0.7910705,
+        "endTime": 14.095166,
+        "startTime": 13.755166,
+        "word": "项"
+      },
+      {
+        "confidence": 0.2163888,
+        "endTime": 14.125166,
+        "startTime": 14.095166,
+        "word": "目、"
+      },
+      {
+        "confidence": 0.9147673,
+        "endTime": 14.535166,
+        "startTime": 14.295166,
+        "word": "换"
+      },
+      {
+        "confidence": 0.9761262,
+        "endTime": 14.725166,
+        "startTime": 14.535166,
+        "word": "合"
+      },
+      {
+        "confidence": 0.95476025,
+        "endTime": 14.855166,
+        "startTime": 14.725166,
+        "word": "作"
+      },
+      {
+        "confidence": 0.9748981,
+        "endTime": 14.995167,
+        "startTime": 14.855166,
+        "word": "对"
+      },
+      {
+        "confidence": 0.984932,
+        "endTime": 15.205166,
+        "startTime": 14.995167,
+        "word": "象，"
+      },
+      {
+        "confidence": 0.6314677,
+        "endTime": 15.5251665,
+        "startTime": 15.445167,
+        "word": "别"
+      },
+      {
+        "confidence": 0.20849843,
+        "endTime": 15.555166,
+        "startTime": 15.5251665,
+        "word": "硬"
+      },
+      {
+        "confidence": 0.16297628,
+        "endTime": 15.615167,
+        "startTime": 15.555166,
+        "word": "撑。"
+      }
+    ]
+  }
+]

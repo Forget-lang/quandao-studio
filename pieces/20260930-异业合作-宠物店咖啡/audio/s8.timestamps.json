@@ -1,0 +1,223 @@
+[
+  {
+    "phonemes": [],
+    "text": "所以这件事不是打折，是把等狗洗完的那四十分钟，",
+    "words": [
+      {
+        "confidence": 0.88452315,
+        "endTime": 0.535,
+        "startTime": 0.285,
+        "word": "所"
+      },
+      {
+        "confidence": 0.96279925,
+        "endTime": 0.675,
+        "startTime": 0.535,
+        "word": "以"
+      },
+      {
+        "confidence": 0.9833288,
+        "endTime": 0.805,
+        "startTime": 0.675,
+        "word": "这"
+      },
+      {
+        "confidence": 0.9401732,
+        "endTime": 0.955,
+        "startTime": 0.805,
+        "word": "件"
+      },
+      {
+        "confidence": 0.95963377,
+        "endTime": 1.145,
+        "startTime": 0.955,
+        "word": "事"
+      },
+      {
+        "confidence": 0.89100826,
+        "endTime": 1.285,
+        "startTime": 1.145,
+        "word": "不"
+      },
+      {
+        "confidence": 0.93769276,
+        "endTime": 1.435,
+        "startTime": 1.285,
+        "word": "是"
+      },
+      {
+        "confidence": 0.9468605,
+        "endTime": 1.625,
+        "startTime": 1.435,
+        "word": "打"
+      },
+      {
+        "confidence": 0.8479723,
+        "endTime": 2.055,
+        "startTime": 1.625,
+        "word": "折，"
+      },
+      {
+        "confidence": 0.96895987,
+        "endTime": 2.525,
+        "startTime": 2.305,
+        "word": "是"
+      },
+      {
+        "confidence": 0.8414606,
+        "endTime": 2.805,
+        "startTime": 2.525,
+        "word": "把"
+      },
+      {
+        "confidence": 0.86645395,
+        "endTime": 3.045,
+        "startTime": 2.805,
+        "word": "等"
+      },
+      {
+        "confidence": 0.914249,
+        "endTime": 3.205,
+        "startTime": 3.045,
+        "word": "狗"
+      },
+      {
+        "confidence": 0.9309393,
+        "endTime": 3.485,
+        "startTime": 3.205,
+        "word": "洗"
+      },
+      {
+        "confidence": 0.9144498,
+        "endTime": 3.665,
+        "startTime": 3.485,
+        "word": "完"
+      },
+      {
+        "confidence": 0.9493072,
+        "endTime": 3.795,
+        "startTime": 3.665,
+        "word": "的"
+      },
+      {
+        "confidence": 0.917241,
+        "endTime": 3.945,
+        "startTime": 3.795,
+        "word": "那"
+      },
+      {
+        "confidence": 0.9055631,
+        "endTime": 4.095,
+        "startTime": 3.945,
+        "word": "四"
+      },
+      {
+        "confidence": 0.97584593,
+        "endTime": 4.235,
+        "startTime": 4.095,
+        "word": "十"
+      },
+      {
+        "confidence": 0.95272756,
+        "endTime": 4.405,
+        "startTime": 4.235,
+        "word": "分"
+      },
+      {
+        "confidence": 0.9708381,
+        "endTime": 4.665,
+        "startTime": 4.405,
+        "word": "钟，"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "所以这件事不是打折，是把等狗洗完的那四十分钟，变成隔壁店里一次到店的理由。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "变成隔壁店里一次到店的理由。",
+    "words": [
+      {
+        "confidence": 0.5860757,
+        "endTime": 5.0850415,
+        "startTime": 5.0100417,
+        "word": "变"
+      },
+      {
+        "confidence": 0.8977695,
+        "endTime": 5.3850417,
+        "startTime": 5.0850415,
+        "word": "成"
+      },
+      {
+        "confidence": 0.9712011,
+        "endTime": 5.5650415,
+        "startTime": 5.3850417,
+        "word": "隔"
+      },
+      {
+        "confidence": 0.9387197,
+        "endTime": 5.705042,
+        "startTime": 5.5650415,
+        "word": "壁"
+      },
+      {
+        "confidence": 0.9457887,
+        "endTime": 5.915042,
+        "startTime": 5.705042,
+        "word": "店"
+      },
+      {
+        "confidence": 0.93120086,
+        "endTime": 6.1150417,
+        "startTime": 5.915042,
+        "word": "里"
+      },
+      {
+        "confidence": 0.77128714,
+        "endTime": 6.1850414,
+        "startTime": 6.1150417,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9774305,
+        "endTime": 6.3850417,
+        "startTime": 6.1850414,
+        "word": "次"
+      },
+      {
+        "confidence": 0.91127896,
+        "endTime": 6.575042,
+        "startTime": 6.3850417,
+        "word": "到"
+      },
+      {
+        "confidence": 0.7139314,
+        "endTime": 6.6750417,
+        "startTime": 6.575042,
+        "word": "店"
+      },
+      {
+        "confidence": 0.2682623,
+        "endTime": 6.7350416,
+        "startTime": 6.6750417,
+        "word": "的"
+      },
+      {
+        "confidence": 0.13603802,
+        "endTime": 6.7950416,
+        "startTime": 6.7350416,
+        "word": "理"
+      },
+      {
+        "confidence": 0.18416603,
+        "endTime": 6.825042,
+        "startTime": 6.7950416,
+        "word": "由。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,748 @@
+{
+  "duration": 11.662625,
+  "wordTimelineUnit": "seconds",
+  "segments": [
+    {
+      "segment": 1,
+      "kind": "golden3s",
+      "speech_rate": 10,
+      "start": 0.0,
+      "end": 4.901708333333334,
+      "text": "宠物店想让洗完的顾客再回来，别把体验券和次卡混着发。"
+    },
+    {
+      "segment": 2,
+      "kind": "normal",
+      "speech_rate": 0,
+      "start": 4.901708333333334,
+      "end": 11.662625,
+      "text": "先解决第一次体验，再给下次到店一个理由；顾客确实有稳定需求后，才轮到次卡。"
+    }
+  ],
+  "providerSentencesRaw": [
+    {
+      "segment": 1,
+      "data": [
+        {
+          "phonemes": [],
+          "text": "宠物店想让洗完的顾客再回来，别把体验券和次卡混着发。",
+          "words": []
+        },
+        {
+          "phonemes": [],
+          "text": "宠物店想让洗完的顾客再回来，别把体验券和次卡混着发。",
+          "words": [
+            {
+              "confidence": 0.8538673,
+              "endTime": 0.445,
+              "startTime": 0.265,
+              "word": "宠"
+            },
+            {
+              "confidence": 0.80799836,
+              "endTime": 0.575,
+              "startTime": 0.445,
+              "word": "物"
+            },
+            {
+              "confidence": 0.93040323,
+              "endTime": 0.755,
+              "startTime": 0.575,
+              "word": "店"
+            },
+            {
+              "confidence": 0.9327084,
+              "endTime": 0.935,
+              "startTime": 0.755,
+              "word": "想"
+            },
+            {
+              "confidence": 0.9538358,
+              "endTime": 1.065,
+              "startTime": 0.935,
+              "word": "让"
+            },
+            {
+              "confidence": 0.89937466,
+              "endTime": 1.275,
+              "startTime": 1.065,
+              "word": "洗"
+            },
+            {
+              "confidence": 0.8877802,
+              "endTime": 1.375,
+              "startTime": 1.275,
+              "word": "完"
+            },
+            {
+              "confidence": 0.88423413,
+              "endTime": 1.485,
+              "startTime": 1.375,
+              "word": "的"
+            },
+            {
+              "confidence": 0.9294422,
+              "endTime": 1.605,
+              "startTime": 1.485,
+              "word": "顾"
+            },
+            {
+              "confidence": 0.9147394,
+              "endTime": 1.765,
+              "startTime": 1.605,
+              "word": "客"
+            },
+            {
+              "confidence": 0.9664859,
+              "endTime": 1.925,
+              "startTime": 1.765,
+              "word": "再"
+            },
+            {
+              "confidence": 0.95595133,
+              "endTime": 2.145,
+              "startTime": 1.925,
+              "word": "回"
+            },
+            {
+              "confidence": 0.8542952,
+              "endTime": 2.315,
+              "startTime": 2.145,
+              "word": "来，"
+            },
+            {
+              "confidence": 0.9424669,
+              "endTime": 2.745,
+              "startTime": 2.605,
+              "word": "别"
+            },
+            {
+              "confidence": 0.8982804,
+              "endTime": 2.935,
+              "startTime": 2.745,
+              "word": "把"
+            },
+            {
+              "confidence": 0.8596863,
+              "endTime": 3.145,
+              "startTime": 2.935,
+              "word": "体"
+            },
+            {
+              "confidence": 0.9592397,
+              "endTime": 3.275,
+              "startTime": 3.145,
+              "word": "验"
+            },
+            {
+              "confidence": 0.85482025,
+              "endTime": 3.515,
+              "startTime": 3.275,
+              "word": "券"
+            },
+            {
+              "confidence": 0.917322,
+              "endTime": 3.705,
+              "startTime": 3.515,
+              "word": "和"
+            },
+            {
+              "confidence": 0.7543819,
+              "endTime": 3.885,
+              "startTime": 3.705,
+              "word": "次"
+            },
+            {
+              "confidence": 0.8346676,
+              "endTime": 4.075,
+              "startTime": 3.885,
+              "word": "卡"
+            },
+            {
+              "confidence": 0.8655707,
+              "endTime": 4.305,
+              "startTime": 4.075,
+              "word": "混"
+            },
+            {
+              "confidence": 0.86953664,
+              "endTime": 4.415,
+              "startTime": 4.305,
+              "word": "着"
+            },
+            {
+              "confidence": 0.95377,
+              "endTime": 4.655,
+              "startTime": 4.415,
+              "word": "发。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "segment": 2,
+      "data": [
+        {
+          "phonemes": [],
+          "text": "先解决第一次体验，再给下次到店一个理由；",
+          "words": [
+            {
+              "confidence": 0.94476134,
+              "endTime": 0.515,
+              "startTime": 0.285,
+              "word": "先"
+            },
+            {
+              "confidence": 0.9408403,
+              "endTime": 0.665,
+              "startTime": 0.515,
+              "word": "解"
+            },
+            {
+              "confidence": 0.9578684,
+              "endTime": 0.835,
+              "startTime": 0.665,
+              "word": "决"
+            },
+            {
+              "confidence": 0.95955944,
+              "endTime": 0.985,
+              "startTime": 0.835,
+              "word": "第"
+            },
+            {
+              "confidence": 0.81274635,
+              "endTime": 1.035,
+              "startTime": 0.985,
+              "word": "一"
+            },
+            {
+              "confidence": 0.9510131,
+              "endTime": 1.185,
+              "startTime": 1.035,
+              "word": "次"
+            },
+            {
+              "confidence": 0.930492,
+              "endTime": 1.415,
+              "startTime": 1.185,
+              "word": "体"
+            },
+            {
+              "confidence": 0.9466776,
+              "endTime": 1.615,
+              "startTime": 1.415,
+              "word": "验，"
+            },
+            {
+              "confidence": 0.97559595,
+              "endTime": 1.945,
+              "startTime": 1.795,
+              "word": "再"
+            },
+            {
+              "confidence": 0.9535189,
+              "endTime": 2.125,
+              "startTime": 1.945,
+              "word": "给"
+            },
+            {
+              "confidence": 0.8446722,
+              "endTime": 2.335,
+              "startTime": 2.125,
+              "word": "下"
+            },
+            {
+              "confidence": 0.95898956,
+              "endTime": 2.475,
+              "startTime": 2.335,
+              "word": "次"
+            },
+            {
+              "confidence": 0.945888,
+              "endTime": 2.625,
+              "startTime": 2.475,
+              "word": "到"
+            },
+            {
+              "confidence": 0.96351147,
+              "endTime": 2.795,
+              "startTime": 2.625,
+              "word": "店"
+            },
+            {
+              "confidence": 0.9679908,
+              "endTime": 2.865,
+              "startTime": 2.795,
+              "word": "一"
+            },
+            {
+              "confidence": 0.97669613,
+              "endTime": 2.995,
+              "startTime": 2.865,
+              "word": "个"
+            },
+            {
+              "confidence": 0.89360136,
+              "endTime": 3.135,
+              "startTime": 2.995,
+              "word": "理"
+            },
+            {
+              "confidence": 0.97331494,
+              "endTime": 3.445,
+              "startTime": 3.135,
+              "word": "由；"
+            }
+          ]
+        },
+        {
+          "phonemes": [],
+          "text": "先解决第一次体验，再给下次到店一个理由；顾客确实有稳定需求后，才轮到次卡。",
+          "words": []
+        },
+        {
+          "phonemes": [],
+          "text": "顾客确实有稳定需求后，才轮到次卡。",
+          "words": [
+            {
+              "confidence": 0.41402364,
+              "endTime": 3.9350417,
+              "startTime": 3.8600416,
+              "word": "顾"
+            },
+            {
+              "confidence": 0.84153956,
+              "endTime": 4.0850415,
+              "startTime": 3.9350417,
+              "word": "客"
+            },
+            {
+              "confidence": 0.89649075,
+              "endTime": 4.2750416,
+              "startTime": 4.0850415,
+              "word": "确"
+            },
+            {
+              "confidence": 0.9055558,
+              "endTime": 4.4350414,
+              "startTime": 4.2750416,
+              "word": "实"
+            },
+            {
+              "confidence": 0.6591774,
+              "endTime": 4.5650415,
+              "startTime": 4.4350414,
+              "word": "有"
+            },
+            {
+              "confidence": 0.8424997,
+              "endTime": 4.7250414,
+              "startTime": 4.5650415,
+              "word": "稳"
+            },
+            {
+              "confidence": 0.94957715,
+              "endTime": 4.8850417,
+              "startTime": 4.7250414,
+              "word": "定"
+            },
+            {
+              "confidence": 0.7273248,
+              "endTime": 5.0250416,
+              "startTime": 4.8850417,
+              "word": "需"
+            },
+            {
+              "confidence": 0.8657782,
+              "endTime": 5.205042,
+              "startTime": 5.0250416,
+              "word": "求"
+            },
+            {
+              "confidence": 0.9520571,
+              "endTime": 5.495042,
+              "startTime": 5.205042,
+              "word": "后，"
+            },
+            {
+              "confidence": 0.93580323,
+              "endTime": 5.8450418,
+              "startTime": 5.6050415,
+              "word": "才"
+            },
+            {
+              "confidence": 0.80777335,
+              "endTime": 5.9750414,
+              "startTime": 5.8450418,
+              "word": "轮"
+            },
+            {
+              "confidence": 0.93638414,
+              "endTime": 6.1050415,
+              "startTime": 5.9750414,
+              "word": "到"
+            },
+            {
+              "confidence": 0.9018494,
+              "endTime": 6.2950416,
+              "startTime": 6.1050415,
+              "word": "次"
+            },
+            {
+              "confidence": 0.9206533,
+              "endTime": 6.495042,
+              "startTime": 6.2950416,
+              "word": "卡。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "confidence": 0.8538673,
+      "endTime": 0.445,
+      "startTime": 0.265,
+      "word": "宠"
+    },
+    {
+      "confidence": 0.80799836,
+      "endTime": 0.575,
+      "startTime": 0.445,
+      "word": "物"
+    },
+    {
+      "confidence": 0.93040323,
+      "endTime": 0.755,
+      "startTime": 0.575,
+      "word": "店"
+    },
+    {
+      "confidence": 0.9327084,
+      "endTime": 0.935,
+      "startTime": 0.755,
+      "word": "想"
+    },
+    {
+      "confidence": 0.9538358,
+      "endTime": 1.065,
+      "startTime": 0.935,
+      "word": "让"
+    },
+    {
+      "confidence": 0.89937466,
+      "endTime": 1.275,
+      "startTime": 1.065,
+      "word": "洗"
+    },
+    {
+      "confidence": 0.8877802,
+      "endTime": 1.375,
+      "startTime": 1.275,
+      "word": "完"
+    },
+    {
+      "confidence": 0.88423413,
+      "endTime": 1.485,
+      "startTime": 1.375,
+      "word": "的"
+    },
+    {
+      "confidence": 0.9294422,
+      "endTime": 1.605,
+      "startTime": 1.485,
+      "word": "顾"
+    },
+    {
+      "confidence": 0.9147394,
+      "endTime": 1.765,
+      "startTime": 1.605,
+      "word": "客"
+    },
+    {
+      "confidence": 0.9664859,
+      "endTime": 1.925,
+      "startTime": 1.765,
+      "word": "再"
+    },
+    {
+      "confidence": 0.95595133,
+      "endTime": 2.145,
+      "startTime": 1.925,
+      "word": "回"
+    },
+    {
+      "confidence": 0.8542952,
+      "endTime": 2.315,
+      "startTime": 2.145,
+      "word": "来，"
+    },
+    {
+      "confidence": 0.9424669,
+      "endTime": 2.745,
+      "startTime": 2.605,
+      "word": "别"
+    },
+    {
+      "confidence": 0.8982804,
+      "endTime": 2.935,
+      "startTime": 2.745,
+      "word": "把"
+    },
+    {
+      "confidence": 0.8596863,
+      "endTime": 3.145,
+      "startTime": 2.935,
+      "word": "体"
+    },
+    {
+      "confidence": 0.9592397,
+      "endTime": 3.275,
+      "startTime": 3.145,
+      "word": "验"
+    },
+    {
+      "confidence": 0.85482025,
+      "endTime": 3.515,
+      "startTime": 3.275,
+      "word": "券"
+    },
+    {
+      "confidence": 0.917322,
+      "endTime": 3.705,
+      "startTime": 3.515,
+      "word": "和"
+    },
+    {
+      "confidence": 0.7543819,
+      "endTime": 3.885,
+      "startTime": 3.705,
+      "word": "次"
+    },
+    {
+      "confidence": 0.8346676,
+      "endTime": 4.075,
+      "startTime": 3.885,
+      "word": "卡"
+    },
+    {
+      "confidence": 0.8655707,
+      "endTime": 4.305,
+      "startTime": 4.075,
+      "word": "混"
+    },
+    {
+      "confidence": 0.86953664,
+      "endTime": 4.415,
+      "startTime": 4.305,
+      "word": "着"
+    },
+    {
+      "confidence": 0.95377,
+      "endTime": 4.655,
+      "startTime": 4.415,
+      "word": "发。"
+    },
+    {
+      "confidence": 0.94476134,
+      "endTime": 5.416708333333333,
+      "startTime": 5.186708333333334,
+      "word": "先"
+    },
+    {
+      "confidence": 0.9408403,
+      "endTime": 5.566708333333334,
+      "startTime": 5.416708333333333,
+      "word": "解"
+    },
+    {
+      "confidence": 0.9578684,
+      "endTime": 5.7367083333333335,
+      "startTime": 5.566708333333334,
+      "word": "决"
+    },
+    {
+      "confidence": 0.95955944,
+      "endTime": 5.886708333333334,
+      "startTime": 5.7367083333333335,
+      "word": "第"
+    },
+    {
+      "confidence": 0.81274635,
+      "endTime": 5.936708333333334,
+      "startTime": 5.886708333333334,
+      "word": "一"
+    },
+    {
+      "confidence": 0.9510131,
+      "endTime": 6.086708333333334,
+      "startTime": 5.936708333333334,
+      "word": "次"
+    },
+    {
+      "confidence": 0.930492,
+      "endTime": 6.316708333333334,
+      "startTime": 6.086708333333334,
+      "word": "体"
+    },
+    {
+      "confidence": 0.9466776,
+      "endTime": 6.516708333333334,
+      "startTime": 6.316708333333334,
+      "word": "验，"
+    },
+    {
+      "confidence": 0.97559595,
+      "endTime": 6.846708333333334,
+      "startTime": 6.6967083333333335,
+      "word": "再"
+    },
+    {
+      "confidence": 0.9535189,
+      "endTime": 7.026708333333334,
+      "startTime": 6.846708333333334,
+      "word": "给"
+    },
+    {
+      "confidence": 0.8446722,
+      "endTime": 7.2367083333333335,
+      "startTime": 7.026708333333334,
+      "word": "下"
+    },
+    {
+      "confidence": 0.95898956,
+      "endTime": 7.376708333333333,
+      "startTime": 7.2367083333333335,
+      "word": "次"
+    },
+    {
+      "confidence": 0.945888,
+      "endTime": 7.526708333333334,
+      "startTime": 7.376708333333333,
+      "word": "到"
+    },
+    {
+      "confidence": 0.96351147,
+      "endTime": 7.6967083333333335,
+      "startTime": 7.526708333333334,
+      "word": "店"
+    },
+    {
+      "confidence": 0.9679908,
+      "endTime": 7.766708333333334,
+      "startTime": 7.6967083333333335,
+      "word": "一"
+    },
+    {
+      "confidence": 0.97669613,
+      "endTime": 7.896708333333334,
+      "startTime": 7.766708333333334,
+      "word": "个"
+    },
+    {
+      "confidence": 0.89360136,
+      "endTime": 8.036708333333333,
+      "startTime": 7.896708333333334,
+      "word": "理"
+    },
+    {
+      "confidence": 0.97331494,
+      "endTime": 8.346708333333334,
+      "startTime": 8.036708333333333,
+      "word": "由；"
+    },
+    {
+      "confidence": 0.41402364,
+      "endTime": 8.836750033333335,
+      "startTime": 8.761749933333334,
+      "word": "顾"
+    },
+    {
+      "confidence": 0.84153956,
+      "endTime": 8.986749833333334,
+      "startTime": 8.836750033333335,
+      "word": "客"
+    },
+    {
+      "confidence": 0.89649075,
+      "endTime": 9.176749933333333,
+      "startTime": 8.986749833333334,
+      "word": "确"
+    },
+    {
+      "confidence": 0.9055558,
+      "endTime": 9.336749733333335,
+      "startTime": 9.176749933333333,
+      "word": "实"
+    },
+    {
+      "confidence": 0.6591774,
+      "endTime": 9.466749833333335,
+      "startTime": 9.336749733333335,
+      "word": "有"
+    },
+    {
+      "confidence": 0.8424997,
+      "endTime": 9.626749733333334,
+      "startTime": 9.466749833333335,
+      "word": "稳"
+    },
+    {
+      "confidence": 0.94957715,
+      "endTime": 9.786750033333334,
+      "startTime": 9.626749733333334,
+      "word": "定"
+    },
+    {
+      "confidence": 0.7273248,
+      "endTime": 9.926749933333333,
+      "startTime": 9.786750033333334,
+      "word": "需"
+    },
+    {
+      "confidence": 0.8657782,
+      "endTime": 10.106750333333334,
+      "startTime": 9.926749933333333,
+      "word": "求"
+    },
+    {
+      "confidence": 0.9520571,
+      "endTime": 10.396750333333333,
+      "startTime": 10.106750333333334,
+      "word": "后，"
+    },
+    {
+      "confidence": 0.93580323,
+      "endTime": 10.746750133333332,
+      "startTime": 10.506749833333334,
+      "word": "才"
+    },
+    {
+      "confidence": 0.80777335,
+      "endTime": 10.876749733333334,
+      "startTime": 10.746750133333332,
+      "word": "轮"
+    },
+    {
+      "confidence": 0.93638414,
+      "endTime": 11.006749833333334,
+      "startTime": 10.876749733333334,
+      "word": "到"
+    },
+    {
+      "confidence": 0.9018494,
+      "endTime": 11.196749933333333,
+      "startTime": 11.006749833333334,
+      "word": "次"
+    },
+    {
+      "confidence": 0.9206533,
+      "endTime": 11.396750333333333,
+      "startTime": 11.196749933333333,
+      "word": "卡。"
+    }
+  ]
+}

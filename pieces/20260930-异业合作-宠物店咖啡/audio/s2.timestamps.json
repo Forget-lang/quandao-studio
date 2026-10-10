@@ -1,0 +1,493 @@
+[
+  {
+    "phonemes": [],
+    "text": "先把这件事说清楚，这就是异业合作。",
+    "words": [
+      {
+        "confidence": 0.88968444,
+        "endTime": 0.565,
+        "startTime": 0.285,
+        "word": "先"
+      },
+      {
+        "confidence": 0.9174336,
+        "endTime": 0.765,
+        "startTime": 0.565,
+        "word": "把"
+      },
+      {
+        "confidence": 0.959891,
+        "endTime": 0.895,
+        "startTime": 0.765,
+        "word": "这"
+      },
+      {
+        "confidence": 0.92938477,
+        "endTime": 1.015,
+        "startTime": 0.895,
+        "word": "件"
+      },
+      {
+        "confidence": 0.9621012,
+        "endTime": 1.155,
+        "startTime": 1.015,
+        "word": "事"
+      },
+      {
+        "confidence": 0.9712597,
+        "endTime": 1.325,
+        "startTime": 1.155,
+        "word": "说"
+      },
+      {
+        "confidence": 0.9384635,
+        "endTime": 1.585,
+        "startTime": 1.325,
+        "word": "清"
+      },
+      {
+        "confidence": 0.89937896,
+        "endTime": 1.835,
+        "startTime": 1.585,
+        "word": "楚，"
+      },
+      {
+        "confidence": 0.96370745,
+        "endTime": 2.355,
+        "startTime": 2.215,
+        "word": "这"
+      },
+      {
+        "confidence": 0.974636,
+        "endTime": 2.475,
+        "startTime": 2.355,
+        "word": "就"
+      },
+      {
+        "confidence": 0.96165514,
+        "endTime": 2.625,
+        "startTime": 2.475,
+        "word": "是"
+      },
+      {
+        "confidence": 0.93510807,
+        "endTime": 2.875,
+        "startTime": 2.625,
+        "word": "异"
+      },
+      {
+        "confidence": 0.78028846,
+        "endTime": 2.925,
+        "startTime": 2.875,
+        "word": "业"
+      },
+      {
+        "confidence": 0.9074121,
+        "endTime": 3.145,
+        "startTime": 2.925,
+        "word": "合"
+      },
+      {
+        "confidence": 0.96833754,
+        "endTime": 3.415,
+        "startTime": 3.145,
+        "word": "作。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "它不是发优惠券。",
+    "words": [
+      {
+        "confidence": 0.9589135,
+        "endTime": 3.8450418,
+        "startTime": 3.7500417,
+        "word": "它"
+      },
+      {
+        "confidence": 0.8844833,
+        "endTime": 4.0050416,
+        "startTime": 3.8450418,
+        "word": "不"
+      },
+      {
+        "confidence": 0.9020451,
+        "endTime": 4.185042,
+        "startTime": 4.0050416,
+        "word": "是"
+      },
+      {
+        "confidence": 0.94043356,
+        "endTime": 4.3650417,
+        "startTime": 4.185042,
+        "word": "发"
+      },
+      {
+        "confidence": 0.88770646,
+        "endTime": 4.4650416,
+        "startTime": 4.3650417,
+        "word": "优"
+      },
+      {
+        "confidence": 0.9770502,
+        "endTime": 4.625042,
+        "startTime": 4.4650416,
+        "word": "惠"
+      },
+      {
+        "confidence": 0.964729,
+        "endTime": 4.8650417,
+        "startTime": 4.625042,
+        "word": "券。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "优惠券是让顾客觉得便宜；",
+    "words": [
+      {
+        "confidence": 0.76393825,
+        "endTime": 5.345083,
+        "startTime": 5.2300835,
+        "word": "优"
+      },
+      {
+        "confidence": 0.95881903,
+        "endTime": 5.5150833,
+        "startTime": 5.345083,
+        "word": "惠"
+      },
+      {
+        "confidence": 0.9456078,
+        "endTime": 5.7450833,
+        "startTime": 5.5150833,
+        "word": "券"
+      },
+      {
+        "confidence": 0.7980138,
+        "endTime": 5.9150834,
+        "startTime": 5.7450833,
+        "word": "是"
+      },
+      {
+        "confidence": 0.9094706,
+        "endTime": 6.0450835,
+        "startTime": 5.9150834,
+        "word": "让"
+      },
+      {
+        "confidence": 0.95520157,
+        "endTime": 6.1850834,
+        "startTime": 6.0450835,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.9515914,
+        "endTime": 6.3650837,
+        "startTime": 6.1850834,
+        "word": "客"
+      },
+      {
+        "confidence": 0.94317365,
+        "endTime": 6.5050836,
+        "startTime": 6.3650837,
+        "word": "觉"
+      },
+      {
+        "confidence": 0.9387595,
+        "endTime": 6.595083,
+        "startTime": 6.5050836,
+        "word": "得"
+      },
+      {
+        "confidence": 0.9507621,
+        "endTime": 7.0050836,
+        "startTime": 6.595083,
+        "word": "便"
+      },
+      {
+        "confidence": 0.5891429,
+        "endTime": 7.0650835,
+        "startTime": 7.0050836,
+        "word": "宜；"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "这一步是拿别人店里的客流，做自己的到店生意。",
+    "words": [
+      {
+        "confidence": 0.9658558,
+        "endTime": 7.645125,
+        "startTime": 7.5051246,
+        "word": "这"
+      },
+      {
+        "confidence": 0.87817895,
+        "endTime": 7.765125,
+        "startTime": 7.645125,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9526915,
+        "endTime": 7.975125,
+        "startTime": 7.765125,
+        "word": "步"
+      },
+      {
+        "confidence": 0.96734166,
+        "endTime": 8.165125,
+        "startTime": 7.975125,
+        "word": "是"
+      },
+      {
+        "confidence": 0.90788853,
+        "endTime": 8.335125,
+        "startTime": 8.165125,
+        "word": "拿"
+      },
+      {
+        "confidence": 0.90731,
+        "endTime": 8.555124,
+        "startTime": 8.335125,
+        "word": "别"
+      },
+      {
+        "confidence": 0.9655684,
+        "endTime": 8.705125,
+        "startTime": 8.555124,
+        "word": "人"
+      },
+      {
+        "confidence": 0.89295506,
+        "endTime": 8.875125,
+        "startTime": 8.705125,
+        "word": "店"
+      },
+      {
+        "confidence": 0.9615199,
+        "endTime": 8.985125,
+        "startTime": 8.875125,
+        "word": "里"
+      },
+      {
+        "confidence": 0.9166341,
+        "endTime": 9.095125,
+        "startTime": 8.985125,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9599461,
+        "endTime": 9.345125,
+        "startTime": 9.095125,
+        "word": "客"
+      },
+      {
+        "confidence": 0.96368456,
+        "endTime": 9.635124,
+        "startTime": 9.345125,
+        "word": "流，"
+      },
+      {
+        "confidence": 0.95908755,
+        "endTime": 9.945125,
+        "startTime": 9.745125,
+        "word": "做"
+      },
+      {
+        "confidence": 0.9482428,
+        "endTime": 10.145124,
+        "startTime": 9.945125,
+        "word": "自"
+      },
+      {
+        "confidence": 0.99100363,
+        "endTime": 10.335125,
+        "startTime": 10.145124,
+        "word": "己"
+      },
+      {
+        "confidence": 0.9063549,
+        "endTime": 10.455125,
+        "startTime": 10.335125,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9563972,
+        "endTime": 10.615125,
+        "startTime": 10.455125,
+        "word": "到"
+      },
+      {
+        "confidence": 0.9376987,
+        "endTime": 10.755125,
+        "startTime": 10.615125,
+        "word": "店"
+      },
+      {
+        "confidence": 0.93707657,
+        "endTime": 10.995125,
+        "startTime": 10.755125,
+        "word": "生"
+      },
+      {
+        "confidence": 0.9491812,
+        "endTime": 11.185125,
+        "startTime": 10.995125,
+        "word": "意。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "先把这件事说清楚，这就是异业合作。它不是发优惠券。优惠券是让顾客觉得便宜；这一步是拿别人店里的客流，做自己的到店生意。宠物店出正在等人的顾客，咖啡馆出能给的方便，两边换。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "宠物店出正在等人的顾客，咖啡馆出能给的方便，两边换。",
+    "words": [
+      {
+        "confidence": 0.84712607,
+        "endTime": 11.745167,
+        "startTime": 11.570167,
+        "word": "宠"
+      },
+      {
+        "confidence": 0.81329316,
+        "endTime": 11.885166,
+        "startTime": 11.745167,
+        "word": "物"
+      },
+      {
+        "confidence": 0.94528687,
+        "endTime": 12.125167,
+        "startTime": 11.885166,
+        "word": "店"
+      },
+      {
+        "confidence": 0.9608305,
+        "endTime": 12.405167,
+        "startTime": 12.125167,
+        "word": "出"
+      },
+      {
+        "confidence": 0.9419886,
+        "endTime": 12.595166,
+        "startTime": 12.405167,
+        "word": "正"
+      },
+      {
+        "confidence": 0.9846189,
+        "endTime": 12.765166,
+        "startTime": 12.595166,
+        "word": "在"
+      },
+      {
+        "confidence": 0.9504865,
+        "endTime": 12.915167,
+        "startTime": 12.765166,
+        "word": "等"
+      },
+      {
+        "confidence": 0.9606298,
+        "endTime": 13.055166,
+        "startTime": 12.915167,
+        "word": "人"
+      },
+      {
+        "confidence": 0.83025724,
+        "endTime": 13.155167,
+        "startTime": 13.055166,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9438061,
+        "endTime": 13.315166,
+        "startTime": 13.155167,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.9884283,
+        "endTime": 13.615167,
+        "startTime": 13.315166,
+        "word": "客，"
+      },
+      {
+        "confidence": 0.7494997,
+        "endTime": 14.035167,
+        "startTime": 13.875167,
+        "word": "咖"
+      },
+      {
+        "confidence": 0.98896015,
+        "endTime": 14.175167,
+        "startTime": 14.035167,
+        "word": "啡"
+      },
+      {
+        "confidence": 0.841022,
+        "endTime": 14.375167,
+        "startTime": 14.175167,
+        "word": "馆"
+      },
+      {
+        "confidence": 0.9578461,
+        "endTime": 14.635166,
+        "startTime": 14.375167,
+        "word": "出"
+      },
+      {
+        "confidence": 0.96661747,
+        "endTime": 14.785167,
+        "startTime": 14.635166,
+        "word": "能"
+      },
+      {
+        "confidence": 0.9882848,
+        "endTime": 14.945167,
+        "startTime": 14.785167,
+        "word": "给"
+      },
+      {
+        "confidence": 0.9671148,
+        "endTime": 15.035167,
+        "startTime": 14.945167,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9617337,
+        "endTime": 15.245167,
+        "startTime": 15.035167,
+        "word": "方"
+      },
+      {
+        "confidence": 0.98551023,
+        "endTime": 15.495167,
+        "startTime": 15.245167,
+        "word": "便，"
+      },
+      {
+        "confidence": 0.97295946,
+        "endTime": 15.815166,
+        "startTime": 15.645166,
+        "word": "两"
+      },
+      {
+        "confidence": 0.6310409,
+        "endTime": 15.925167,
+        "startTime": 15.815166,
+        "word": "边"
+      },
+      {
+        "confidence": 0.19909628,
+        "endTime": 15.985167,
+        "startTime": 15.925167,
+        "word": "换。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,535 @@
+[
+  {
+    "phonemes": [],
+    "text": "活动是这么跑的。",
+    "words": [
+      {
+        "confidence": 0.9041085,
+        "endTime": 0.575,
+        "startTime": 0.275,
+        "word": "活"
+      },
+      {
+        "confidence": 0.9625759,
+        "endTime": 0.765,
+        "startTime": 0.575,
+        "word": "动"
+      },
+      {
+        "confidence": 0.97635126,
+        "endTime": 0.945,
+        "startTime": 0.765,
+        "word": "是"
+      },
+      {
+        "confidence": 0.92374545,
+        "endTime": 1.065,
+        "startTime": 0.945,
+        "word": "这"
+      },
+      {
+        "confidence": 0.9184186,
+        "endTime": 1.175,
+        "startTime": 1.065,
+        "word": "么"
+      },
+      {
+        "confidence": 0.9093645,
+        "endTime": 1.465,
+        "startTime": 1.175,
+        "word": "跑"
+      },
+      {
+        "confidence": 0.9108699,
+        "endTime": 1.715,
+        "startTime": 1.465,
+        "word": "的。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "顾客把狗送进洗护区，前台摆着一张领券的牌子，",
+    "words": [
+      {
+        "confidence": 0.38971242,
+        "endTime": 2.3550417,
+        "startTime": 2.2800417,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.83552486,
+        "endTime": 2.5050416,
+        "startTime": 2.3550417,
+        "word": "客"
+      },
+      {
+        "confidence": 0.8210179,
+        "endTime": 2.6650417,
+        "startTime": 2.5050416,
+        "word": "把"
+      },
+      {
+        "confidence": 0.946088,
+        "endTime": 2.9250417,
+        "startTime": 2.6650417,
+        "word": "狗"
+      },
+      {
+        "confidence": 0.89381427,
+        "endTime": 3.1250417,
+        "startTime": 2.9250417,
+        "word": "送"
+      },
+      {
+        "confidence": 0.7901938,
+        "endTime": 3.2650418,
+        "startTime": 3.1250417,
+        "word": "进"
+      },
+      {
+        "confidence": 0.87132823,
+        "endTime": 3.4650416,
+        "startTime": 3.2650418,
+        "word": "洗"
+      },
+      {
+        "confidence": 0.87799406,
+        "endTime": 3.6350417,
+        "startTime": 3.4650416,
+        "word": "护"
+      },
+      {
+        "confidence": 0.91636014,
+        "endTime": 3.9650416,
+        "startTime": 3.6350417,
+        "word": "区，"
+      },
+      {
+        "confidence": 0.9307956,
+        "endTime": 4.415042,
+        "startTime": 4.225042,
+        "word": "前"
+      },
+      {
+        "confidence": 0.9102441,
+        "endTime": 4.6950417,
+        "startTime": 4.415042,
+        "word": "台"
+      },
+      {
+        "confidence": 0.9385308,
+        "endTime": 4.875042,
+        "startTime": 4.6950417,
+        "word": "摆"
+      },
+      {
+        "confidence": 0.7328612,
+        "endTime": 5.0050416,
+        "startTime": 4.875042,
+        "word": "着"
+      },
+      {
+        "confidence": 0.9275509,
+        "endTime": 5.1350417,
+        "startTime": 5.0050416,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9627795,
+        "endTime": 5.3950415,
+        "startTime": 5.1350417,
+        "word": "张"
+      },
+      {
+        "confidence": 0.86555725,
+        "endTime": 5.5250416,
+        "startTime": 5.3950415,
+        "word": "领"
+      },
+      {
+        "confidence": 0.85342693,
+        "endTime": 5.7250414,
+        "startTime": 5.5250416,
+        "word": "券"
+      },
+      {
+        "confidence": 0.9125751,
+        "endTime": 5.805042,
+        "startTime": 5.7250414,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9386757,
+        "endTime": 6.085042,
+        "startTime": 5.805042,
+        "word": "牌"
+      },
+      {
+        "confidence": 0.84743017,
+        "endTime": 6.245042,
+        "startTime": 6.085042,
+        "word": "子，"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "他拿手机扫一下就领到券包。",
+    "words": [
+      {
+        "confidence": 0.9489506,
+        "endTime": 6.7850833,
+        "startTime": 6.6450834,
+        "word": "他"
+      },
+      {
+        "confidence": 0.91496086,
+        "endTime": 6.9150834,
+        "startTime": 6.7850833,
+        "word": "拿"
+      },
+      {
+        "confidence": 0.95404613,
+        "endTime": 7.095083,
+        "startTime": 6.9150834,
+        "word": "手"
+      },
+      {
+        "confidence": 0.9875603,
+        "endTime": 7.2550836,
+        "startTime": 7.095083,
+        "word": "机"
+      },
+      {
+        "confidence": 0.8631121,
+        "endTime": 7.5250835,
+        "startTime": 7.2550836,
+        "word": "扫"
+      },
+      {
+        "confidence": 0.87457323,
+        "endTime": 7.5850835,
+        "startTime": 7.5250835,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9503125,
+        "endTime": 7.8350835,
+        "startTime": 7.5850835,
+        "word": "下"
+      },
+      {
+        "confidence": 0.95702255,
+        "endTime": 8.005083,
+        "startTime": 7.8350835,
+        "word": "就"
+      },
+      {
+        "confidence": 0.90120995,
+        "endTime": 8.155084,
+        "startTime": 8.005083,
+        "word": "领"
+      },
+      {
+        "confidence": 0.9771026,
+        "endTime": 8.305083,
+        "startTime": 8.155084,
+        "word": "到"
+      },
+      {
+        "confidence": 0.90526277,
+        "endTime": 8.525084,
+        "startTime": 8.305083,
+        "word": "券"
+      },
+      {
+        "confidence": 0.9726704,
+        "endTime": 8.785084,
+        "startTime": 8.525084,
+        "word": "包。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "券包里有三种券，来自三家不同的邻店，他挑一种。",
+    "words": [
+      {
+        "confidence": 0.80032843,
+        "endTime": 9.305125,
+        "startTime": 9.100125,
+        "word": "券"
+      },
+      {
+        "confidence": 0.95232654,
+        "endTime": 9.495126,
+        "startTime": 9.305125,
+        "word": "包"
+      },
+      {
+        "confidence": 0.861605,
+        "endTime": 9.675125,
+        "startTime": 9.495126,
+        "word": "里"
+      },
+      {
+        "confidence": 0.925309,
+        "endTime": 9.815125,
+        "startTime": 9.675125,
+        "word": "有"
+      },
+      {
+        "confidence": 0.955565,
+        "endTime": 10.0251255,
+        "startTime": 9.815125,
+        "word": "三"
+      },
+      {
+        "confidence": 0.966807,
+        "endTime": 10.195126,
+        "startTime": 10.0251255,
+        "word": "种"
+      },
+      {
+        "confidence": 0.8945388,
+        "endTime": 10.435125,
+        "startTime": 10.195126,
+        "word": "券，"
+      },
+      {
+        "confidence": 0.9667107,
+        "endTime": 10.925125,
+        "startTime": 10.755125,
+        "word": "来"
+      },
+      {
+        "confidence": 0.9532033,
+        "endTime": 11.145125,
+        "startTime": 10.925125,
+        "word": "自"
+      },
+      {
+        "confidence": 0.87336475,
+        "endTime": 11.325125,
+        "startTime": 11.145125,
+        "word": "三"
+      },
+      {
+        "confidence": 0.9235443,
+        "endTime": 11.535126,
+        "startTime": 11.325125,
+        "word": "家"
+      },
+      {
+        "confidence": 0.92330843,
+        "endTime": 11.665125,
+        "startTime": 11.535126,
+        "word": "不"
+      },
+      {
+        "confidence": 0.9800539,
+        "endTime": 11.855125,
+        "startTime": 11.665125,
+        "word": "同"
+      },
+      {
+        "confidence": 0.9561162,
+        "endTime": 11.975125,
+        "startTime": 11.855125,
+        "word": "的"
+      },
+      {
+        "confidence": 0.8827387,
+        "endTime": 12.155126,
+        "startTime": 11.975125,
+        "word": "邻"
+      },
+      {
+        "confidence": 0.9624762,
+        "endTime": 12.365126,
+        "startTime": 12.155126,
+        "word": "店，"
+      },
+      {
+        "confidence": 0.97420603,
+        "endTime": 12.705126,
+        "startTime": 12.565125,
+        "word": "他"
+      },
+      {
+        "confidence": 0.9374875,
+        "endTime": 12.885125,
+        "startTime": 12.705126,
+        "word": "挑"
+      },
+      {
+        "confidence": 0.94366086,
+        "endTime": 13.005125,
+        "startTime": 12.885125,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9594563,
+        "endTime": 13.185125,
+        "startTime": 13.005125,
+        "word": "种。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "活动是这么跑的。顾客把狗送进洗护区，前台摆着一张领券的牌子，他拿手机扫一下就领到券包。券包里有三种券，来自三家不同的邻店，他挑一种。之后拿着这张券走过去，店员用微信扫一扫，就算核销完成。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "之后拿着这张券走过去，店员用微信扫一扫，就算核销完成。",
+    "words": [
+      {
+        "confidence": 0.8898011,
+        "endTime": 13.745168,
+        "startTime": 13.560167,
+        "word": "之"
+      },
+      {
+        "confidence": 0.9829394,
+        "endTime": 13.975167,
+        "startTime": 13.745168,
+        "word": "后"
+      },
+      {
+        "confidence": 0.90376675,
+        "endTime": 14.125167,
+        "startTime": 13.975167,
+        "word": "拿"
+      },
+      {
+        "confidence": 0.9110984,
+        "endTime": 14.225167,
+        "startTime": 14.125167,
+        "word": "着"
+      },
+      {
+        "confidence": 0.976822,
+        "endTime": 14.355167,
+        "startTime": 14.225167,
+        "word": "这"
+      },
+      {
+        "confidence": 0.9196934,
+        "endTime": 14.505167,
+        "startTime": 14.355167,
+        "word": "张"
+      },
+      {
+        "confidence": 0.8574814,
+        "endTime": 14.725167,
+        "startTime": 14.505167,
+        "word": "券"
+      },
+      {
+        "confidence": 0.8999394,
+        "endTime": 14.935167,
+        "startTime": 14.725167,
+        "word": "走"
+      },
+      {
+        "confidence": 0.9250814,
+        "endTime": 15.095167,
+        "startTime": 14.935167,
+        "word": "过"
+      },
+      {
+        "confidence": 0.9589426,
+        "endTime": 15.375168,
+        "startTime": 15.095167,
+        "word": "去，"
+      },
+      {
+        "confidence": 0.84129304,
+        "endTime": 15.845167,
+        "startTime": 15.705168,
+        "word": "店"
+      },
+      {
+        "confidence": 0.9536998,
+        "endTime": 16.075167,
+        "startTime": 15.845167,
+        "word": "员"
+      },
+      {
+        "confidence": 0.93658966,
+        "endTime": 16.245167,
+        "startTime": 16.075167,
+        "word": "用"
+      },
+      {
+        "confidence": 0.9357732,
+        "endTime": 16.405167,
+        "startTime": 16.245167,
+        "word": "微"
+      },
+      {
+        "confidence": 0.9838216,
+        "endTime": 16.605167,
+        "startTime": 16.405167,
+        "word": "信"
+      },
+      {
+        "confidence": 0.90556604,
+        "endTime": 16.825167,
+        "startTime": 16.605167,
+        "word": "扫"
+      },
+      {
+        "confidence": 0.91981846,
+        "endTime": 16.935167,
+        "startTime": 16.825167,
+        "word": "一"
+      },
+      {
+        "confidence": 0.8716872,
+        "endTime": 17.195168,
+        "startTime": 16.935167,
+        "word": "扫，"
+      },
+      {
+        "confidence": 0.9314301,
+        "endTime": 17.465168,
+        "startTime": 17.305168,
+        "word": "就"
+      },
+      {
+        "confidence": 0.88672376,
+        "endTime": 17.705168,
+        "startTime": 17.465168,
+        "word": "算"
+      },
+      {
+        "confidence": 0.9724034,
+        "endTime": 17.885166,
+        "startTime": 17.705168,
+        "word": "核"
+      },
+      {
+        "confidence": 0.8221275,
+        "endTime": 18.045168,
+        "startTime": 17.885166,
+        "word": "销"
+      },
+      {
+        "confidence": 0.96668977,
+        "endTime": 18.195168,
+        "startTime": 18.045168,
+        "word": "完"
+      },
+      {
+        "confidence": 0.97473705,
+        "endTime": 18.495167,
+        "startTime": 18.195168,
+        "word": "成。"
+      }
+    ]
+  }
+]

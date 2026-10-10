@@ -1,0 +1,541 @@
+[
+  {
+    "phonemes": [],
+    "text": "为什么咖啡馆愿意？",
+    "words": [
+      {
+        "confidence": 0.94524425,
+        "endTime": 0.465,
+        "startTime": 0.295,
+        "word": "为"
+      },
+      {
+        "confidence": 0.98530763,
+        "endTime": 0.615,
+        "startTime": 0.465,
+        "word": "什"
+      },
+      {
+        "confidence": 0.9802148,
+        "endTime": 0.705,
+        "startTime": 0.615,
+        "word": "么"
+      },
+      {
+        "confidence": 0.7001953,
+        "endTime": 0.885,
+        "startTime": 0.705,
+        "word": "咖"
+      },
+      {
+        "confidence": 0.97458047,
+        "endTime": 1.045,
+        "startTime": 0.885,
+        "word": "啡"
+      },
+      {
+        "confidence": 0.84125924,
+        "endTime": 1.295,
+        "startTime": 1.045,
+        "word": "馆"
+      },
+      {
+        "confidence": 0.50453407,
+        "endTime": 1.355,
+        "startTime": 1.295,
+        "word": "愿"
+      },
+      {
+        "confidence": 0.960047,
+        "endTime": 1.715,
+        "startTime": 1.355,
+        "word": "意？"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "它工作日午市挤满，下午两三点就空了。",
+    "words": [
+      {
+        "confidence": 0.9557068,
+        "endTime": 2.3850415,
+        "startTime": 2.2250416,
+        "word": "它"
+      },
+      {
+        "confidence": 0.9752751,
+        "endTime": 2.5650415,
+        "startTime": 2.3850415,
+        "word": "工"
+      },
+      {
+        "confidence": 0.9423526,
+        "endTime": 2.7250416,
+        "startTime": 2.5650415,
+        "word": "作"
+      },
+      {
+        "confidence": 0.8506062,
+        "endTime": 2.8650415,
+        "startTime": 2.7250416,
+        "word": "日"
+      },
+      {
+        "confidence": 0.8790517,
+        "endTime": 3.0250416,
+        "startTime": 2.8650415,
+        "word": "午"
+      },
+      {
+        "confidence": 0.8288794,
+        "endTime": 3.2250414,
+        "startTime": 3.0250416,
+        "word": "市"
+      },
+      {
+        "confidence": 0.8484416,
+        "endTime": 3.4550414,
+        "startTime": 3.2250414,
+        "word": "挤"
+      },
+      {
+        "confidence": 0.8627473,
+        "endTime": 3.7050414,
+        "startTime": 3.4550414,
+        "word": "满，"
+      },
+      {
+        "confidence": 0.9599665,
+        "endTime": 4.0950413,
+        "startTime": 3.8850417,
+        "word": "下"
+      },
+      {
+        "confidence": 0.84814095,
+        "endTime": 4.2250414,
+        "startTime": 4.0950413,
+        "word": "午"
+      },
+      {
+        "confidence": 0.9043507,
+        "endTime": 4.3750415,
+        "startTime": 4.2250414,
+        "word": "两"
+      },
+      {
+        "confidence": 0.92669916,
+        "endTime": 4.5650415,
+        "startTime": 4.3750415,
+        "word": "三"
+      },
+      {
+        "confidence": 0.9773269,
+        "endTime": 4.7150416,
+        "startTime": 4.5650415,
+        "word": "点"
+      },
+      {
+        "confidence": 0.9613641,
+        "endTime": 4.8450413,
+        "startTime": 4.7150416,
+        "word": "就"
+      },
+      {
+        "confidence": 0.9686535,
+        "endTime": 5.1050415,
+        "startTime": 4.8450413,
+        "word": "空"
+      },
+      {
+        "confidence": 0.9639751,
+        "endTime": 5.3150415,
+        "startTime": 5.1050415,
+        "word": "了。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "宠物店这边，顾客把狗留下要等四十分钟，人就站在附近没地方去。",
+    "words": [
+      {
+        "confidence": 0.85797447,
+        "endTime": 5.985083,
+        "startTime": 5.7850833,
+        "word": "宠"
+      },
+      {
+        "confidence": 0.7359457,
+        "endTime": 6.085083,
+        "startTime": 5.985083,
+        "word": "物"
+      },
+      {
+        "confidence": 0.9195812,
+        "endTime": 6.275083,
+        "startTime": 6.085083,
+        "word": "店"
+      },
+      {
+        "confidence": 0.9237783,
+        "endTime": 6.4350834,
+        "startTime": 6.275083,
+        "word": "这"
+      },
+      {
+        "confidence": 0.96194416,
+        "endTime": 6.6850834,
+        "startTime": 6.4350834,
+        "word": "边，"
+      },
+      {
+        "confidence": 0.95662117,
+        "endTime": 7.045083,
+        "startTime": 6.915083,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.9508534,
+        "endTime": 7.215083,
+        "startTime": 7.045083,
+        "word": "客"
+      },
+      {
+        "confidence": 0.84380007,
+        "endTime": 7.375083,
+        "startTime": 7.215083,
+        "word": "把"
+      },
+      {
+        "confidence": 0.95578516,
+        "endTime": 7.5650835,
+        "startTime": 7.375083,
+        "word": "狗"
+      },
+      {
+        "confidence": 0.9663185,
+        "endTime": 7.735083,
+        "startTime": 7.5650835,
+        "word": "留"
+      },
+      {
+        "confidence": 0.9691032,
+        "endTime": 7.9750834,
+        "startTime": 7.735083,
+        "word": "下"
+      },
+      {
+        "confidence": 0.9489963,
+        "endTime": 8.125083,
+        "startTime": 7.9750834,
+        "word": "要"
+      },
+      {
+        "confidence": 0.88196784,
+        "endTime": 8.275084,
+        "startTime": 8.125083,
+        "word": "等"
+      },
+      {
+        "confidence": 0.7233483,
+        "endTime": 8.435083,
+        "startTime": 8.275084,
+        "word": "四"
+      },
+      {
+        "confidence": 0.95988137,
+        "endTime": 8.585083,
+        "startTime": 8.435083,
+        "word": "十"
+      },
+      {
+        "confidence": 0.96647596,
+        "endTime": 8.735083,
+        "startTime": 8.585083,
+        "word": "分"
+      },
+      {
+        "confidence": 0.968608,
+        "endTime": 9.005083,
+        "startTime": 8.735083,
+        "word": "钟，"
+      },
+      {
+        "confidence": 0.97450584,
+        "endTime": 9.495083,
+        "startTime": 9.325083,
+        "word": "人"
+      },
+      {
+        "confidence": 0.94176245,
+        "endTime": 9.645083,
+        "startTime": 9.495083,
+        "word": "就"
+      },
+      {
+        "confidence": 0.9588217,
+        "endTime": 9.805083,
+        "startTime": 9.645083,
+        "word": "站"
+      },
+      {
+        "confidence": 0.9784362,
+        "endTime": 9.925083,
+        "startTime": 9.805083,
+        "word": "在"
+      },
+      {
+        "confidence": 0.98159736,
+        "endTime": 10.095083,
+        "startTime": 9.925083,
+        "word": "附"
+      },
+      {
+        "confidence": 0.84544444,
+        "endTime": 10.265083,
+        "startTime": 10.095083,
+        "word": "近"
+      },
+      {
+        "confidence": 0.95794415,
+        "endTime": 10.415083,
+        "startTime": 10.265083,
+        "word": "没"
+      },
+      {
+        "confidence": 0.97110534,
+        "endTime": 10.535084,
+        "startTime": 10.415083,
+        "word": "地"
+      },
+      {
+        "confidence": 0.9762533,
+        "endTime": 10.695084,
+        "startTime": 10.535084,
+        "word": "方"
+      },
+      {
+        "confidence": 0.94984597,
+        "endTime": 11.025084,
+        "startTime": 10.695084,
+        "word": "去。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "这张券换来的不是少收几块钱，",
+    "words": [
+      {
+        "confidence": 0.97358733,
+        "endTime": 11.535125,
+        "startTime": 11.405125,
+        "word": "这"
+      },
+      {
+        "confidence": 0.87715584,
+        "endTime": 11.695125,
+        "startTime": 11.535125,
+        "word": "张"
+      },
+      {
+        "confidence": 0.7275648,
+        "endTime": 11.895125,
+        "startTime": 11.695125,
+        "word": "券"
+      },
+      {
+        "confidence": 0.8281242,
+        "endTime": 12.135125,
+        "startTime": 11.895125,
+        "word": "换"
+      },
+      {
+        "confidence": 0.9551437,
+        "endTime": 12.345125,
+        "startTime": 12.135125,
+        "word": "来"
+      },
+      {
+        "confidence": 0.9060596,
+        "endTime": 12.515125,
+        "startTime": 12.345125,
+        "word": "的"
+      },
+      {
+        "confidence": 0.88798094,
+        "endTime": 12.635125,
+        "startTime": 12.515125,
+        "word": "不"
+      },
+      {
+        "confidence": 0.93994886,
+        "endTime": 12.7751255,
+        "startTime": 12.635125,
+        "word": "是"
+      },
+      {
+        "confidence": 0.96203375,
+        "endTime": 12.955125,
+        "startTime": 12.7751255,
+        "word": "少"
+      },
+      {
+        "confidence": 0.915349,
+        "endTime": 13.115125,
+        "startTime": 12.955125,
+        "word": "收"
+      },
+      {
+        "confidence": 0.87613046,
+        "endTime": 13.2751255,
+        "startTime": 13.115125,
+        "word": "几"
+      },
+      {
+        "confidence": 0.9792548,
+        "endTime": 13.455125,
+        "startTime": 13.2751255,
+        "word": "块"
+      },
+      {
+        "confidence": 0.9532164,
+        "endTime": 13.795125,
+        "startTime": 13.455125,
+        "word": "钱，"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "为什么咖啡馆愿意？它工作日午市挤满，下午两三点就空了。宠物店这边，顾客把狗留下要等四十分钟，人就站在附近没地方去。这张券换来的不是少收几块钱，是把一个本来就路过、又有空闲的人请进店坐下。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "是把一个本来就路过、又有空闲的人请进店坐下。",
+    "words": [
+      {
+        "confidence": 0.86096543,
+        "endTime": 14.225167,
+        "startTime": 14.040167,
+        "word": "是"
+      },
+      {
+        "confidence": 0.83276373,
+        "endTime": 14.365167,
+        "startTime": 14.225167,
+        "word": "把"
+      },
+      {
+        "confidence": 0.8761564,
+        "endTime": 14.505167,
+        "startTime": 14.365167,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9656235,
+        "endTime": 14.645166,
+        "startTime": 14.505167,
+        "word": "个"
+      },
+      {
+        "confidence": 0.9507889,
+        "endTime": 14.825167,
+        "startTime": 14.645166,
+        "word": "本"
+      },
+      {
+        "confidence": 0.9783968,
+        "endTime": 14.985167,
+        "startTime": 14.825167,
+        "word": "来"
+      },
+      {
+        "confidence": 0.9787564,
+        "endTime": 15.155167,
+        "startTime": 14.985167,
+        "word": "就"
+      },
+      {
+        "confidence": 0.88334835,
+        "endTime": 15.345167,
+        "startTime": 15.155167,
+        "word": "路"
+      },
+      {
+        "confidence": 0.16098,
+        "endTime": 15.565166,
+        "startTime": 15.535167,
+        "word": "过、"
+      },
+      {
+        "confidence": 0.9385163,
+        "endTime": 15.895166,
+        "startTime": 15.7751665,
+        "word": "又"
+      },
+      {
+        "confidence": 0.9669495,
+        "endTime": 16.025167,
+        "startTime": 15.895166,
+        "word": "有"
+      },
+      {
+        "confidence": 0.97995293,
+        "endTime": 16.245167,
+        "startTime": 16.025167,
+        "word": "空"
+      },
+      {
+        "confidence": 0.8840307,
+        "endTime": 16.425167,
+        "startTime": 16.245167,
+        "word": "闲"
+      },
+      {
+        "confidence": 0.9200715,
+        "endTime": 16.565166,
+        "startTime": 16.425167,
+        "word": "的"
+      },
+      {
+        "confidence": 0.93339527,
+        "endTime": 16.765167,
+        "startTime": 16.565166,
+        "word": "人"
+      },
+      {
+        "confidence": 0.9059733,
+        "endTime": 16.995167,
+        "startTime": 16.765167,
+        "word": "请"
+      },
+      {
+        "confidence": 0.8528055,
+        "endTime": 17.135166,
+        "startTime": 16.995167,
+        "word": "进"
+      },
+      {
+        "confidence": 0.17326666,
+        "endTime": 17.195168,
+        "startTime": 17.135166,
+        "word": "店"
+      },
+      {
+        "confidence": 0.11228948,
+        "endTime": 17.255167,
+        "startTime": 17.195168,
+        "word": "坐"
+      },
+      {
+        "confidence": 0.19501288,
+        "endTime": 17.315166,
+        "startTime": 17.255167,
+        "word": "下。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,481 @@
+[
+  {
+    "phonemes": [],
+    "text": "顾客和老板，为什么都愿意？",
+    "words": [
+      {
+        "confidence": 0.8949705,
+        "endTime": 0.455,
+        "startTime": 0.265,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.96481204,
+        "endTime": 0.665,
+        "startTime": 0.455,
+        "word": "客"
+      },
+      {
+        "confidence": 0.9225808,
+        "endTime": 0.825,
+        "startTime": 0.665,
+        "word": "和"
+      },
+      {
+        "confidence": 0.913809,
+        "endTime": 1.025,
+        "startTime": 0.825,
+        "word": "老"
+      },
+      {
+        "confidence": 0.95944685,
+        "endTime": 1.355,
+        "startTime": 1.025,
+        "word": "板，"
+      },
+      {
+        "confidence": 0.97298867,
+        "endTime": 1.705,
+        "startTime": 1.575,
+        "word": "为"
+      },
+      {
+        "confidence": 0.9791257,
+        "endTime": 1.845,
+        "startTime": 1.705,
+        "word": "什"
+      },
+      {
+        "confidence": 0.9770308,
+        "endTime": 1.935,
+        "startTime": 1.845,
+        "word": "么"
+      },
+      {
+        "confidence": 0.92213434,
+        "endTime": 2.125,
+        "startTime": 1.935,
+        "word": "都"
+      },
+      {
+        "confidence": 0.9281427,
+        "endTime": 2.235,
+        "startTime": 2.125,
+        "word": "愿"
+      },
+      {
+        "confidence": 0.9603776,
+        "endTime": 2.605,
+        "startTime": 2.235,
+        "word": "意？"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "顾客这边很简单：工作日白天来不用排队，哪天来还能自己挑。",
+    "words": [
+      {
+        "confidence": 0.88724077,
+        "endTime": 3.1750417,
+        "startTime": 3.0350418,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.96349865,
+        "endTime": 3.3550417,
+        "startTime": 3.1750417,
+        "word": "客"
+      },
+      {
+        "confidence": 0.88776463,
+        "endTime": 3.4650416,
+        "startTime": 3.3550417,
+        "word": "这"
+      },
+      {
+        "confidence": 0.9625651,
+        "endTime": 3.6050417,
+        "startTime": 3.4650416,
+        "word": "边"
+      },
+      {
+        "confidence": 0.9544474,
+        "endTime": 3.7850418,
+        "startTime": 3.6050417,
+        "word": "很"
+      },
+      {
+        "confidence": 0.85504836,
+        "endTime": 3.9450417,
+        "startTime": 3.7850418,
+        "word": "简"
+      },
+      {
+        "confidence": 0.116388746,
+        "endTime": 3.9750419,
+        "startTime": 3.9450417,
+        "word": "单："
+      },
+      {
+        "confidence": 0.97598207,
+        "endTime": 4.6950417,
+        "startTime": 4.535042,
+        "word": "工"
+      },
+      {
+        "confidence": 0.96672547,
+        "endTime": 4.8450418,
+        "startTime": 4.6950417,
+        "word": "作"
+      },
+      {
+        "confidence": 0.9555591,
+        "endTime": 5.005042,
+        "startTime": 4.8450418,
+        "word": "日"
+      },
+      {
+        "confidence": 0.95842445,
+        "endTime": 5.165042,
+        "startTime": 5.005042,
+        "word": "白"
+      },
+      {
+        "confidence": 0.9642421,
+        "endTime": 5.3550415,
+        "startTime": 5.165042,
+        "word": "天"
+      },
+      {
+        "confidence": 0.9705309,
+        "endTime": 5.585042,
+        "startTime": 5.3550415,
+        "word": "来"
+      },
+      {
+        "confidence": 0.9594713,
+        "endTime": 5.6950417,
+        "startTime": 5.585042,
+        "word": "不"
+      },
+      {
+        "confidence": 0.9843733,
+        "endTime": 5.805042,
+        "startTime": 5.6950417,
+        "word": "用"
+      },
+      {
+        "confidence": 0.9575901,
+        "endTime": 6.035042,
+        "startTime": 5.805042,
+        "word": "排"
+      },
+      {
+        "confidence": 0.9223913,
+        "endTime": 6.295042,
+        "startTime": 6.035042,
+        "word": "队，"
+      },
+      {
+        "confidence": 0.8939253,
+        "endTime": 6.755042,
+        "startTime": 6.575042,
+        "word": "哪"
+      },
+      {
+        "confidence": 0.95179886,
+        "endTime": 6.955042,
+        "startTime": 6.755042,
+        "word": "天"
+      },
+      {
+        "confidence": 0.8555929,
+        "endTime": 7.1750417,
+        "startTime": 6.955042,
+        "word": "来"
+      },
+      {
+        "confidence": 0.9647889,
+        "endTime": 7.3150415,
+        "startTime": 7.1750417,
+        "word": "还"
+      },
+      {
+        "confidence": 0.97398764,
+        "endTime": 7.435042,
+        "startTime": 7.3150415,
+        "word": "能"
+      },
+      {
+        "confidence": 0.96546733,
+        "endTime": 7.555042,
+        "startTime": 7.435042,
+        "word": "自"
+      },
+      {
+        "confidence": 0.9635759,
+        "endTime": 7.6950417,
+        "startTime": 7.555042,
+        "word": "己"
+      },
+      {
+        "confidence": 0.89682245,
+        "endTime": 8.015041,
+        "startTime": 7.6950417,
+        "word": "挑。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "老板这边更实在：工位空一天，房租和工资一分不少，",
+    "words": [
+      {
+        "confidence": 0.9802616,
+        "endTime": 8.575084,
+        "startTime": 8.415083,
+        "word": "老"
+      },
+      {
+        "confidence": 0.9296101,
+        "endTime": 8.735084,
+        "startTime": 8.575084,
+        "word": "板"
+      },
+      {
+        "confidence": 0.9487167,
+        "endTime": 8.865084,
+        "startTime": 8.735084,
+        "word": "这"
+      },
+      {
+        "confidence": 0.9615956,
+        "endTime": 9.015083,
+        "startTime": 8.865084,
+        "word": "边"
+      },
+      {
+        "confidence": 0.92057276,
+        "endTime": 9.185083,
+        "startTime": 9.015083,
+        "word": "更"
+      },
+      {
+        "confidence": 0.8293198,
+        "endTime": 9.395083,
+        "startTime": 9.185083,
+        "word": "实"
+      },
+      {
+        "confidence": 0.10058951,
+        "endTime": 9.425083,
+        "startTime": 9.395083,
+        "word": "在："
+      },
+      {
+        "confidence": 0.9621064,
+        "endTime": 10.095083,
+        "startTime": 9.935083,
+        "word": "工"
+      },
+      {
+        "confidence": 0.9542596,
+        "endTime": 10.215083,
+        "startTime": 10.095083,
+        "word": "位"
+      },
+      {
+        "confidence": 0.9652422,
+        "endTime": 10.415083,
+        "startTime": 10.215083,
+        "word": "空"
+      },
+      {
+        "confidence": 0.9447613,
+        "endTime": 10.525084,
+        "startTime": 10.415083,
+        "word": "一"
+      },
+      {
+        "confidence": 0.97025704,
+        "endTime": 10.825083,
+        "startTime": 10.525084,
+        "word": "天，"
+      },
+      {
+        "confidence": 0.96668726,
+        "endTime": 11.265083,
+        "startTime": 10.985084,
+        "word": "房"
+      },
+      {
+        "confidence": 0.92220837,
+        "endTime": 11.435083,
+        "startTime": 11.265083,
+        "word": "租"
+      },
+      {
+        "confidence": 0.95991826,
+        "endTime": 11.585083,
+        "startTime": 11.435083,
+        "word": "和"
+      },
+      {
+        "confidence": 0.96248215,
+        "endTime": 11.785084,
+        "startTime": 11.585083,
+        "word": "工"
+      },
+      {
+        "confidence": 0.9657636,
+        "endTime": 12.005083,
+        "startTime": 11.785084,
+        "word": "资"
+      },
+      {
+        "confidence": 0.8922292,
+        "endTime": 12.125084,
+        "startTime": 12.005083,
+        "word": "一"
+      },
+      {
+        "confidence": 0.955111,
+        "endTime": 12.295083,
+        "startTime": 12.125084,
+        "word": "分"
+      },
+      {
+        "confidence": 0.97068185,
+        "endTime": 12.415083,
+        "startTime": 12.295083,
+        "word": "不"
+      },
+      {
+        "confidence": 0.9741417,
+        "endTime": 12.695084,
+        "startTime": 12.415083,
+        "word": "少，"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "顾客和老板，为什么都愿意？顾客这边很简单：工作日白天来不用排队，哪天来还能自己挑。老板这边更实在：工位空一天，房租和工资一分不少，多洗一辆就多一份收入，周末的客人也没丢。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "多洗一辆就多一份收入，周末的客人也没丢。",
+    "words": [
+      {
+        "confidence": 0.7244793,
+        "endTime": 13.125125,
+        "startTime": 13.030125,
+        "word": "多"
+      },
+      {
+        "confidence": 0.8429107,
+        "endTime": 13.365125,
+        "startTime": 13.125125,
+        "word": "洗"
+      },
+      {
+        "confidence": 0.73002875,
+        "endTime": 13.435124,
+        "startTime": 13.365125,
+        "word": "一"
+      },
+      {
+        "confidence": 0.94474524,
+        "endTime": 13.655125,
+        "startTime": 13.435124,
+        "word": "辆"
+      },
+      {
+        "confidence": 0.9387835,
+        "endTime": 13.805124,
+        "startTime": 13.655125,
+        "word": "就"
+      },
+      {
+        "confidence": 0.97653335,
+        "endTime": 13.955125,
+        "startTime": 13.805124,
+        "word": "多"
+      },
+      {
+        "confidence": 0.87520045,
+        "endTime": 14.0651245,
+        "startTime": 13.955125,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9372846,
+        "endTime": 14.205125,
+        "startTime": 14.0651245,
+        "word": "份"
+      },
+      {
+        "confidence": 0.94494474,
+        "endTime": 14.455125,
+        "startTime": 14.205125,
+        "word": "收"
+      },
+      {
+        "confidence": 0.9690008,
+        "endTime": 14.685124,
+        "startTime": 14.455125,
+        "word": "入，"
+      },
+      {
+        "confidence": 0.8398615,
+        "endTime": 15.125125,
+        "startTime": 14.965124,
+        "word": "周"
+      },
+      {
+        "confidence": 0.9280419,
+        "endTime": 15.275125,
+        "startTime": 15.125125,
+        "word": "末"
+      },
+      {
+        "confidence": 0.9091609,
+        "endTime": 15.365125,
+        "startTime": 15.275125,
+        "word": "的"
+      },
+      {
+        "confidence": 0.9687826,
+        "endTime": 15.575125,
+        "startTime": 15.365125,
+        "word": "客"
+      },
+      {
+        "confidence": 0.95813566,
+        "endTime": 15.675125,
+        "startTime": 15.575125,
+        "word": "人"
+      },
+      {
+        "confidence": 0.26506177,
+        "endTime": 15.705125,
+        "startTime": 15.675125,
+        "word": "也"
+      },
+      {
+        "confidence": 0.15474783,
+        "endTime": 15.765124,
+        "startTime": 15.705125,
+        "word": "没"
+      },
+      {
+        "confidence": 0.21427003,
+        "endTime": 15.825125,
+        "startTime": 15.765124,
+        "word": "丢。"
+      }
+    ]
+  }
+]

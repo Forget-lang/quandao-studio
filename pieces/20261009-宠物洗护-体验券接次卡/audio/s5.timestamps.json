@@ -1,0 +1,874 @@
+{
+  "duration": 15.018833333333333,
+  "wordTimelineUnit": "seconds",
+  "segments": [
+    {
+      "segment": 1,
+      "kind": "normal",
+      "speech_rate": 0,
+      "start": 0.0,
+      "end": 15.018833333333333,
+      "text": "如果顾客又来洗，确实表现出持续需求，再介绍按次核销的洗护次卡。次卡要对应你实际能提供的服务，按真实规则设置；不要拿一次体验就判断顾客一定需要长期购买。"
+    }
+  ],
+  "providerSentencesRaw": [
+    {
+      "segment": 1,
+      "data": [
+        {
+          "phonemes": [],
+          "text": "如果顾客又来洗，确实表现出持续需求，再介绍按次核销的洗护次卡。",
+          "words": [
+            {
+              "confidence": 0.9817744,
+              "endTime": 0.475,
+              "startTime": 0.285,
+              "word": "如"
+            },
+            {
+              "confidence": 0.969109,
+              "endTime": 0.665,
+              "startTime": 0.475,
+              "word": "果"
+            },
+            {
+              "confidence": 0.9458622,
+              "endTime": 0.835,
+              "startTime": 0.665,
+              "word": "顾"
+            },
+            {
+              "confidence": 0.86859256,
+              "endTime": 1.065,
+              "startTime": 0.835,
+              "word": "客"
+            },
+            {
+              "confidence": 0.89391804,
+              "endTime": 1.225,
+              "startTime": 1.065,
+              "word": "又"
+            },
+            {
+              "confidence": 0.9378199,
+              "endTime": 1.405,
+              "startTime": 1.225,
+              "word": "来"
+            },
+            {
+              "confidence": 0.8310033,
+              "endTime": 1.735,
+              "startTime": 1.405,
+              "word": "洗，"
+            },
+            {
+              "confidence": 0.9680163,
+              "endTime": 2.105,
+              "startTime": 1.925,
+              "word": "确"
+            },
+            {
+              "confidence": 0.94439644,
+              "endTime": 2.235,
+              "startTime": 2.105,
+              "word": "实"
+            },
+            {
+              "confidence": 0.9677648,
+              "endTime": 2.405,
+              "startTime": 2.235,
+              "word": "表"
+            },
+            {
+              "confidence": 0.9365062,
+              "endTime": 2.615,
+              "startTime": 2.405,
+              "word": "现"
+            },
+            {
+              "confidence": 0.95128006,
+              "endTime": 2.865,
+              "startTime": 2.615,
+              "word": "出"
+            },
+            {
+              "confidence": 0.9698434,
+              "endTime": 3.075,
+              "startTime": 2.865,
+              "word": "持"
+            },
+            {
+              "confidence": 0.9361904,
+              "endTime": 3.235,
+              "startTime": 3.075,
+              "word": "续"
+            },
+            {
+              "confidence": 0.7556172,
+              "endTime": 3.415,
+              "startTime": 3.235,
+              "word": "需"
+            },
+            {
+              "confidence": 0.8933036,
+              "endTime": 3.765,
+              "startTime": 3.415,
+              "word": "求，"
+            },
+            {
+              "confidence": 0.9713087,
+              "endTime": 4.215,
+              "startTime": 4.035,
+              "word": "再"
+            },
+            {
+              "confidence": 0.9148579,
+              "endTime": 4.355,
+              "startTime": 4.215,
+              "word": "介"
+            },
+            {
+              "confidence": 0.9046374,
+              "endTime": 4.655,
+              "startTime": 4.355,
+              "word": "绍"
+            },
+            {
+              "confidence": 0.9553467,
+              "endTime": 4.875,
+              "startTime": 4.715,
+              "word": "按"
+            },
+            {
+              "confidence": 0.9471805,
+              "endTime": 5.055,
+              "startTime": 4.875,
+              "word": "次"
+            },
+            {
+              "confidence": 0.95362383,
+              "endTime": 5.235,
+              "startTime": 5.055,
+              "word": "核"
+            },
+            {
+              "confidence": 0.9760235,
+              "endTime": 5.445,
+              "startTime": 5.235,
+              "word": "销"
+            },
+            {
+              "confidence": 0.938598,
+              "endTime": 5.565,
+              "startTime": 5.445,
+              "word": "的"
+            },
+            {
+              "confidence": 0.9661075,
+              "endTime": 5.765,
+              "startTime": 5.565,
+              "word": "洗"
+            },
+            {
+              "confidence": 0.8761225,
+              "endTime": 5.945,
+              "startTime": 5.765,
+              "word": "护"
+            },
+            {
+              "confidence": 0.86192507,
+              "endTime": 6.125,
+              "startTime": 5.945,
+              "word": "次"
+            },
+            {
+              "confidence": 0.88351125,
+              "endTime": 6.365,
+              "startTime": 6.125,
+              "word": "卡。"
+            }
+          ]
+        },
+        {
+          "phonemes": [],
+          "text": "次卡要对应你实际能提供的服务，按真实规则设置；",
+          "words": [
+            {
+              "confidence": 0.7907083,
+              "endTime": 7.0350413,
+              "startTime": 6.8650413,
+              "word": "次"
+            },
+            {
+              "confidence": 0.8239784,
+              "endTime": 7.2850413,
+              "startTime": 7.0350413,
+              "word": "卡"
+            },
+            {
+              "confidence": 0.9119742,
+              "endTime": 7.4450417,
+              "startTime": 7.2850413,
+              "word": "要"
+            },
+            {
+              "confidence": 0.9240134,
+              "endTime": 7.6150413,
+              "startTime": 7.4450417,
+              "word": "对"
+            },
+            {
+              "confidence": 0.90227604,
+              "endTime": 7.8050413,
+              "startTime": 7.6150413,
+              "word": "应"
+            },
+            {
+              "confidence": 0.9366641,
+              "endTime": 7.9450417,
+              "startTime": 7.8050413,
+              "word": "你"
+            },
+            {
+              "confidence": 0.91163945,
+              "endTime": 8.155042,
+              "startTime": 7.9450417,
+              "word": "实"
+            },
+            {
+              "confidence": 0.75753045,
+              "endTime": 8.315042,
+              "startTime": 8.155042,
+              "word": "际"
+            },
+            {
+              "confidence": 0.9707872,
+              "endTime": 8.485042,
+              "startTime": 8.315042,
+              "word": "能"
+            },
+            {
+              "confidence": 0.92745817,
+              "endTime": 8.645041,
+              "startTime": 8.485042,
+              "word": "提"
+            },
+            {
+              "confidence": 0.97723424,
+              "endTime": 8.795042,
+              "startTime": 8.645041,
+              "word": "供"
+            },
+            {
+              "confidence": 0.9809748,
+              "endTime": 8.885041,
+              "startTime": 8.795042,
+              "word": "的"
+            },
+            {
+              "confidence": 0.9263986,
+              "endTime": 9.065042,
+              "startTime": 8.885041,
+              "word": "服"
+            },
+            {
+              "confidence": 0.9785143,
+              "endTime": 9.325042,
+              "startTime": 9.065042,
+              "word": "务，"
+            },
+            {
+              "confidence": 0.84998477,
+              "endTime": 9.825042,
+              "startTime": 9.665041,
+              "word": "按"
+            },
+            {
+              "confidence": 0.8622929,
+              "endTime": 9.995041,
+              "startTime": 9.825042,
+              "word": "真"
+            },
+            {
+              "confidence": 0.8661808,
+              "endTime": 10.165041,
+              "startTime": 9.995041,
+              "word": "实"
+            },
+            {
+              "confidence": 0.97964144,
+              "endTime": 10.325042,
+              "startTime": 10.165041,
+              "word": "规"
+            },
+            {
+              "confidence": 0.977896,
+              "endTime": 10.475041,
+              "startTime": 10.325042,
+              "word": "则"
+            },
+            {
+              "confidence": 0.92940056,
+              "endTime": 10.665041,
+              "startTime": 10.475041,
+              "word": "设"
+            },
+            {
+              "confidence": 0.9403057,
+              "endTime": 10.895041,
+              "startTime": 10.665041,
+              "word": "置；"
+            }
+          ]
+        },
+        {
+          "phonemes": [],
+          "text": "如果顾客又来洗，确实表现出持续需求，再介绍按次核销的洗护次卡。次卡要对应你实际能提供的服务，按真实规则设置；不要拿一次体验就判断顾客一定需要长期购买。",
+          "words": []
+        },
+        {
+          "phonemes": [],
+          "text": "不要拿一次体验就判断顾客一定需要长期购买。",
+          "words": [
+            {
+              "confidence": 0.73517054,
+              "endTime": 11.355083,
+              "startTime": 11.255083,
+              "word": "不"
+            },
+            {
+              "confidence": 0.82607645,
+              "endTime": 11.505083,
+              "startTime": 11.355083,
+              "word": "要"
+            },
+            {
+              "confidence": 0.8943336,
+              "endTime": 11.625084,
+              "startTime": 11.505083,
+              "word": "拿"
+            },
+            {
+              "confidence": 0.80846137,
+              "endTime": 11.795084,
+              "startTime": 11.625084,
+              "word": "一"
+            },
+            {
+              "confidence": 0.9748242,
+              "endTime": 11.965083,
+              "startTime": 11.795084,
+              "word": "次"
+            },
+            {
+              "confidence": 0.9593371,
+              "endTime": 12.205084,
+              "startTime": 11.965083,
+              "word": "体"
+            },
+            {
+              "confidence": 0.93987685,
+              "endTime": 12.415084,
+              "startTime": 12.205084,
+              "word": "验"
+            },
+            {
+              "confidence": 0.88240355,
+              "endTime": 12.555083,
+              "startTime": 12.415084,
+              "word": "就"
+            },
+            {
+              "confidence": 0.96909297,
+              "endTime": 12.755083,
+              "startTime": 12.555083,
+              "word": "判"
+            },
+            {
+              "confidence": 0.95313823,
+              "endTime": 12.925083,
+              "startTime": 12.755083,
+              "word": "断"
+            },
+            {
+              "confidence": 0.9524357,
+              "endTime": 13.105083,
+              "startTime": 12.925083,
+              "word": "顾"
+            },
+            {
+              "confidence": 0.9590248,
+              "endTime": 13.365084,
+              "startTime": 13.105083,
+              "word": "客"
+            },
+            {
+              "confidence": 0.92922246,
+              "endTime": 13.545084,
+              "startTime": 13.365084,
+              "word": "一"
+            },
+            {
+              "confidence": 0.97908014,
+              "endTime": 13.725083,
+              "startTime": 13.545084,
+              "word": "定"
+            },
+            {
+              "confidence": 0.8286749,
+              "endTime": 13.905084,
+              "startTime": 13.725083,
+              "word": "需"
+            },
+            {
+              "confidence": 0.9321719,
+              "endTime": 14.035084,
+              "startTime": 13.905084,
+              "word": "要"
+            },
+            {
+              "confidence": 0.7307354,
+              "endTime": 14.165084,
+              "startTime": 14.035084,
+              "word": "长"
+            },
+            {
+              "confidence": 0.087597825,
+              "endTime": 14.225083,
+              "startTime": 14.165084,
+              "word": "期"
+            },
+            {
+              "confidence": 0.08218337,
+              "endTime": 14.285084,
+              "startTime": 14.225083,
+              "word": "购"
+            },
+            {
+              "confidence": 0.17501836,
+              "endTime": 14.345083,
+              "startTime": 14.285084,
+              "word": "买。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "confidence": 0.9817744,
+      "endTime": 0.475,
+      "startTime": 0.285,
+      "word": "如"
+    },
+    {
+      "confidence": 0.969109,
+      "endTime": 0.665,
+      "startTime": 0.475,
+      "word": "果"
+    },
+    {
+      "confidence": 0.9458622,
+      "endTime": 0.835,
+      "startTime": 0.665,
+      "word": "顾"
+    },
+    {
+      "confidence": 0.86859256,
+      "endTime": 1.065,
+      "startTime": 0.835,
+      "word": "客"
+    },
+    {
+      "confidence": 0.89391804,
+      "endTime": 1.225,
+      "startTime": 1.065,
+      "word": "又"
+    },
+    {
+      "confidence": 0.9378199,
+      "endTime": 1.405,
+      "startTime": 1.225,
+      "word": "来"
+    },
+    {
+      "confidence": 0.8310033,
+      "endTime": 1.735,
+      "startTime": 1.405,
+      "word": "洗，"
+    },
+    {
+      "confidence": 0.9680163,
+      "endTime": 2.105,
+      "startTime": 1.925,
+      "word": "确"
+    },
+    {
+      "confidence": 0.94439644,
+      "endTime": 2.235,
+      "startTime": 2.105,
+      "word": "实"
+    },
+    {
+      "confidence": 0.9677648,
+      "endTime": 2.405,
+      "startTime": 2.235,
+      "word": "表"
+    },
+    {
+      "confidence": 0.9365062,
+      "endTime": 2.615,
+      "startTime": 2.405,
+      "word": "现"
+    },
+    {
+      "confidence": 0.95128006,
+      "endTime": 2.865,
+      "startTime": 2.615,
+      "word": "出"
+    },
+    {
+      "confidence": 0.9698434,
+      "endTime": 3.075,
+      "startTime": 2.865,
+      "word": "持"
+    },
+    {
+      "confidence": 0.9361904,
+      "endTime": 3.235,
+      "startTime": 3.075,
+      "word": "续"
+    },
+    {
+      "confidence": 0.7556172,
+      "endTime": 3.415,
+      "startTime": 3.235,
+      "word": "需"
+    },
+    {
+      "confidence": 0.8933036,
+      "endTime": 3.765,
+      "startTime": 3.415,
+      "word": "求，"
+    },
+    {
+      "confidence": 0.9713087,
+      "endTime": 4.215,
+      "startTime": 4.035,
+      "word": "再"
+    },
+    {
+      "confidence": 0.9148579,
+      "endTime": 4.355,
+      "startTime": 4.215,
+      "word": "介"
+    },
+    {
+      "confidence": 0.9046374,
+      "endTime": 4.655,
+      "startTime": 4.355,
+      "word": "绍"
+    },
+    {
+      "confidence": 0.9553467,
+      "endTime": 4.875,
+      "startTime": 4.715,
+      "word": "按"
+    },
+    {
+      "confidence": 0.9471805,
+      "endTime": 5.055,
+      "startTime": 4.875,
+      "word": "次"
+    },
+    {
+      "confidence": 0.95362383,
+      "endTime": 5.235,
+      "startTime": 5.055,
+      "word": "核"
+    },
+    {
+      "confidence": 0.9760235,
+      "endTime": 5.445,
+      "startTime": 5.235,
+      "word": "销"
+    },
+    {
+      "confidence": 0.938598,
+      "endTime": 5.565,
+      "startTime": 5.445,
+      "word": "的"
+    },
+    {
+      "confidence": 0.9661075,
+      "endTime": 5.765,
+      "startTime": 5.565,
+      "word": "洗"
+    },
+    {
+      "confidence": 0.8761225,
+      "endTime": 5.945,
+      "startTime": 5.765,
+      "word": "护"
+    },
+    {
+      "confidence": 0.86192507,
+      "endTime": 6.125,
+      "startTime": 5.945,
+      "word": "次"
+    },
+    {
+      "confidence": 0.88351125,
+      "endTime": 6.365,
+      "startTime": 6.125,
+      "word": "卡。"
+    },
+    {
+      "confidence": 0.7907083,
+      "endTime": 7.0350413,
+      "startTime": 6.8650413,
+      "word": "次"
+    },
+    {
+      "confidence": 0.8239784,
+      "endTime": 7.2850413,
+      "startTime": 7.0350413,
+      "word": "卡"
+    },
+    {
+      "confidence": 0.9119742,
+      "endTime": 7.4450417,
+      "startTime": 7.2850413,
+      "word": "要"
+    },
+    {
+      "confidence": 0.9240134,
+      "endTime": 7.6150413,
+      "startTime": 7.4450417,
+      "word": "对"
+    },
+    {
+      "confidence": 0.90227604,
+      "endTime": 7.8050413,
+      "startTime": 7.6150413,
+      "word": "应"
+    },
+    {
+      "confidence": 0.9366641,
+      "endTime": 7.9450417,
+      "startTime": 7.8050413,
+      "word": "你"
+    },
+    {
+      "confidence": 0.91163945,
+      "endTime": 8.155042,
+      "startTime": 7.9450417,
+      "word": "实"
+    },
+    {
+      "confidence": 0.75753045,
+      "endTime": 8.315042,
+      "startTime": 8.155042,
+      "word": "际"
+    },
+    {
+      "confidence": 0.9707872,
+      "endTime": 8.485042,
+      "startTime": 8.315042,
+      "word": "能"
+    },
+    {
+      "confidence": 0.92745817,
+      "endTime": 8.645041,
+      "startTime": 8.485042,
+      "word": "提"
+    },
+    {
+      "confidence": 0.97723424,
+      "endTime": 8.795042,
+      "startTime": 8.645041,
+      "word": "供"
+    },
+    {
+      "confidence": 0.9809748,
+      "endTime": 8.885041,
+      "startTime": 8.795042,
+      "word": "的"
+    },
+    {
+      "confidence": 0.9263986,
+      "endTime": 9.065042,
+      "startTime": 8.885041,
+      "word": "服"
+    },
+    {
+      "confidence": 0.9785143,
+      "endTime": 9.325042,
+      "startTime": 9.065042,
+      "word": "务，"
+    },
+    {
+      "confidence": 0.84998477,
+      "endTime": 9.825042,
+      "startTime": 9.665041,
+      "word": "按"
+    },
+    {
+      "confidence": 0.8622929,
+      "endTime": 9.995041,
+      "startTime": 9.825042,
+      "word": "真"
+    },
+    {
+      "confidence": 0.8661808,
+      "endTime": 10.165041,
+      "startTime": 9.995041,
+      "word": "实"
+    },
+    {
+      "confidence": 0.97964144,
+      "endTime": 10.325042,
+      "startTime": 10.165041,
+      "word": "规"
+    },
+    {
+      "confidence": 0.977896,
+      "endTime": 10.475041,
+      "startTime": 10.325042,
+      "word": "则"
+    },
+    {
+      "confidence": 0.92940056,
+      "endTime": 10.665041,
+      "startTime": 10.475041,
+      "word": "设"
+    },
+    {
+      "confidence": 0.9403057,
+      "endTime": 10.895041,
+      "startTime": 10.665041,
+      "word": "置；"
+    },
+    {
+      "confidence": 0.73517054,
+      "endTime": 11.355083,
+      "startTime": 11.255083,
+      "word": "不"
+    },
+    {
+      "confidence": 0.82607645,
+      "endTime": 11.505083,
+      "startTime": 11.355083,
+      "word": "要"
+    },
+    {
+      "confidence": 0.8943336,
+      "endTime": 11.625084,
+      "startTime": 11.505083,
+      "word": "拿"
+    },
+    {
+      "confidence": 0.80846137,
+      "endTime": 11.795084,
+      "startTime": 11.625084,
+      "word": "一"
+    },
+    {
+      "confidence": 0.9748242,
+      "endTime": 11.965083,
+      "startTime": 11.795084,
+      "word": "次"
+    },
+    {
+      "confidence": 0.9593371,
+      "endTime": 12.205084,
+      "startTime": 11.965083,
+      "word": "体"
+    },
+    {
+      "confidence": 0.93987685,
+      "endTime": 12.415084,
+      "startTime": 12.205084,
+      "word": "验"
+    },
+    {
+      "confidence": 0.88240355,
+      "endTime": 12.555083,
+      "startTime": 12.415084,
+      "word": "就"
+    },
+    {
+      "confidence": 0.96909297,
+      "endTime": 12.755083,
+      "startTime": 12.555083,
+      "word": "判"
+    },
+    {
+      "confidence": 0.95313823,
+      "endTime": 12.925083,
+      "startTime": 12.755083,
+      "word": "断"
+    },
+    {
+      "confidence": 0.9524357,
+      "endTime": 13.105083,
+      "startTime": 12.925083,
+      "word": "顾"
+    },
+    {
+      "confidence": 0.9590248,
+      "endTime": 13.365084,
+      "startTime": 13.105083,
+      "word": "客"
+    },
+    {
+      "confidence": 0.92922246,
+      "endTime": 13.545084,
+      "startTime": 13.365084,
+      "word": "一"
+    },
+    {
+      "confidence": 0.97908014,
+      "endTime": 13.725083,
+      "startTime": 13.545084,
+      "word": "定"
+    },
+    {
+      "confidence": 0.8286749,
+      "endTime": 13.905084,
+      "startTime": 13.725083,
+      "word": "需"
+    },
+    {
+      "confidence": 0.9321719,
+      "endTime": 14.035084,
+      "startTime": 13.905084,
+      "word": "要"
+    },
+    {
+      "confidence": 0.7307354,
+      "endTime": 14.165084,
+      "startTime": 14.035084,
+      "word": "长"
+    },
+    {
+      "confidence": 0.087597825,
+      "endTime": 14.225083,
+      "startTime": 14.165084,
+      "word": "期"
+    },
+    {
+      "confidence": 0.08218337,
+      "endTime": 14.285084,
+      "startTime": 14.225083,
+      "word": "购"
+    },
+    {
+      "confidence": 0.17501836,
+      "endTime": 14.345083,
+      "startTime": 14.285084,
+      "word": "买。"
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+[
+  {
+    "phonemes": [],
+    "text": "社区宠物店想让顾客洗完狗下次再来，正常是不是先打折？",
+    "words": [
+      {
+        "confidence": 0.93550706,
+        "endTime": 0.505,
+        "startTime": 0.255,
+        "word": "社"
+      },
+      {
+        "confidence": 0.8638025,
+        "endTime": 0.675,
+        "startTime": 0.505,
+        "word": "区"
+      },
+      {
+        "confidence": 0.87703717,
+        "endTime": 0.845,
+        "startTime": 0.675,
+        "word": "宠"
+      },
+      {
+        "confidence": 0.83959377,
+        "endTime": 0.995,
+        "startTime": 0.845,
+        "word": "物"
+      },
+      {
+        "confidence": 0.89749676,
+        "endTime": 1.225,
+        "startTime": 0.995,
+        "word": "店"
+      },
+      {
+        "confidence": 0.92760783,
+        "endTime": 1.425,
+        "startTime": 1.225,
+        "word": "想"
+      },
+      {
+        "confidence": 0.94977033,
+        "endTime": 1.605,
+        "startTime": 1.425,
+        "word": "让"
+      },
+      {
+        "confidence": 0.9608912,
+        "endTime": 1.765,
+        "startTime": 1.605,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.96903473,
+        "endTime": 2.015,
+        "startTime": 1.765,
+        "word": "客"
+      },
+      {
+        "confidence": 0.8656109,
+        "endTime": 2.205,
+        "startTime": 2.015,
+        "word": "洗"
+      },
+      {
+        "confidence": 0.8088145,
+        "endTime": 2.375,
+        "startTime": 2.205,
+        "word": "完"
+      },
+      {
+        "confidence": 0.9662256,
+        "endTime": 2.565,
+        "startTime": 2.375,
+        "word": "狗"
+      },
+      {
+        "confidence": 0.939439,
+        "endTime": 2.795,
+        "startTime": 2.565,
+        "word": "下"
+      },
+      {
+        "confidence": 0.9614972,
+        "endTime": 2.925,
+        "startTime": 2.795,
+        "word": "次"
+      },
+      {
+        "confidence": 0.8645473,
+        "endTime": 3.125,
+        "startTime": 2.925,
+        "word": "再"
+      },
+      {
+        "confidence": 0.96651816,
+        "endTime": 3.415,
+        "startTime": 3.125,
+        "word": "来，"
+      },
+      {
+        "confidence": 0.92719585,
+        "endTime": 3.865,
+        "startTime": 3.705,
+        "word": "正"
+      },
+      {
+        "confidence": 0.9778094,
+        "endTime": 4.065,
+        "startTime": 3.865,
+        "word": "常"
+      },
+      {
+        "confidence": 0.97892565,
+        "endTime": 4.245,
+        "startTime": 4.065,
+        "word": "是"
+      },
+      {
+        "confidence": 0.80807537,
+        "endTime": 4.325,
+        "startTime": 4.245,
+        "word": "不"
+      },
+      {
+        "confidence": 0.8894264,
+        "endTime": 4.525,
+        "startTime": 4.325,
+        "word": "是"
+      },
+      {
+        "confidence": 0.9494232,
+        "endTime": 4.705,
+        "startTime": 4.525,
+        "word": "先"
+      },
+      {
+        "confidence": 0.9702009,
+        "endTime": 4.875,
+        "startTime": 4.705,
+        "word": "打"
+      },
+      {
+        "confidence": 0.92743677,
+        "endTime": 5.225,
+        "startTime": 4.875,
+        "word": "折？"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "沐沐宠物没打折，反而去找隔壁咖啡馆谈合作，咖啡馆愿意接。",
+    "words": [
+      {
+        "confidence": 0.6242971,
+        "endTime": 5.835042,
+        "startTime": 5.680042,
+        "word": "沐"
+      },
+      {
+        "confidence": 0.8061741,
+        "endTime": 5.9250417,
+        "startTime": 5.835042,
+        "word": "沐"
+      },
+      {
+        "confidence": 0.86827385,
+        "endTime": 6.165042,
+        "startTime": 5.9250417,
+        "word": "宠"
+      },
+      {
+        "confidence": 0.79678035,
+        "endTime": 6.265042,
+        "startTime": 6.165042,
+        "word": "物"
+      },
+      {
+        "confidence": 0.96614146,
+        "endTime": 6.4250417,
+        "startTime": 6.265042,
+        "word": "没"
+      },
+      {
+        "confidence": 0.9726962,
+        "endTime": 6.5950418,
+        "startTime": 6.4250417,
+        "word": "打"
+      },
+      {
+        "confidence": 0.90210456,
+        "endTime": 6.935042,
+        "startTime": 6.5950418,
+        "word": "折，"
+      },
+      {
+        "confidence": 0.8567313,
+        "endTime": 7.225042,
+        "startTime": 7.055042,
+        "word": "反"
+      },
+      {
+        "confidence": 0.85818326,
+        "endTime": 7.3650417,
+        "startTime": 7.225042,
+        "word": "而"
+      },
+      {
+        "confidence": 0.9103322,
+        "endTime": 7.545042,
+        "startTime": 7.3650417,
+        "word": "去"
+      },
+      {
+        "confidence": 0.97549003,
+        "endTime": 7.7750416,
+        "startTime": 7.545042,
+        "word": "找"
+      },
+      {
+        "confidence": 0.9568992,
+        "endTime": 7.935042,
+        "startTime": 7.7750416,
+        "word": "隔"
+      },
+      {
+        "confidence": 0.9559597,
+        "endTime": 8.065042,
+        "startTime": 7.935042,
+        "word": "壁"
+      },
+      {
+        "confidence": 0.717729,
+        "endTime": 8.245042,
+        "startTime": 8.065042,
+        "word": "咖"
+      },
+      {
+        "confidence": 0.959941,
+        "endTime": 8.385042,
+        "startTime": 8.245042,
+        "word": "啡"
+      },
+      {
+        "confidence": 0.9360621,
+        "endTime": 8.565042,
+        "startTime": 8.385042,
+        "word": "馆"
+      },
+      {
+        "confidence": 0.6754912,
+        "endTime": 8.715042,
+        "startTime": 8.565042,
+        "word": "谈"
+      },
+      {
+        "confidence": 0.8501134,
+        "endTime": 8.925041,
+        "startTime": 8.715042,
+        "word": "合"
+      },
+      {
+        "confidence": 0.9644271,
+        "endTime": 9.205042,
+        "startTime": 8.925041,
+        "word": "作，"
+      },
+      {
+        "confidence": 0.7509105,
+        "endTime": 9.665042,
+        "startTime": 9.495042,
+        "word": "咖"
+      },
+      {
+        "confidence": 0.97096485,
+        "endTime": 9.805042,
+        "startTime": 9.665042,
+        "word": "啡"
+      },
+      {
+        "confidence": 0.81112766,
+        "endTime": 9.925041,
+        "startTime": 9.805042,
+        "word": "馆"
+      },
+      {
+        "confidence": 0.7901602,
+        "endTime": 10.085042,
+        "startTime": 9.975042,
+        "word": "愿"
+      },
+      {
+        "confidence": 0.95480245,
+        "endTime": 10.245042,
+        "startTime": 10.085042,
+        "word": "意"
+      },
+      {
+        "confidence": 0.8618795,
+        "endTime": 10.545042,
+        "startTime": 10.245042,
+        "word": "接。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "社区宠物店想让顾客洗完狗下次再来，正常是不是先打折？沐沐宠物没打折，反而去找隔壁咖啡馆谈合作，咖啡馆愿意接。那等狗洗完的四十分钟，怎么变成一个券包？",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "那等狗洗完的四十分钟，怎么变成一个券包？",
+    "words": [
+      {
+        "confidence": 0.96888095,
+        "endTime": 11.005084,
+        "startTime": 10.865084,
+        "word": "那"
+      },
+      {
+        "confidence": 0.9335063,
+        "endTime": 11.215084,
+        "startTime": 11.005084,
+        "word": "等"
+      },
+      {
+        "confidence": 0.8872439,
+        "endTime": 11.365084,
+        "startTime": 11.215084,
+        "word": "狗"
+      },
+      {
+        "confidence": 0.9147883,
+        "endTime": 11.5650835,
+        "startTime": 11.365084,
+        "word": "洗"
+      },
+      {
+        "confidence": 0.9318632,
+        "endTime": 11.705084,
+        "startTime": 11.5650835,
+        "word": "完"
+      },
+      {
+        "confidence": 0.9153417,
+        "endTime": 11.8150835,
+        "startTime": 11.705084,
+        "word": "的"
+      },
+      {
+        "confidence": 0.8426299,
+        "endTime": 11.955084,
+        "startTime": 11.8150835,
+        "word": "四"
+      },
+      {
+        "confidence": 0.9471083,
+        "endTime": 12.075084,
+        "startTime": 11.955084,
+        "word": "十"
+      },
+      {
+        "confidence": 0.9506124,
+        "endTime": 12.245084,
+        "startTime": 12.075084,
+        "word": "分"
+      },
+      {
+        "confidence": 0.9714978,
+        "endTime": 12.475083,
+        "startTime": 12.245084,
+        "word": "钟，"
+      },
+      {
+        "confidence": 0.9555881,
+        "endTime": 12.785084,
+        "startTime": 12.655084,
+        "word": "怎"
+      },
+      {
+        "confidence": 0.96073896,
+        "endTime": 12.895083,
+        "startTime": 12.785084,
+        "word": "么"
+      },
+      {
+        "confidence": 0.9800998,
+        "endTime": 13.085084,
+        "startTime": 12.895083,
+        "word": "变"
+      },
+      {
+        "confidence": 0.9791539,
+        "endTime": 13.3150835,
+        "startTime": 13.085084,
+        "word": "成"
+      },
+      {
+        "confidence": 0.8330438,
+        "endTime": 13.415084,
+        "startTime": 13.3150835,
+        "word": "一"
+      },
+      {
+        "confidence": 0.31832042,
+        "endTime": 13.475083,
+        "startTime": 13.415084,
+        "word": "个"
+      },
+      {
+        "confidence": 0.14824905,
+        "endTime": 13.535084,
+        "startTime": 13.475083,
+        "word": "券"
+      },
+      {
+        "confidence": 0.16481183,
+        "endTime": 13.595083,
+        "startTime": 13.535084,
+        "word": "包？"
+      }
+    ]
+  }
+]

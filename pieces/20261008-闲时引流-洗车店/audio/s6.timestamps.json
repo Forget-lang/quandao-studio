@@ -1,0 +1,445 @@
+[
+  {
+    "phonemes": [],
+    "text": "有两件事得先想清楚。",
+    "words": [
+      {
+        "confidence": 0.9588041,
+        "endTime": 0.445,
+        "startTime": 0.305,
+        "word": "有"
+      },
+      {
+        "confidence": 0.97344583,
+        "endTime": 0.625,
+        "startTime": 0.445,
+        "word": "两"
+      },
+      {
+        "confidence": 0.9475213,
+        "endTime": 0.825,
+        "startTime": 0.625,
+        "word": "件"
+      },
+      {
+        "confidence": 0.91306895,
+        "endTime": 1.035,
+        "startTime": 0.825,
+        "word": "事"
+      },
+      {
+        "confidence": 0.94875044,
+        "endTime": 1.145,
+        "startTime": 1.035,
+        "word": "得"
+      },
+      {
+        "confidence": 0.91404736,
+        "endTime": 1.285,
+        "startTime": 1.145,
+        "word": "先"
+      },
+      {
+        "confidence": 0.93629044,
+        "endTime": 1.455,
+        "startTime": 1.285,
+        "word": "想"
+      },
+      {
+        "confidence": 0.9578674,
+        "endTime": 1.685,
+        "startTime": 1.455,
+        "word": "清"
+      },
+      {
+        "confidence": 0.92210895,
+        "endTime": 1.945,
+        "startTime": 1.685,
+        "word": "楚。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "一件是领取时间要跟闲时接得上，让顾客领完就能用；",
+    "words": [
+      {
+        "confidence": 0.72136825,
+        "endTime": 2.4550416,
+        "startTime": 2.3300416,
+        "word": "一"
+      },
+      {
+        "confidence": 0.97420734,
+        "endTime": 2.6450417,
+        "startTime": 2.4550416,
+        "word": "件"
+      },
+      {
+        "confidence": 0.9291463,
+        "endTime": 2.9350417,
+        "startTime": 2.6450417,
+        "word": "是"
+      },
+      {
+        "confidence": 0.81813174,
+        "endTime": 3.0650415,
+        "startTime": 2.9350417,
+        "word": "领"
+      },
+      {
+        "confidence": 0.98077214,
+        "endTime": 3.2350416,
+        "startTime": 3.0650415,
+        "word": "取"
+      },
+      {
+        "confidence": 0.96877587,
+        "endTime": 3.4350417,
+        "startTime": 3.2350416,
+        "word": "时"
+      },
+      {
+        "confidence": 0.92327327,
+        "endTime": 3.6650417,
+        "startTime": 3.4350417,
+        "word": "间"
+      },
+      {
+        "confidence": 0.9592696,
+        "endTime": 3.7950416,
+        "startTime": 3.6650417,
+        "word": "要"
+      },
+      {
+        "confidence": 0.96384954,
+        "endTime": 3.9450417,
+        "startTime": 3.7950416,
+        "word": "跟"
+      },
+      {
+        "confidence": 0.88542414,
+        "endTime": 4.1550417,
+        "startTime": 3.9450417,
+        "word": "闲"
+      },
+      {
+        "confidence": 0.9380694,
+        "endTime": 4.335042,
+        "startTime": 4.1550417,
+        "word": "时"
+      },
+      {
+        "confidence": 0.79715705,
+        "endTime": 4.4850416,
+        "startTime": 4.335042,
+        "word": "接"
+      },
+      {
+        "confidence": 0.8511316,
+        "endTime": 4.5650415,
+        "startTime": 4.4850416,
+        "word": "得"
+      },
+      {
+        "confidence": 0.9426642,
+        "endTime": 4.7750416,
+        "startTime": 4.5650415,
+        "word": "上，"
+      },
+      {
+        "confidence": 0.71378654,
+        "endTime": 5.2950416,
+        "startTime": 5.1750417,
+        "word": "让"
+      },
+      {
+        "confidence": 0.95176417,
+        "endTime": 5.4650416,
+        "startTime": 5.2950416,
+        "word": "顾"
+      },
+      {
+        "confidence": 0.94756293,
+        "endTime": 5.7350416,
+        "startTime": 5.4650416,
+        "word": "客"
+      },
+      {
+        "confidence": 0.90455484,
+        "endTime": 5.8850417,
+        "startTime": 5.7350416,
+        "word": "领"
+      },
+      {
+        "confidence": 0.9633278,
+        "endTime": 6.075042,
+        "startTime": 5.8850417,
+        "word": "完"
+      },
+      {
+        "confidence": 0.9194198,
+        "endTime": 6.2250414,
+        "startTime": 6.075042,
+        "word": "就"
+      },
+      {
+        "confidence": 0.9780157,
+        "endTime": 6.375042,
+        "startTime": 6.2250414,
+        "word": "能"
+      },
+      {
+        "confidence": 0.9829069,
+        "endTime": 6.5950413,
+        "startTime": 6.375042,
+        "word": "用；"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "定得太早或太晚，都接不上。",
+    "words": [
+      {
+        "confidence": 0.8964408,
+        "endTime": 7.0950837,
+        "startTime": 6.955084,
+        "word": "定"
+      },
+      {
+        "confidence": 0.92738426,
+        "endTime": 7.1950836,
+        "startTime": 7.0950837,
+        "word": "得"
+      },
+      {
+        "confidence": 0.9568722,
+        "endTime": 7.4250836,
+        "startTime": 7.1950836,
+        "word": "太"
+      },
+      {
+        "confidence": 0.922426,
+        "endTime": 7.6550837,
+        "startTime": 7.4250836,
+        "word": "早"
+      },
+      {
+        "confidence": 0.72435206,
+        "endTime": 7.785084,
+        "startTime": 7.6550837,
+        "word": "或"
+      },
+      {
+        "confidence": 0.9429878,
+        "endTime": 8.035084,
+        "startTime": 7.785084,
+        "word": "太"
+      },
+      {
+        "confidence": 0.86715597,
+        "endTime": 8.235084,
+        "startTime": 8.035084,
+        "word": "晚，"
+      },
+      {
+        "confidence": 0.8226702,
+        "endTime": 8.455084,
+        "startTime": 8.235084,
+        "word": "都"
+      },
+      {
+        "confidence": 0.796884,
+        "endTime": 8.615084,
+        "startTime": 8.455084,
+        "word": "接"
+      },
+      {
+        "confidence": 0.8711651,
+        "endTime": 8.715084,
+        "startTime": 8.615084,
+        "word": "不"
+      },
+      {
+        "confidence": 0.97503537,
+        "endTime": 8.955084,
+        "startTime": 8.715084,
+        "word": "上。"
+      }
+    ]
+  },
+  {
+    "phonemes": [],
+    "text": "有两件事得先想清楚。一件是领取时间要跟闲时接得上，让顾客领完就能用；定得太早或太晚，都接不上。另一件是别一次发太多，一下全被领走，闲时反而又挤满，白忙一场。",
+    "words": []
+  },
+  {
+    "phonemes": [],
+    "text": "另一件是别一次发太多，一下全被领走，闲时反而又挤满，白忙一场。",
+    "words": [
+      {
+        "confidence": 0.8512947,
+        "endTime": 9.545126,
+        "startTime": 9.375126,
+        "word": "另"
+      },
+      {
+        "confidence": 0.8592283,
+        "endTime": 9.605125,
+        "startTime": 9.545126,
+        "word": "一"
+      },
+      {
+        "confidence": 0.96812475,
+        "endTime": 9.835126,
+        "startTime": 9.605125,
+        "word": "件"
+      },
+      {
+        "confidence": 0.93682384,
+        "endTime": 10.135126,
+        "startTime": 9.835126,
+        "word": "是"
+      },
+      {
+        "confidence": 0.8403498,
+        "endTime": 10.335126,
+        "startTime": 10.165126,
+        "word": "别"
+      },
+      {
+        "confidence": 0.73666364,
+        "endTime": 10.405126,
+        "startTime": 10.335126,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9536425,
+        "endTime": 10.575126,
+        "startTime": 10.405126,
+        "word": "次"
+      },
+      {
+        "confidence": 0.9657494,
+        "endTime": 10.725126,
+        "startTime": 10.575126,
+        "word": "发"
+      },
+      {
+        "confidence": 0.9584739,
+        "endTime": 10.915126,
+        "startTime": 10.725126,
+        "word": "太"
+      },
+      {
+        "confidence": 0.96538496,
+        "endTime": 11.185125,
+        "startTime": 10.915126,
+        "word": "多，"
+      },
+      {
+        "confidence": 0.7546759,
+        "endTime": 11.485126,
+        "startTime": 11.415126,
+        "word": "一"
+      },
+      {
+        "confidence": 0.9793177,
+        "endTime": 11.705126,
+        "startTime": 11.485126,
+        "word": "下"
+      },
+      {
+        "confidence": 0.9524543,
+        "endTime": 11.925126,
+        "startTime": 11.705126,
+        "word": "全"
+      },
+      {
+        "confidence": 0.9778266,
+        "endTime": 12.065125,
+        "startTime": 11.925126,
+        "word": "被"
+      },
+      {
+        "confidence": 0.8745867,
+        "endTime": 12.235126,
+        "startTime": 12.065125,
+        "word": "领"
+      },
+      {
+        "confidence": 0.9459389,
+        "endTime": 12.485126,
+        "startTime": 12.235126,
+        "word": "走，"
+      },
+      {
+        "confidence": 0.9359386,
+        "endTime": 12.845126,
+        "startTime": 12.615126,
+        "word": "闲"
+      },
+      {
+        "confidence": 0.9612921,
+        "endTime": 13.085126,
+        "startTime": 12.845126,
+        "word": "时"
+      },
+      {
+        "confidence": 0.87407184,
+        "endTime": 13.265125,
+        "startTime": 13.085126,
+        "word": "反"
+      },
+      {
+        "confidence": 0.8842518,
+        "endTime": 13.365126,
+        "startTime": 13.265125,
+        "word": "而"
+      },
+      {
+        "confidence": 0.9558638,
+        "endTime": 13.505126,
+        "startTime": 13.365126,
+        "word": "又"
+      },
+      {
+        "confidence": 0.8641235,
+        "endTime": 13.715126,
+        "startTime": 13.505126,
+        "word": "挤"
+      },
+      {
+        "confidence": 0.87476325,
+        "endTime": 13.895126,
+        "startTime": 13.715126,
+        "word": "满，"
+      },
+      {
+        "confidence": 0.9652153,
+        "endTime": 14.2351265,
+        "startTime": 14.075126,
+        "word": "白"
+      },
+      {
+        "confidence": 0.8813573,
+        "endTime": 14.375126,
+        "startTime": 14.2351265,
+        "word": "忙"
+      },
+      {
+        "confidence": 0.9307815,
+        "endTime": 14.495126,
+        "startTime": 14.375126,
+        "word": "一"
+      },
+      {
+        "confidence": 0.96235895,
+        "endTime": 14.715126,
+        "startTime": 14.495126,
+        "word": "场。"
+      }
+    ]
+  }
+]
