@@ -1,6 +1,6 @@
 from pathlib import Path
 import base64,json,os,re,urllib.request,urllib.error,uuid,wave,sys,hashlib
-from voiceover_utils import captions_for, clean, normalize_word_times, split_golden_prefix
+from voiceover_utils import caption_plan_signature, captions_for, clean, normalize_word_times, rebuild_cached_captions, split_golden_prefix
 # 技能目录（放 .env）与 Remotion 工程目录（放 src/ 与 public/）是两个地方，此前混成一个 ROOT，
 # 结果音频落在 quandao-video/public/，而 staticFile() 只读 video/public/。
 SKILL_DIR=Path(__file__).resolve().parents[1]
@@ -75,8 +75,27 @@ for shot_index,shot in enumerate(project['shots']):
  if is_first_shot:
   signature_input.append({'strategy':'golden3s-piecewise-v1','segments':[{'text':t,'rate':r,'kind':k} for t,r,k in segment_plan]})
  signature=hashlib.sha256(json.dumps(signature_input,ensure_ascii=False).encode()).hexdigest()
- if out.exists() and meta['shots'].get(str(shot['id']),{}).get('signature')==signature:
-  print('Reuse voice',shot['id'],flush=True);continue
+ caption_signature=caption_plan_signature(shot.get('captions'))
+ shot_meta=meta['shots'].get(str(shot['id']),{})
+ if out.exists() and shot_meta.get('signature')==signature:
+  timing_path=out.with_suffix('.timestamps.json')
+  if timing_path.exists():
+   if shot_meta.get('captionSignature')==caption_signature:
+    print('Reuse voice + captions',shot['id'],flush=True);continue
+   try:
+    timing_data=json.loads(timing_path.read_text(encoding='utf-8'))
+    refreshed=rebuild_cached_captions(shot['voice'],timing_data,shot.get('captions'))
+    shot_meta['duration']=float(timing_data['duration'])
+    shot_meta['captions']=refreshed
+    shot_meta['captionSignature']=caption_signature
+    meta['shots'][str(shot['id'])]=shot_meta
+    meta['status']='ready' if all(str(s['id']) in meta['shots'] and (PROJECT/'public'/s['audio']).exists() for s in project['shots']) else 'in-progress'
+    metaPath.write_text(json.dumps(meta,ensure_ascii=False,indent=2),encoding='utf-8')
+    print('Reuse voice; refreshed captions from cached word timings',shot['id'],flush=True);continue
+   except (OSError,ValueError,TypeError,KeyError,RuntimeError,json.JSONDecodeError) as e:
+    print(f'Cannot reflow cached captions for shot {shot["id"]}: {e}; regenerate this voice track.',flush=True)
+  else:
+   print(f'Missing cached word timings for shot {shot["id"]}; regenerate this voice track.',flush=True)
 
  audio_parts=[];segments_for_meta=[];provider_sentences=[];all_words=[];offset=0.0
  for segment_no,(segment_text,segment_rate,kind) in enumerate(segment_plan,1):
@@ -102,7 +121,7 @@ for shot_index,shot in enumerate(project['shots']):
   'duration':duration,'wordTimelineUnit':'seconds','segments':segments_for_meta,
   'providerSentencesRaw':provider_sentences,'words':all_words
  },ensure_ascii=False,indent=2),encoding='utf-8')
- meta['shots'][str(shot['id'])]={'duration':duration,'captions':captions,'signature':signature,'speaker':speaker}
+ meta['shots'][str(shot['id'])]={'duration':duration,'captions':captions,'signature':signature,'captionSignature':caption_signature,'speaker':speaker}
  meta['status']='ready' if all(str(s['id']) in meta['shots'] and (PROJECT/'public'/s['audio']).exists() for s in project['shots']) else 'in-progress'
  metaPath.write_text(json.dumps(meta,ensure_ascii=False,indent=2),encoding='utf-8')
  print(f'Voice {shot["id"]}: {duration:.2f}s, {len(captions)} captions',flush=True)
