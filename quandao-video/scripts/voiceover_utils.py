@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 """Pure helpers for piecewise TTS; --self-test runs offline and needs no API credentials."""
+import hashlib
+import json
 import re
 import sys
 from typing import Iterable, Mapping, Sequence
@@ -61,6 +63,21 @@ def split_golden_prefix(text: str, base_rate: int, fast_rate: int,
     if prefix + suffix != text:
         raise AssertionError("TTS segmentation must preserve the exact source text")
     return prefix, suffix
+
+
+def caption_plan_signature(plan) -> str:
+    """Stable signature for the subtitle split plan; None means automatic segmentation."""
+    payload = json.dumps(list(plan) if plan is not None else None, ensure_ascii=False, separators=(",", ":"))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def rebuild_cached_captions(text: str, timestamp_data: Mapping, plan=None) -> list[dict]:
+    """Rebuild subtitle slices from cached word timings without calling TTS again."""
+    duration = float(timestamp_data["duration"])
+    words = timestamp_data["words"]
+    if duration <= 0 or not isinstance(words, list) or not words:
+        raise RuntimeError("cached word timing is missing or invalid")
+    return captions_for(text, words, duration, plan)
 
 
 def normalize_word_times(words: Iterable[Mapping], duration_seconds: float) -> list[dict]:
@@ -155,6 +172,16 @@ def self_test() -> int:
     except RuntimeError:
         rejected = True
     checks.append(("错误字幕计划会被拒绝", rejected))
+    timing_data = {"duration": 1.2, "words": [
+        {"word":"你","startTime":0.0,"endTime":0.3},
+        {"word":"好","startTime":0.3,"endTime":0.6},
+        {"word":"世","startTime":0.6,"endTime":0.9},
+        {"word":"界","startTime":0.9,"endTime":1.2},
+    ]}
+    cached_a = rebuild_cached_captions("你好世界", timing_data, ["你好", "世界"])
+    cached_b = rebuild_cached_captions("你好世界", timing_data, ["你", "好世", "界"])
+    checks.append(("字幕计划变更时可仅凭缓存词级时间戳重新切分", [c["text"] for c in cached_b] == ["你", "好世", "界"] and cached_a != cached_b))
+    checks.append(("不同字幕计划具有不同缓存签名", caption_plan_signature(["你好","世界"]) != caption_plan_signature(["你","好世","界"]))
     raw = "这是一段没有标点的中文文本" * 4
     p2, s2 = split_golden_prefix(raw, 0, 30)
     checks.append(("无标点回退分段保留原文", p2 + s2 == raw and bool(p2) and bool(s2)))
