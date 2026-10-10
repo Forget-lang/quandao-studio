@@ -227,10 +227,10 @@ const manualTasks = R.length + promptGuide.length + guide.length;
 const manualReviewConfirmed = argv.includes('--confirm-manual-review');
 if (manualTasks && !manualReviewConfirmed) {
   console.log(`结论：硬性机检未发现拦截项，但仍有 ${manualTasks} 项人工复核任务；退出码 2 表示待人工确认，不可直接发布。`);
-  console.log('逐图完成人工检查并将结论写入本片导演稿验收记录后，才可带 --confirm-manual-review 重新运行。');
+  console.log('仅在已处理对应提示词／文案风险派单并记录依据后，才可带 --confirm-manual-review 重新运行；该参数不会替代视觉验收.json。');
   process.exit(2);
 }
 if (manualTasks && manualReviewConfirmed) {
-  console.log(`人工复核由操作者显式确认（${manualTasks} 项）；请确认逐图结论已写入本片导演稿验收记录。`);
+  console.log(`提示词／文案风险派单由操作者显式确认（${manualTasks} 项）；该确认不代表图片像素已验收。`);
 }
 console.log(manualTasks ? '结论：词面机检通过，提示词风险派单由操作者确认；逐图视觉验收记录完整。' : '结论：词面机检通过，逐图视觉验收记录完整（' + visualReview.exceptions.length + ' 项本片例外）。脚本本身不判断图片语义。');
