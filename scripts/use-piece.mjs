@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -46,11 +47,18 @@ for (const need of ['project.json', 'voiceover-meta.json', 'images', 'audio']) {
 
 fs.mkdirSync(PUB, { recursive: true });
 fs.mkdirSync(path.join(PUB, 'fonts'), { recursive: true });
-if (!fs.existsSync(FONT_DST)) {
-  if (!fs.existsSync(FONT_SRC)) { console.error(`缺字体 ${FONT_SRC}，技能 §4.7 是硬门槛，停。`); process.exit(1); }
-  fs.copyFileSync(FONT_SRC, FONT_DST);
-  console.log('字体已按 §4.7 第 3 步拷入工程 public/fonts/');
+if (!fs.existsSync(FONT_SRC)) {
+  console.error(`缺字体源文件：${FONT_SRC}，技能 §4.7 是硬门槛，停。`);
+  process.exit(1);
 }
+const sha256File = (file) => createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+const sourceHash = sha256File(FONT_SRC);
+const targetHash = fs.existsSync(FONT_DST) ? sha256File(FONT_DST) : null;
+if (targetHash !== sourceHash) {
+  fs.copyFileSync(FONT_SRC, FONT_DST);
+  console.log(targetHash ? '工程字幕字体与唯一源文件不同，已同步覆盖。' : '字体已按 §4.7 第 3 步拷入工程 public/fonts/');
+}
+
 
 for (const [sub, dst] of [
   ['project.json', path.join(SRC, 'project.json')],
