@@ -39,9 +39,9 @@
 | 3 出图 | 按风险挑选代表性样图；每张图逐张验收并记录 | 人眼 | `quandao-video` §4.8–§4.9、§5.10A、§9.0、§十九 ＋本文件 §六 |
 | 4 素材齐 | 素材路径、真实文件格式／扩展名、像素尺寸、音频与字幕时间轴对账 | `node quandao-video/scripts/preflight.mjs` | §七 开头 |
 | 5 渲染 | 逐图视觉验收记录完整且无待办／失败后，才允许渲染 | `node scripts/check-visual-review.mjs --piece <片名>`；`node scripts/render-piece.mjs --piece <片名>` | `quandao-video` §4.9 |
-| 6 验收 | 词面机检＋文档漂移＋画面人判 | `node scripts/check-piece.mjs` ＋ `node scripts/check-docs.mjs` | §七 |
+| 6 验收 | 文本机检＋文档漂移＋成片全片复核 | `node scripts/check-piece.mjs` ＋ `node scripts/check-delivery-review.mjs --piece <片名>` ＋ `node scripts/check-docs.mjs` | `quandao-video` §4.9–4.10 ＋ §七 |
 
-**顺序必须保留：素材技术预检 → 逐图视觉验收闸门 → 官方渲染命令 → 文本检查与完整视听验收。** CI 绿灯只证明机器能够验证的约束通过，不代表它看懂了图片语义或完整观看了成片。
+**顺序必须保留：素材技术预检 → 逐图视觉验收闸门 → 官方渲染命令 → 文本检查与完整视听验收 → 发布动作。** 渲染后必须完整播放最终 MP4，填写成片验收记录并通过 `check-delivery-review.mjs`；细则见 `quandao-video` §4.10。CI 绿灯只证明机器能够验证的约束通过，不代表它看懂了图片语义或完整观看了成片。
 
 改完文档跑 `node scripts/check-docs.mjs`：判红五类——**同一读数出现在两个文件**、**点名的路径或节号不存在**、**缺陷账条数与表格对不上**、**作废话头回流到现行文档**、**制作层重复复制统一视觉风格正文**（风格唯一真源见 `mac-director` §10.12）；另报一类清单：**同一份文件里自己说两遍的行**。路径检查会验证真实文件与节号；对 `.gitignore` 明确排除的片目录、本地密钥和由 `use-piece.mjs` 生成的运行时文件，只允许在工作区尚未生成时缺席，不把正常干净克隆误判为断链。扫描面由目录派生，新增文档自动进检查（所以不用维护"文档清单"第二份）。带 `--self-test` 验证各判红检测器、已知可缺席路径和重复项清单。
 
@@ -124,7 +124,7 @@ node scripts/sync-redlines.mjs
 所有片产物放 `pieces/<日期>-<题材短名>/`：
 
 ```
-导演稿.md  project.json  voiceover-meta.json  images/  audio/  成片.mp4  发布文案.md
+导演稿.md  project.json  voiceover-meta.json  images/  audio/  视觉验收.json  成片.mp4  成片验收.json  发布文案.md
 ```
 
 `video/src/project.json`、`video/src/voiceover-meta.json`、`video/public/images`、`video/public/audio` **全是生成物**，切哪条片就跑：
@@ -155,7 +155,7 @@ node scripts/render-piece.mjs
 
 按 `quandao-video` §4.9 的逐图验收项复核原图；任何硬性要求不符时标记失败，不得因为“整体看起来不错”而放行。将每张图的检查状态、复核人、日期、证据和结论写入本片 `视觉验收.json`。用户明确接受的偏差只能作为本片例外单独登记；不能把例外写成通用规范。跑偏时**缩短提示词重生**，错图不得当后续参考。
 
-## 七、跑完必须过的三道验收
+## 七、跑完必须过的验收与发布闸门
 
 **进这三道之前先跑素材完整性检查**：
 
@@ -195,15 +195,19 @@ node scripts/check-visual-review.mjs --piece <片名>
 
 这条纪律要落到每张含码图形的出图检查里，并写进该片 `导演稿.md` 的验收段。
 
-**④ 发布动作**
+**⑤ 发布动作**
 
 发布时在平台的创作端勾「内容由 AI 生成」声明——裁掉画面上那个角标，不等于免掉这个动作。
 
+**④ 成片全片复核（不可只抽关键帧）**
+
+完整播放当前最终 MP4，从头到尾核对口播、字幕、节奏、画面切换和业务表达；填写片目录的 `成片验收.json`，执行 `node scripts/check-delivery-review.mjs --piece <片名>`。它会核对逐图视觉验收状态与当前 MP4 的 SHA-256；缺记录、待验、失败或哈希不一致都不能进入发布。具体检查项唯一详见 `quandao-video` §4.10。
+
 ## 八、维护
 
-改完文档跑 `node scripts/check-docs.mjs`（漂移机检，见 §〇）。改过 TTS 分段／字幕时间轴后另跑 `python quandao-video/scripts/voiceover_utils.py --self-test`；它不调用语音 API。改过提示层扫描后跑 `node scripts/check-piece.mjs --self-test`。新发现的坑记进 `缺陷账.md` 一行，改完删掉那行。**这张表应该越跑越短**；只在变长就说明我们在重造一套 promotion。
+改完文档跑 `node scripts/check-docs.mjs`（漂移机检，见 §〇）。改过 TTS 分段／字幕时间轴后另跑 `python quandao-video/scripts/voiceover_utils.py --self-test`；它不调用语音 API。改过提示层扫描后跑 `node scripts/check-piece.mjs --self-test`；改过逐图验收闸门跑 `node scripts/check-visual-review.mjs --self-test`；改过成片验收闸门跑 `node scripts/check-delivery-review.mjs --self-test`。新发现的坑记进 `缺陷账.md` 一行，改完删掉那行。**这张表应该越跑越短**；只在变长就说明我们在重造一套 promotion。
 
-**实测证据要落盘**：为验证某项能力而出的压测图，当场存进本片 `images/`，不要只留在宿主给的临时目录。结论必须能被下一个人重看——否则只能重做一遍才能复核（已经踩过一次：两张中文压测图当时没留，现在只能用"下一条片前 2～3 张兼作重新取证"来补）。
+**实测证据要落盘**：为验证某项能力而出的压测图，当场存进本片 `images/`，不要只留在宿主给的临时目录。结论必须能被下一个人重看——否则只能重做一遍才能复核（已经踩过一次：两张中文压测图当时没留，现在只能在下一条片制作前，按 `quandao-video` §4.8 风险选样规则重新取证）。
 
 **换口径必须同批登记退役话头**：新方案顶掉旧方案时，把旧写法加进 `spec/退役.json`（旧话头＋为什么作废＋改成什么），`check-docs.mjs` 第④项会扫描所有现行 Markdown 规则文档与当前片产物。只改描述不登记＝下一个人从别的文件里又把旧话抄回来。
 
