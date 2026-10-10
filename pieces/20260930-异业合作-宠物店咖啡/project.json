@@ -18,8 +18,24 @@
         "怎么变成一个券包？"
       ],
       "audio": "audio/s1.wav",
-      "images": ["images/f1-1.png", "images/f1-2.png", "images/f1-3.png", "images/f1-4.png"],
-      "imageWeights": [0.22, 0.2, 0.28, 0.3]
+      "images": [
+        "images/f1-1.png",
+        "images/f1-2.png",
+        "images/f1-3.png",
+        "images/f1-4.png"
+      ],
+      "imageWeights": [
+        0.22,
+        0.2,
+        0.28,
+        0.3
+      ],
+      "imageCrop": [
+        true,
+        true,
+        true,
+        true
+      ]
     },
     {
       "id": 2,
@@ -37,8 +53,18 @@
         "两边换。"
       ],
       "audio": "audio/s2.wav",
-      "images": ["images/f2-1.png", "images/f2-2.png"],
-      "imageWeights": [0.5, 0.5]
+      "images": [
+        "images/f2-1.png",
+        "images/f2-2.png"
+      ],
+      "imageWeights": [
+        0.5,
+        0.5
+      ],
+      "imageCrop": [
+        true,
+        true
+      ]
     },
     {
       "id": 3,
@@ -56,8 +82,18 @@
         "又有空闲的人请进店坐下。"
       ],
       "audio": "audio/s3.wav",
-      "images": ["images/f3-1.png", "images/f3-2.png"],
-      "imageWeights": [0.5, 0.5]
+      "images": [
+        "images/f3-1.png",
+        "images/f3-2.png"
+      ],
+      "imageWeights": [
+        0.5,
+        0.5
+      ],
+      "imageCrop": [
+        true,
+        true
+      ]
     },
     {
       "id": 4,
@@ -76,8 +112,21 @@
         "就算核销完成。"
       ],
       "audio": "audio/s4.wav",
-      "images": ["images/f4-1.png", "images/f4-2.png", "images/f4-3.png"],
-      "imageWeights": [0.28, 0.34, 0.38]
+      "images": [
+        "images/f4-1.png",
+        "images/f4-2.png",
+        "images/f4-3.png"
+      ],
+      "imageWeights": [
+        0.28,
+        0.34,
+        0.38
+      ],
+      "imageCrop": [
+        true,
+        true,
+        true
+      ]
     },
     {
       "id": 5,
@@ -94,8 +143,18 @@
         "是他真打算用的。"
       ],
       "audio": "audio/s5.wav",
-      "images": ["images/f5-1.png", "images/f5-2.png"],
-      "imageWeights": [0.5, 0.5]
+      "images": [
+        "images/f5-1.png",
+        "images/f5-2.png"
+      ],
+      "imageWeights": [
+        0.5,
+        0.5
+      ],
+      "imageCrop": [
+        true,
+        true
+      ]
     },
     {
       "id": 6,
@@ -114,8 +173,15 @@
         "别硬撑。"
       ],
       "audio": "audio/s6.wav",
-      "images": ["images/f6-1.png"],
-      "imageWeights": [1]
+      "images": [
+        "images/f6-1.png"
+      ],
+      "imageWeights": [
+        1
+      ],
+      "imageCrop": [
+        true
+      ]
     },
     {
       "id": 7,
@@ -134,8 +200,18 @@
         "账各算各的。"
       ],
       "audio": "audio/s7.wav",
-      "images": ["images/f7-1.png", "images/f7-2.png"],
-      "imageWeights": [0.45, 0.55]
+      "images": [
+        "images/f7-1.png",
+        "images/f7-2.png"
+      ],
+      "imageWeights": [
+        0.45,
+        0.55
+      ],
+      "imageCrop": [
+        true,
+        true
+      ]
     },
     {
       "id": 8,
@@ -147,8 +223,15 @@
         "变成隔壁店里一次到店的理由。"
       ],
       "audio": "audio/s8.wav",
-      "images": ["images/f8-1.png"],
-      "imageWeights": [1]
+      "images": [
+        "images/f8-1.png"
+      ],
+      "imageWeights": [
+        1
+      ],
+      "imageCrop": [
+        true
+      ]
     }
   ],
   "overlayMap": {}
