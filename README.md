@@ -22,12 +22,13 @@ node scripts/use-piece.mjs <片名>
 node scripts/check-reuse.mjs --piece <片名>
 # 完成图片、TTS 与字幕数据后
 node quandao-video/scripts/preflight.mjs
+node scripts/check-visual-review.mjs --piece <片名>
 node scripts/render-piece.mjs --piece <片名>
 node scripts/check-piece.mjs --piece <片名>
 node scripts/check-docs.mjs
 ```
 
-check-piece.mjs 退出码：0 表示硬性机检无问题且无待审派单（或人工复核已显式确认）；1 表示硬性失败；2 表示仍有人工复核任务。只有在逐张检查最终图片／成片、并将结论写入导演稿验收记录后，才使用 --confirm-manual-review 结束人工复核闸门。
+check-piece.mjs 退出码：0 表示文本检查通过且逐图视觉验收记录完整；1 表示硬性失败、视觉验收失败或验收记录结构错误；2 表示仍有提示词人工复核任务或视觉验收待办。--confirm-manual-review 只能确认文本提示层派单，不能绕过视觉验收闸门。图片本身必须先由人逐张检查，并将结论写入片目录的视觉验收.json。
 
 字幕字体的唯一源文件是 quandao-video/font/LXGWWenKai-Medium.ttf；工程副本由 scripts/use-piece.mjs 复制和校验。密钥放在本地 quandao-video/.env，严禁提交。
 
@@ -41,6 +42,7 @@ node scripts/check-docs.mjs --self-test
 node scripts/check-piece.mjs --self-test
 node scripts/check-reuse.mjs --self-test
 node quandao-video/scripts/preflight.mjs --self-test
+node scripts/check-visual-review.mjs --self-test
 python3 quandao-video/scripts/voiceover_utils.py --self-test
 ```
 

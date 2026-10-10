@@ -36,6 +36,12 @@ function dimensionsFromBuffer(buf) {
   throw new Error('不支持或无法读取图片尺寸（仅支持 PNG/JPEG）');
 }
 const is4x3 = ({ width, height }) => width > 0 && height > 0 && width * 3 === height * 4;
+function extensionMatchesFormat(filename, format) {
+  const ext = path.extname(filename).toLowerCase();
+  if (format === 'png') return ext === '.png';
+  if (format === 'jpeg') return ext === '.jpg' || ext === '.jpeg';
+  return false;
+}
 
 function shotConfigProblems(shot) {
   const problems = [];
@@ -67,6 +73,9 @@ function selfTest() {
   const good=dimensionsFromBuffer(header(2364,1773)), bad=dimensionsFromBuffer(header(1536,1024));
   checks.push(['PNG 像素尺寸解析与 4:3 判断',good.width===2364&&good.height===1773&&is4x3(good)]);
   checks.push(['非 4:3 图片会被识别',!is4x3(bad)]);
+  checks.push(['PNG 内容必须使用 .png 扩展名',extensionMatchesFormat('images/a.png','png')]);
+  checks.push(['JPEG 内容不能伪装成 .png',!extensionMatchesFormat('images/a.png','jpeg')]);
+  checks.push(['JPEG 内容允许 .jpg 与 .jpeg',extensionMatchesFormat('images/a.jpg','jpeg')&&extensionMatchesFormat('images/a.jpeg','jpeg')]);
   checks.push(['空图片数组会被拒绝',shotConfigProblems({images:[],imageCrop:[],audio:'audio/s1.wav',voice:'x',captions:['x']}).some(x=>x.startsWith('images'))]);
   checks.push(['裁切标记必须与图片一一对应',shotConfigProblems({images:['images/a.png'],imageCrop:[],audio:'audio/s1.wav',voice:'x',captions:['x']}).some(x=>x.startsWith('imageCrop'))]);
   checks.push(['字幕计划必须与口播逐字一致',shotConfigProblems({images:['images/a.png'],imageCrop:[false],audio:'audio/s1.wav',voice:'你好',captions:['你好啊']}).some(x=>x.includes('逐字拼回'))]);
@@ -95,6 +104,7 @@ for (const s of p.shots) {
     if (asset.kind==='图片') {
       try {
         const d=dimensionsFromBuffer(fs.readFileSync(file));
+        if (!extensionMatchesFormat(asset.name, d.format)) issues.push(`镜${s.id}: 图片实际格式为 ${d.format}，但文件扩展名与格式不一致：${asset.name}`);
         if (!is4x3(d)) issues.push(`镜${s.id}: 图片比例不合格：${asset.name} = ${d.width}×${d.height}（要求严格 4:3）`);
       } catch(e) { issues.push(`镜${s.id}: 无法验收图片尺寸：${asset.name}（${e.message}）`); }
     }

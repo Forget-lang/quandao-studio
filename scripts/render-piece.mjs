@@ -35,6 +35,15 @@ if (fs.existsSync(OUT) && !argv.includes('--force')) {
   process.exit(2);
 }
 
+// 逐图视觉验收必须先通过；--confirm-manual-review 不能替代这道闸门。
+const visualGate = spawnSync(process.execPath, [path.join(ROOT, 'scripts', 'check-visual-review.mjs'), '--piece', piece], {
+  cwd: ROOT, stdio: 'inherit',
+});
+if (visualGate.status !== 0) {
+  console.error('逐图视觉验收未通过，停止渲染；请先修复图片或补齐有依据的本片例外记录。');
+  process.exit(visualGate.status || 1);
+}
+
 // 合成 ID 只在 Root.tsx 里定义一次，这里解析出来用，避免第二处字面量各改各的。
 const root = fs.readFileSync(path.join(VIDEO, 'src', 'Root.tsx'), 'utf8');
 const id = (root.match(/COMPOSITION_ID\s*=\s*'([^']+)'/) || [])[1];

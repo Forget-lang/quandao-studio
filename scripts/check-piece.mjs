@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validateVisualReview, VISUAL_REVIEW_FILENAME } from './check-visual-review.mjs';
 
 /**
  * check-piece.mjs —— 本线（quandao-studio）的词面机检 + 画面人判派单
@@ -202,9 +203,25 @@ guide.forEach((g) => console.log(`   导演稿.md:${g.line}  触发词[${g.words
 if (!guide.length) console.log('   无');
 console.log();
 
-if (H.length || titleProblems.length || brandProblems.length) {
+const visualReview = validateVisualReview(DIR, pj);
+console.log('── ⑤ 逐图视觉验收记录（' + VISUAL_REVIEW_FILENAME + '）');
+visualReview.errors.forEach((x) => console.error('   [记录结构错误] ' + x));
+visualReview.failed.forEach((x) => console.error('   [视觉不通过] ' + x));
+visualReview.pending.forEach((x) => console.error('   [待验收] ' + x));
+visualReview.exceptions.forEach((x) => console.warn('   [本片例外] ' + x.path + ': ' + x.deviation));
+if (!visualReview.errors.length && !visualReview.failed.length && !visualReview.pending.length) {
+  console.log('   记录完整：' + visualReview.exceptions.length + ' 项本片例外');
+}
+console.log('   注意：本脚本验证验收记录，不会自动识别图片中的人物、动作或文字是否正确。');
+console.log();
+
+if (H.length || titleProblems.length || brandProblems.length || visualReview.errors.length || visualReview.failed.length) {
   console.error(`结论：不通过。词面硬禁 ${H.length} 处、标题门槛 ${titleProblems.length} 处、品牌口径 ${brandProblems.length} 处。`);
   process.exit(1);
+}
+if (visualReview.pending.length) {
+  console.error('结论：视觉验收记录仍有待验图片；即使使用 --confirm-manual-review 也不能绕过此闸门。');
+  process.exit(2);
 }
 const manualTasks = R.length + promptGuide.length + guide.length;
 const manualReviewConfirmed = argv.includes('--confirm-manual-review');
@@ -216,4 +233,4 @@ if (manualTasks && !manualReviewConfirmed) {
 if (manualTasks && manualReviewConfirmed) {
   console.log(`人工复核由操作者显式确认（${manualTasks} 项）；请确认逐图结论已写入本片导演稿验收记录。`);
 }
-console.log(manualTasks ? '结论：硬性机检通过，人工复核已由操作者确认。' : '结论：词面无硬禁，无提示层待审项，无画面待判项。');
+console.log(manualTasks ? '结论：词面机检通过，提示词风险派单由操作者确认；逐图视觉验收记录完整。' : '结论：词面机检通过，逐图视觉验收记录完整（' + visualReview.exceptions.length + ' 项本片例外）。脚本本身不判断图片语义。');

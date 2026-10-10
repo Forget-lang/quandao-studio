@@ -20,9 +20,9 @@
       ],
       "audio": "audio/s1.wav",
       "images": [
-        "images/f1-1.png",
-        "images/f1-2.png",
-        "images/f1-3.png"
+        "images/f1-1.jpg",
+        "images/f1-2.jpg",
+        "images/f1-3.jpg"
       ],
       "imageWeights": [
         0.33,
@@ -50,7 +50,7 @@
       ],
       "audio": "audio/s2.wav",
       "images": [
-        "images/f2-1.png"
+        "images/f2-1.jpg"
       ],
       "imageWeights": [
         1
@@ -75,7 +75,7 @@
       ],
       "audio": "audio/s3.wav",
       "images": [
-        "images/f3-1.png"
+        "images/f3-1.jpg"
       ],
       "imageWeights": [
         1
@@ -99,7 +99,7 @@
       ],
       "audio": "audio/s4.wav",
       "images": [
-        "images/f4-1.png"
+        "images/f4-1.jpg"
       ],
       "imageWeights": [
         1
@@ -124,8 +124,8 @@
       ],
       "audio": "audio/s5.wav",
       "images": [
-        "images/f5-1.png",
-        "images/f5-2.png"
+        "images/f5-1.jpg",
+        "images/f5-2.jpg"
       ],
       "imageWeights": [
         0.5,
@@ -151,7 +151,7 @@
       ],
       "audio": "audio/s6.wav",
       "images": [
-        "images/f6-1.png"
+        "images/f6-1.jpg"
       ],
       "imageWeights": [
         1

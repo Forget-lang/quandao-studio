@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "piece": "20261009-宠物洗护-体验券接次卡",
+  "images": [
+    {
+      "path": "images/f1-1.jpg",
+      "status": "pending",
+      "note": "旧记录承认动作方向偏离进店叙事；需按新版任务/动作标准重新验收。"
+    },
+    {
+      "path": "images/f1-2.jpg",
+      "status": "pending",
+      "note": "旧记录确认洗护中的比熊仍戴胸背，与提示词冲突；虽有历史接受记录，仍须按新版字段显式登记本片例外。"
+    },
+    {
+      "path": "images/f1-3.jpg",
+      "status": "pending",
+      "note": "旧记录确认出现额外比熊，与明确禁止项冲突；历史接受不自动成为今后规则。"
+    },
+    {
+      "path": "images/f2-1.jpg",
+      "status": "pending",
+      "note": "旧记录称“体验券”文字正确；仍需按新版完整逐图检查项复核。"
+    },
+    {
+      "path": "images/f3-1.jpg",
+      "status": "pending",
+      "note": "导演稿要求卡片精确显示“下次洗护”，归档图中的卡片为空白；不得沿用旧的通过结论。"
+    },
+    {
+      "path": "images/f4-1.jpg",
+      "status": "pending",
+      "note": "旧记录仅有摘要式通过结论；需按新版项目复核人物、动作、画内字和构图。"
+    },
+    {
+      "path": "images/f5-1.jpg",
+      "status": "pending",
+      "note": "旧记录称概念卡文字不可读；需确认导演稿对此图的文字要求和实际画面一致。"
+    },
+    {
+      "path": "images/f5-2.jpg",
+      "status": "pending",
+      "note": "旧记录称“洗护次卡”准确；仍需按新版完整逐图检查项复核。"
+    },
+    {
+      "path": "images/f6-1.jpg",
+      "status": "pending",
+      "note": "旧记录允许一处不可读残字，但提示词要求不出现画内文字；需修复或取得只限本片的明确例外。"
+    }
+  ]
+}
