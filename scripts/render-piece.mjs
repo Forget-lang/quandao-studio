@@ -94,4 +94,4 @@ if (r.status !== 0) { console.error(`渲染失败（退出码 ${r.status}），�
 const size = fs.statSync(OUT).size;
 if (size < 1024 * 100) console.warn(`警告：成片只有 ${(size / 1024).toFixed(0)} KB，几乎肯定是空工程或渲染中断。`);
 console.log(`\n已归档：${path.relative(ROOT, OUT)}（${(size / 1024 / 1024).toFixed(1)} MB）`);
-console.log('下一步：node scripts/check-piece.mjs 过词面机检。');
+console.log('下一步：先完整播放最终 MP4，填写 pieces/' + piece + '/成片验收.json；再运行 node scripts/check-delivery-review.mjs --piece ' + piece + ' 与 node scripts/check-piece.mjs --piece ' + piece + '。渲染成功不等于发布验收通过。');

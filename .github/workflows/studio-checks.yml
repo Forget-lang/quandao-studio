@@ -51,6 +51,7 @@ jobs:
         run: |
           node scripts/check-piece.mjs --self-test
           node scripts/check-visual-review.mjs --self-test
+          node scripts/check-delivery-review.mjs --self-test
           node scripts/check-reuse.mjs --self-test
           node quandao-video/scripts/preflight.mjs --self-test
           python3 quandao-video/scripts/voiceover_utils.py --self-test
