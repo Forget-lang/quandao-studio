@@ -239,7 +239,7 @@ function collectSelfRepeats(docs, names) {
 function selfTest() {
   const docs = {
     'A.md': '甲文件里写 6.5%\n\n## 3.1 标题\n',
-    'B.md': '乙文件里也写 6.5%\n\n见 §99.9 和 `scripts/不存在.mjs`\n',
+    'B.md': '乙文件里也写 6.5%\n\n见 §99.9、§五 和 `scripts/不存在.mjs`\n',
     '缺陷账.md': '## 待办（3 条）\n\n| # | 问题 |\n|---|---|\n| 1 | x |\n',
   };
   const fails = [];
@@ -250,7 +250,7 @@ function selfTest() {
   if (!b.secs.includes('B.md:3  §五')) fails.push('② 没抓到不存在的中文编号节号');
   if (!b.paths.some((x) => x.includes('不存在.mjs'))) fails.push('② 没抓到断路径');
   const generatedPaths = collectBroken({
-    'A.md': '`pieces/` `quandao-video/.env` `video/src/project.json` `video/src/voiceover-meta.json` `video/public/images` `video/public/audio` `video/public/fonts/` `video/out/` `scripts/不存在.mjs`'
+    'A.md': '`pieces/` `../applet/` `quandao-video/.env` `video/src/project.json` `video/src/voiceover-meta.json` `video/public/images` `video/public/audio` `video/public/fonts/` `video/out/` `scripts/不存在.mjs`'
   }, ['A.md'], null);
   if (generatedPaths.paths.length !== 1 || !generatedPaths.paths[0].includes('不存在.mjs')) {
     fails.push('② 生成物/本地密钥路径缺席时误报，或真实断路径漏报');
