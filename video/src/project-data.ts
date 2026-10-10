@@ -10,6 +10,8 @@ export type Shot = {
   audio: string;
   images: string[];
   imageWeights?: number[];
+  /** One flag per image: true applies crop; false displays the full frame. */
+  imageCrop?: boolean[];
 };
 
 export const FPS: number = (projectJson as any).fps ?? 30;
@@ -63,7 +65,9 @@ export const imageSegments = (s: Shot) => {
   return s.images.map((img, i) => {
     const from = acc;
     acc += i === weights.length - 1 ? total - acc : Math.round((weights[i] / sum) * total);
-    return { img, from, durationInFrames: Math.max(1, acc - from) };
+    // Undefined is a legacy fallback; preflight requires an explicit flag for every current image.
+    const crop = s.imageCrop?.length === s.images.length ? s.imageCrop[i] : true;
+    return { img, crop, from, durationInFrames: Math.max(1, acc - from) };
   });
 };
 
