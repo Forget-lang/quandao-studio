@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { spawnSync } from 'node:child_process';
 
 const VIDEO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'video');
 const PUBLIC = path.join(VIDEO, 'public');
@@ -43,6 +44,110 @@ function extensionMatchesFormat(filename, format) {
   return false;
 }
 
+const TIMING_TOLERANCE_SECONDS = 0.15;
+const WORD_START_ORDER_TOLERANCE_SECONDS = 0.03;
+
+function comparableText(value) {
+  return String(value ?? '').replace(/[^\w一-鿿]/gu, '');
+}
+
+function wavDurationFromBuffer(buf) {
+  if (buf.length < 12 || buf.toString('ascii', 0, 4) !== 'RIFF' ||
+      buf.toString('ascii', 8, 12) !== 'WAVE') {
+    throw new Error('音频不是有效的 RIFF/WAVE 文件');
+  }
+  let offset = 12, byteRate = 0, dataBytes = null;
+  while (offset + 8 <= buf.length) {
+    const chunkId = buf.toString('ascii', offset, offset + 4);
+    const chunkSize = buf.readUInt32LE(offset + 4);
+    const chunkStart = offset + 8;
+    if (chunkSize > buf.length - chunkStart) throw new Error('WAV 分块长度超出文件边界');
+    if (chunkId === 'fmt ') {
+      if (chunkSize < 16) throw new Error('WAV fmt 分块长度不足');
+      byteRate = buf.readUInt32LE(chunkStart + 8);
+    } else if (chunkId === 'data') {
+      dataBytes = chunkSize;
+    }
+    offset = chunkStart + chunkSize + (chunkSize % 2);
+  }
+  if (!byteRate || dataBytes === null) throw new Error('WAV 缺少有效 fmt/data 分块');
+  const duration = dataBytes / byteRate;
+  if (!Number.isFinite(duration) || duration <= 0) throw new Error('WAV 计算出的真实时长无效');
+  return duration;
+}
+
+function audioDurationFromFile(file, filename) {
+  const ext = path.extname(filename).toLowerCase();
+  const buf = fs.readFileSync(file);
+  const isWave = buf.length >= 12 && buf.toString('ascii', 0, 4) === 'RIFF' &&
+    buf.toString('ascii', 8, 12) === 'WAVE';
+  if (ext === '.wav' || isWave) return wavDurationFromBuffer(buf);
+
+  const result = spawnSync('ffprobe', [
+    '-v', 'error', '-show_entries', 'format=duration',
+    '-of', 'default=noprint_wrappers=1:nokey=1', file
+  ], { encoding: 'utf8', timeout: 10000 });
+  if (result.error?.code === 'ENOENT') {
+    throw new Error('非 WAV 音频需要 ffprobe 才能核验真实时长；请安装 ffmpeg/ffprobe');
+  }
+  if (result.error) throw new Error(`ffprobe 无法读取音频：${result.error.message}`);
+  const duration = Number(String(result.stdout || '').trim());
+  if (result.status !== 0 || !Number.isFinite(duration) || duration <= 0) {
+    throw new Error(`ffprobe 未返回有效音频时长：${String(result.stderr || '').trim()}`);
+  }
+  return duration;
+}
+
+function timestampProblems(t, voice, audioDuration = null) {
+  const problems = [];
+  if (!t || !Number.isFinite(t.duration) || t.duration <= 0 ||
+      !Array.isArray(t.words) || !t.words.length) {
+    return ['时间戳文件缺有效 duration 或 words'];
+  }
+  if (t.wordTimelineUnit !== 'seconds') problems.push('wordTimelineUnit 必须明确标记为 seconds');
+
+  const expected = comparableText(voice);
+  const actual = comparableText(t.words.map((w) => typeof w?.word === 'string' ? w.word : '').join(''));
+  if (!expected) problems.push('当前口播不含可用于词级对齐的文字或数字');
+  else if (actual !== expected) {
+    problems.push(`词级时间戳文本与当前口播不一致（时间戳 ${actual.length} 字符，口播 ${expected.length} 字符）`);
+  }
+
+  let previousStart = null;
+  t.words.forEach((word, index) => {
+    const label = `词级时间戳第${index + 1}项`;
+    if (!word || typeof word.word !== 'string' || !word.word.trim()) {
+      problems.push(`${label}缺少有效 word 文本`);
+    }
+    const start = word?.startTime, end = word?.endTime;
+    if (!Number.isFinite(start) || !Number.isFinite(end)) {
+      problems.push(`${label}缺少有效 startTime/endTime`);
+      return;
+    }
+    if (start < -WORD_START_ORDER_TOLERANCE_SECONDS || end <= start) {
+      problems.push(`${label}时间范围无效（${start}–${end} 秒）`);
+    }
+    if (previousStart !== null && start + WORD_START_ORDER_TOLERANCE_SECONDS < previousStart) {
+      problems.push(`${label}的 startTime 倒退，词级时间轴顺序不正确`);
+    }
+    previousStart = start;
+    if (end > t.duration + TIMING_TOLERANCE_SECONDS) {
+      problems.push(`${label}结束时间超出时间戳 duration`);
+    }
+    if (Number.isFinite(audioDuration) && end > audioDuration + TIMING_TOLERANCE_SECONDS) {
+      problems.push(`${label}结束时间超出真实音频时长`);
+    }
+  });
+
+  if (Number.isFinite(audioDuration) &&
+      Math.abs(t.duration - audioDuration) > TIMING_TOLERANCE_SECONDS) {
+    problems.push(
+      `时间戳 duration ${t.duration.toFixed(3)}s 与真实音频时长 ${audioDuration.toFixed(3)}s 相差超过 ${TIMING_TOLERANCE_SECONDS.toFixed(2)}s`
+    );
+  }
+  return problems;
+}
+
 function shotConfigProblems(shot) {
   const problems = [];
   if (!Array.isArray(shot.images) || shot.images.length === 0) problems.push('images 必须是至少含一张图片的数组');
@@ -79,6 +184,25 @@ function selfTest() {
   checks.push(['空图片数组会被拒绝',shotConfigProblems({images:[],imageCrop:[],audio:'audio/s1.wav',voice:'x',captions:['x']}).some(x=>x.startsWith('images'))]);
   checks.push(['裁切标记必须与图片一一对应',shotConfigProblems({images:['images/a.png'],imageCrop:[],audio:'audio/s1.wav',voice:'x',captions:['x']}).some(x=>x.startsWith('imageCrop'))]);
   checks.push(['字幕计划必须与口播逐字一致',shotConfigProblems({images:['images/a.png'],imageCrop:[false],audio:'audio/s1.wav',voice:'你好',captions:['你好啊']}).some(x=>x.includes('逐字拼回'))]);
+  const alignedTiming={duration:1,wordTimelineUnit:'seconds',words:[
+    {word:'宠物',startTime:0.1,endTime:0.3},{word:'店。',startTime:0.3,endTime:0.5}
+  ]};
+  checks.push(['词级时间戳文本必须拼回当前口播',timestampProblems(alignedTiming,'宠物店。',1).length===0]);
+  checks.push(['词级时间戳不匹配口播时会被拒绝',timestampProblems({...alignedTiming,words:[{word:'宠物狗',startTime:0.1,endTime:0.3}]},'宠物店。',1).some(x=>x.includes('文本与当前口播不一致'))]);
+  checks.push(['词级时间戳倒序时会被拒绝',timestampProblems({...alignedTiming,words:[
+    {word:'宠物',startTime:0.4,endTime:0.6},{word:'店。',startTime:0.1,endTime:0.3}
+  ]},'宠物店。',1).some(x=>x.includes('startTime 倒退'))]);
+  checks.push(['时间戳与真实音频时长偏差过大时会被拒绝',timestampProblems(alignedTiming,'宠物店。',1.4).some(x=>x.includes('真实音频时长'))]);
+  const wavFixture=()=>{
+    const sampleRate=8000, dataBytes=sampleRate;
+    const b=Buffer.alloc(44+dataBytes);
+    b.write('RIFF',0,'ascii'); b.writeUInt32LE(36+dataBytes,4); b.write('WAVE',8,'ascii');
+    b.write('fmt ',12,'ascii'); b.writeUInt32LE(16,16); b.writeUInt16LE(1,20);
+    b.writeUInt16LE(1,22); b.writeUInt32LE(sampleRate,24); b.writeUInt32LE(sampleRate*2,28);
+    b.writeUInt16LE(2,32); b.writeUInt16LE(16,34); b.write('data',36,'ascii'); b.writeUInt32LE(dataBytes,40);
+    return b;
+  };
+  checks.push(['WAV 真实时长从 PCM 数据长度计算',Math.abs(wavDurationFromBuffer(wavFixture())-0.5)<1e-9]);
   const failed=checks.filter(([,ok])=>!ok);
   for (const [name,ok] of checks) console.log(`${ok?'PASS':'FAIL'} · ${name}`);
   console.log(`自检结果：${checks.length-failed.length}/${checks.length}`);
@@ -95,12 +219,17 @@ const issues=[];
 for (const s of p.shots) {
   for (const problem of shotConfigProblems(s)) issues.push(`镜${s.id}: ${problem}`);
   const assets=[];
+  let actualAudioDuration = null;
   if (Array.isArray(s.images)) for (const name of s.images) assets.push({name,kind:'图片'});
   if (typeof s.audio==='string'&&s.audio) assets.push({name:s.audio,kind:'音频'});
   for (const asset of assets) {
     const file=publicPath(asset.name);
     if (!file) { issues.push(`镜${s.id}: ${asset.kind}路径非法：${asset.name}`); continue; }
     if (!fs.existsSync(file)) { issues.push(`镜${s.id}: 缺少${asset.kind}：${asset.name}`); continue; }
+    if (asset.kind==='音频') {
+      try { actualAudioDuration = audioDurationFromFile(file, asset.name); }
+      catch(e) { issues.push(`镜${s.id}: 无法核验音频真实时长：${asset.name}（${e.message}）`); }
+    }
     if (asset.kind==='图片') {
       try {
         const d=dimensionsFromBuffer(fs.readFileSync(file));
@@ -115,13 +244,19 @@ for (const s of p.shots) {
   } else if (ms.captions.map(c=>String(c.text??'')).join('')!==s.voice) {
     issues.push(`镜${s.id}: voiceover-meta.json 字幕与当前口播不一致`);
   }
+  if (ms && Number.isFinite(ms.duration) && Number.isFinite(actualAudioDuration) &&
+      Math.abs(ms.duration - actualAudioDuration) > TIMING_TOLERANCE_SECONDS) {
+    issues.push(`镜${s.id}: voiceover-meta.json 时长 ${ms.duration.toFixed(3)}s 与真实音频时长 ${actualAudioDuration.toFixed(3)}s 不一致`);
+  }
   if (typeof s.audio==='string'&&s.audio) {
     const timestampName=s.audio.replace(/\.(?:wav|mp3|m4a)$/iu,'.timestamps.json'), timestampFile=publicPath(timestampName);
     if (!timestampFile||!fs.existsSync(timestampFile)) issues.push(`镜${s.id}: 缺语音词级时间戳文件：${timestampName}`);
     else {
       try {
         const t=JSON.parse(fs.readFileSync(timestampFile,'utf8'));
-        if (!Number.isFinite(t.duration)||t.duration<=0||!Array.isArray(t.words)||!t.words.length) issues.push(`镜${s.id}: 时间戳文件缺 duration 或 words：${timestampName}`);
+        for (const problem of timestampProblems(t, s.voice, actualAudioDuration)) {
+          issues.push(`镜${s.id}: ${problem}：${timestampName}`);
+        }
       } catch { issues.push(`镜${s.id}: 时间戳文件不是有效 JSON：${timestampName}`); }
     }
   }
@@ -131,4 +266,4 @@ const expected=new Set(p.shots.map(s=>String(s.id)));
 for (const id of Object.keys(m.shots||{})) if (!expected.has(id)) issues.push(`voiceover-meta.json 存在多余镜头记录：${id}`);
 if (issues.length) { console.error('素材预检不通过：\n'+[...new Set(issues)].map(x=>' - '+x).join('\n')); process.exit(1); }
 const imageCount=p.shots.reduce((n,s)=>n+s.images.length,0);
-console.log(`素材预检通过：${imageCount} 张严格 4:3 图片、${p.shots.length} 条音频、逐字对齐的字幕计划及词级时间戳均已就绪。`);
+console.log(`素材预检通过：${imageCount} 张严格 4:3 图片、${p.shots.length} 条音频；字幕与口播逐字一致，词级时间戳文本／顺序及时间戳、TTS 元数据与真实音频时长均已核对。`);
