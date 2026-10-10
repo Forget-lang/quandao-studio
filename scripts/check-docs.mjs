@@ -77,6 +77,7 @@ function collectDups(docs, names) {
 // per-piece assets, the local secret env file, and use-piece.mjs-generated runtime files.
 const MAY_BE_ABSENT_PATHS = new Set([
   'pieces',
+  '../applet',
   'quandao-video/.env',
   'video/src/project.json',
   'video/src/voiceover-meta.json',
@@ -88,7 +89,8 @@ const MAY_BE_ABSENT_PATHS = new Set([
 
 function collectBroken(docs, names, realRoot) {
   const heads = {};
-  for (const f of names) heads[f] = new Set([...docs[f].matchAll(/^#{1,6}\s+([0-9]+(?:\.[0-9]+)*[A-Z]?)/gm)].map((m) => m[1]));
+  const sectionHeading = /^#{1,6}\s+([0-9]+(?:\.[0-9]+)*[A-Z]?|[〇一二三四五六七八九十]+)(?=[、. ]|$)/gm;
+  for (const f of names) heads[f] = new Set([...docs[f].matchAll(sectionHeading)].map((m) => m[1]));
   const paths = [];
   const secs = [];
   const PATHISH = /^(\.\.?\/|video\/|scripts\/|pieces\/|mac-director\/|quandao-video\/|spec\/|components\/|pages_)/;
@@ -107,7 +109,7 @@ function collectBroken(docs, names, realRoot) {
         const hit = inDocs || !realRoot ? inDocs : existsOnDisk;
         if (!hit) paths.push(`${f}:${i + 1}  \`${raw}\``);
       }
-      for (const m of line.matchAll(/§\s*([0-9]+(?:\.[0-9]+)*[A-Z]?)/g)) {
+      for (const m of line.matchAll(/§\s*([0-9]+(?:\.[0-9]+)*[A-Z]?|[〇一二三四五六七八九十]+)/g)) {
         if (!names.some((g) => heads[g].has(m[1]))) secs.push(`${f}:${i + 1}  §${m[1]}`);
       }
     });
@@ -245,6 +247,7 @@ function selfTest() {
   if (!d.some((x) => x.tok === '6.5%')) fails.push('① 没抓到跨文件重复读数');
   const b = collectBroken(docs, ['A.md', 'B.md'], null);
   if (!b.secs.includes('B.md:3  §99.9')) fails.push('② 没抓到断节号');
+  if (!b.secs.includes('B.md:3  §五')) fails.push('② 没抓到不存在的中文编号节号');
   if (!b.paths.some((x) => x.includes('不存在.mjs'))) fails.push('② 没抓到断路径');
   const generatedPaths = collectBroken({
     'A.md': '`pieces/` `quandao-video/.env` `video/src/project.json` `video/src/voiceover-meta.json` `video/public/images` `video/public/audio` `video/public/fonts/` `video/out/` `scripts/不存在.mjs`'
