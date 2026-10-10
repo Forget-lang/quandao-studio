@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "piece": "20261010-老带新-转赠奖励",
+  "images": [
+    {
+      "path": "images/f1-1.jpg",
+      "status": "pass",
+      "sha256": "48accf7d3aa261b5038596b7d86b91f427e921a606e63444845d5f39d6fbfff1",
+      "checks": {
+        "singleScene": "pass",
+        "aspectRatio": "pass",
+        "style": "pass",
+        "characters": "pass",
+        "action": "pass",
+        "props": "pass",
+        "text": "pass",
+        "composition": "pass"
+      },
+      "reviewer": "doubao-creator",
+      "reviewedAt": "2026-10-10",
+      "evidence": "2364x1773=4:3；店主黑齐肩发+白衬衫+墨绿围裙、老顾客黑齐肩直发+浅灰蓝衬衫+深蓝牛仔裤+白帆布鞋，前台面对面；左墙镜台两椅、右侧玻璃门、木前台；无画内文字；无第三方角标。",
+      "notes": "镜1商量场景，人物与门店锚点一致。"
+    },
+    {
+      "path": "images/f1-2.jpg",
+      "status": "pass",
+      "sha256": "51096a8fae5be509f10fc972dcc0839813051a75d52bdf41cdccc1a6c180668e",
+      "checks": {
+        "singleScene": "pass",
+        "aspectRatio": "pass",
+        "style": "pass",
+        "characters": "pass",
+        "action": "pass",
+        "props": "pass",
+        "text": "pass",
+        "composition": "pass"
+      },
+      "reviewer": "doubao-creator",
+      "reviewedAt": "2026-10-10",
+      "evidence": "2364x1773=4:3；老顾客黑直发浅灰蓝衬衫递手机，朋友深棕微卷姜黄开衫双手接低头看；「券」字小卡逐字正确、仅此一字；背景为美发店内镜台/理发椅（首版误画商场，已重生）；手机屏不可读。",
+      "notes": "转赠动作，券字卡正确。"
+    },
+    {
+      "path": "images/f1-3.jpg",
+      "status": "pass",
+      "sha256": "3dfb7c44f2366a6a47ad7d5092594428464c23f8b53006c4e9b63f60f178602c",
+      "checks": {
+        "singleScene": "pass",
+        "aspectRatio": "pass",
+        "style": "pass",
+        "characters": "pass",
+        "action": "pass",
+        "props": "pass",
+        "text": "pass",
+        "composition": "pass"
+      },
+      "reviewer": "doubao-creator",
+      "reviewedAt": "2026-10-10",
+      "evidence": "2364x1773=4:3；店主持「奖励券」卡逐字正确；视线望右侧玻璃门外；空深灰理发椅在；等待感成立；无其他文字；无角标。",
+      "notes": "奖励在手人未到店。"
+    },
+    {
+      "path": "images/f2-1.jpg",
+      "status": "pass",
+      "sha256": "addd68737483735d76b909bab7a598dd02aafa399b7c58d62ddba4d1ca272301",
+      "checks": {
+        "singleScene": "pass",
+        "aspectRatio": "pass",
+        "style": "pass",
+        "characters": "pass",
+        "action": "pass",
+        "props": "pass",
+        "text": "pass",
+        "composition": "pass"
+      },
+      "reviewer": "doubao-creator",
+      "reviewedAt": "2026-10-10",
+      "evidence": "2364x1773=4:3；店主与老顾客隔前台相对；台面三卡「允许转赠」「转赠奖励」「私密发放」逐字正确；卡片为生活化道具非界面；背景镜台玻璃门；无角标。",
+      "notes": "三步设置名卡。"
+    },
+    {
+      "path": "images/f2-2.jpg",
+      "status": "pass",
+      "sha256": "8875302117dcda896037136bce541eef8800a8ba05b2d16893893308972ae7fc",
+      "checks": {
+        "singleScene": "pass",
+        "aspectRatio": "pass",
+        "style": "pass",
+        "characters": "pass",
+        "action": "pass",
+        "props": "pass",
+        "text": "pass",
+        "composition": "pass"
+      },
+      "reviewer": "doubao-creator",
+      "reviewedAt": "2026-10-10",
+      "evidence": "2364x1773=4:3；老顾客与姜黄开衫朋友并肩坐等候区递接手机；气泡「这家我常来，你也来试试」逐字正确；背景美发店镜台绿植；手机屏不可读；无角标。",
+      "notes": "转赠带备注。"
+    },
+    {
+      "path": "images/f2-3.jpg",
+      "status": "pass",
+      "sha256": "9f6ec569dcfb2d2b4cd3cb8bea63f726e064713e46b87d03b1c9b9720ee14343",
+      "checks": {
+        "singleScene": "pass",
+        "aspectRatio": "pass",
+        "style": "pass",
+        "characters": "pass",
+        "action": "pass",
+        "props": "pass",
+        "text": "pass",
+        "composition": "pass"
+      },
+      "reviewer": "doubao-creator",
+      "reviewedAt": "2026-10-10",
+      "evidence": "2364x1773=4:3；朋友披浅灰围布坐深灰理发椅，店主白衬衫墨绿围裙侧后持手机低头确认；无扫码动作特写、无二维码；无画内文字；镜台映店内。",
+      "notes": "朋友到店核销。"
+    },
+    {
+      "path": "images/f3-1.jpg",
+      "status": "pass",
+      "sha256": "1757720dac42aeca08be7c30e48baa2b58d29028378e25470dfa049d5d502851",
+      "checks": {
+        "singleScene": "pass",
+        "aspectRatio": "pass",
+        "style": "pass",
+        "characters": "pass",
+        "action": "pass",
+        "props": "pass",
+        "text": "pass",
+        "composition": "pass"
+      },
+      "reviewer": "doubao-creator",
+      "reviewedAt": "2026-10-10",
+      "evidence": "2364x1773=4:3；老顾客黑直发浅灰蓝衬衫坐长椅、手机放膝上神态安心；「转赠中」状态标签逐字正确、层级轻；背景镜台理发椅暖光；无角标。",
+      "notes": "转赠中状态。"
+    },
+    {
+      "path": "images/f3-2.jpg",
+      "status": "pass",
+      "sha256": "1a1a9e6aaff35e8d2b5a3ec86777fbccf49ca01989ba0630aaaa2464bb98c6e2",
+      "checks": {
+        "singleScene": "pass",
+        "aspectRatio": "pass",
+        "style": "pass",
+        "characters": "pass",
+        "action": "pass",
+        "props": "pass",
+        "text": "pass",
+        "composition": "pass"
+      },
+      "reviewer": "doubao-creator",
+      "reviewedAt": "2026-10-10",
+      "evidence": "2364x1773=4:3；店玻璃门外人行道三人：老顾客浅灰蓝衬衫侧身指店内，姜黄开衫朋友低头看手机微笑，浅绿上衣马尾朋友旁立且手里无手机；手机屏不可读；无二维码码牌；无画内文字。",
+      "notes": "仅首位领取示意。"
+    },
+    {
+      "path": "images/f4-1.jpg",
+      "status": "pass",
+      "sha256": "b69b344f00c80fc8280f1232da80bbf7a7b2818f91c3288aa05f5d29c6ba4b1e",
+      "checks": {
+        "singleScene": "pass",
+        "aspectRatio": "pass",
+        "style": "pass",
+        "characters": "pass",
+        "action": "pass",
+        "props": "pass",
+        "text": "pass",
+        "composition": "pass"
+      },
+      "reviewer": "doubao-creator",
+      "reviewedAt": "2026-10-10",
+      "evidence": "2364x1773=4:3；老顾客黑直发浅灰蓝衬衫持手机微笑；「奖励券」卡逐字正确、靠近手机；背景木前台镜台暖光；无角标。",
+      "notes": "奖励回到老顾客手里。"
+    },
+    {
+      "path": "images/f4-2.jpg",
+      "status": "pass",
+      "sha256": "509192b5c2638d5075b86e47e8d47ef1ae696d0e935423871f3bf5d758eec182",
+      "checks": {
+        "singleScene": "pass",
+        "aspectRatio": "pass",
+        "style": "pass",
+        "characters": "pass",
+        "action": "pass",
+        "props": "pass",
+        "text": "pass",
+        "composition": "pass"
+      },
+      "reviewer": "doubao-creator",
+      "reviewedAt": "2026-10-10",
+      "evidence": "2364x1773=4:3；店内三人三角：朋友披浅灰围布坐深灰理发椅，店主白衬衫墨绿围裙站椅旁整理工具，老顾客浅灰蓝衬衫在旁说话；左墙镜台、右侧玻璃门自然光；无剪刀接触皮肤特写；无画内文字。",
+      "notes": "门店日常全景收束。"
+    }
+  ]
+}

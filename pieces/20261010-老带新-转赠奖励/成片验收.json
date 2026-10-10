@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "piece": "20261010-老带新-转赠奖励",
+  "videoPath": "成片.mp4",
+  "status": "pass",
+  "sha256": "2ee2daf7843bda2cd28a1ef6dff8f5bd419042142d93d0443f5d3e13d4b7e63c",
+  "reviewer": "doubao-creator",
+  "reviewedAt": "2026-10-10",
+  "evidence": "成片 1080x1920、时长 52.99s（afinfo/mdls）；qlmanage 抽首帧核对：顶部抖音黄标题两行、中间4:3主画面居中、底部白字幕句末无标点。逐图视觉验收.json 10图全 pass；preflight.mjs 验证10图4:3、4条音频、字幕与口播逐字一致、词级时间戳与真实音频时长对账通过；4条 TTS 全部成功合成（s1~s4），音色 zh_female_vv_uranus_bigtts；口播与导演稿逐字一致，无二维码/扫码动作，无品牌露出，无经营结果数字。",
+  "notes": "4镜10图，转赠奖励触发点=朋友核销、受益人=原转赠老顾客；边界句诚实交代不保证人人都来。发布文案与成片内容一致。",
+  "checks": {
+    "fullPlayback": "pass",
+    "voiceover": "pass",
+    "captions": "pass",
+    "timing": "pass",
+    "titleAndSafeArea": "pass",
+    "sceneTransitions": "pass",
+    "characterAndPropContinuity": "pass",
+    "logicAndClaims": "pass",
+    "pacingAndEnding": "pass",
+    "publicationCopy": "pass"
+  }
+}

@@ -1,0 +1,694 @@
+{
+  "duration": 12.226791666666667,
+  "wordTimelineUnit": "seconds",
+  "segments": [
+    {
+      "segment": 1,
+      "kind": "normal",
+      "speech_rate": 0,
+      "start": 0.0,
+      "end": 12.226791666666667,
+      "text": "做起来就三步：先打开允许转赠，再开启转赠奖励，奖励券挑一张私密发放的。朋友到店核销之后，奖励券会发给转赠它的那位老顾客。"
+    }
+  ],
+  "providerSentencesRaw": [
+    {
+      "segment": 1,
+      "data": [
+        {
+          "phonemes": [],
+          "text": "做起来就三步：先打开允许转赠，",
+          "words": [
+            {
+              "confidence": 0.9300033,
+              "endTime": 0.495,
+              "startTime": 0.295,
+              "word": "做"
+            },
+            {
+              "confidence": 0.9203712,
+              "endTime": 0.655,
+              "startTime": 0.495,
+              "word": "起"
+            },
+            {
+              "confidence": 0.9715992,
+              "endTime": 0.785,
+              "startTime": 0.655,
+              "word": "来"
+            },
+            {
+              "confidence": 0.9788571,
+              "endTime": 0.905,
+              "startTime": 0.785,
+              "word": "就"
+            },
+            {
+              "confidence": 0.862597,
+              "endTime": 1.085,
+              "startTime": 0.905,
+              "word": "三"
+            },
+            {
+              "confidence": 0.14512582,
+              "endTime": 1.115,
+              "startTime": 1.085,
+              "word": "步："
+            },
+            {
+              "confidence": 0.9389842,
+              "endTime": 1.925,
+              "startTime": 1.695,
+              "word": "先"
+            },
+            {
+              "confidence": 0.95776415,
+              "endTime": 2.125,
+              "startTime": 1.925,
+              "word": "打"
+            },
+            {
+              "confidence": 0.8874161,
+              "endTime": 2.465,
+              "startTime": 2.125,
+              "word": "开"
+            },
+            {
+              "confidence": 0.772863,
+              "endTime": 2.615,
+              "startTime": 2.465,
+              "word": "允"
+            },
+            {
+              "confidence": 0.85282516,
+              "endTime": 2.765,
+              "startTime": 2.615,
+              "word": "许"
+            },
+            {
+              "confidence": 0.97510624,
+              "endTime": 2.975,
+              "startTime": 2.765,
+              "word": "转"
+            },
+            {
+              "confidence": 0.85352945,
+              "endTime": 3.215,
+              "startTime": 2.975,
+              "word": "赠，"
+            }
+          ]
+        },
+        {
+          "phonemes": [],
+          "text": "再开启转赠奖励，奖励券挑一张私密发放的。",
+          "words": [
+            {
+              "confidence": 0.38781515,
+              "endTime": 3.8150418,
+              "startTime": 3.7400417,
+              "word": "再"
+            },
+            {
+              "confidence": 0.65003127,
+              "endTime": 3.9150417,
+              "startTime": 3.8150418,
+              "word": "开"
+            },
+            {
+              "confidence": 0.8086301,
+              "endTime": 4.2350416,
+              "startTime": 3.9150417,
+              "word": "启"
+            },
+            {
+              "confidence": 0.92126876,
+              "endTime": 4.435042,
+              "startTime": 4.2350416,
+              "word": "转"
+            },
+            {
+              "confidence": 0.8936435,
+              "endTime": 4.6050415,
+              "startTime": 4.435042,
+              "word": "赠"
+            },
+            {
+              "confidence": 0.8816414,
+              "endTime": 4.805042,
+              "startTime": 4.6050415,
+              "word": "奖"
+            },
+            {
+              "confidence": 0.97480994,
+              "endTime": 5.0450416,
+              "startTime": 4.805042,
+              "word": "励，"
+            },
+            {
+              "confidence": 0.95452017,
+              "endTime": 5.5950418,
+              "startTime": 5.415042,
+              "word": "奖"
+            },
+            {
+              "confidence": 0.93744177,
+              "endTime": 5.745042,
+              "startTime": 5.5950418,
+              "word": "励"
+            },
+            {
+              "confidence": 0.9305872,
+              "endTime": 6.005042,
+              "startTime": 5.745042,
+              "word": "券"
+            },
+            {
+              "confidence": 0.88353217,
+              "endTime": 6.2150416,
+              "startTime": 6.005042,
+              "word": "挑"
+            },
+            {
+              "confidence": 0.9443509,
+              "endTime": 6.3150415,
+              "startTime": 6.2150416,
+              "word": "一"
+            },
+            {
+              "confidence": 0.95927227,
+              "endTime": 6.535042,
+              "startTime": 6.3150415,
+              "word": "张"
+            },
+            {
+              "confidence": 0.8695758,
+              "endTime": 6.755042,
+              "startTime": 6.535042,
+              "word": "私"
+            },
+            {
+              "confidence": 0.950454,
+              "endTime": 6.8850417,
+              "startTime": 6.755042,
+              "word": "密"
+            },
+            {
+              "confidence": 0.8988109,
+              "endTime": 7.045042,
+              "startTime": 6.8850417,
+              "word": "发"
+            },
+            {
+              "confidence": 0.9752866,
+              "endTime": 7.265042,
+              "startTime": 7.045042,
+              "word": "放"
+            },
+            {
+              "confidence": 0.9566363,
+              "endTime": 7.455042,
+              "startTime": 7.265042,
+              "word": "的。"
+            }
+          ]
+        },
+        {
+          "phonemes": [],
+          "text": "做起来就三步：先打开允许转赠，再开启转赠奖励，奖励券挑一张私密发放的。朋友到店核销之后，奖励券会发给转赠它的那位老顾客。",
+          "words": []
+        },
+        {
+          "phonemes": [],
+          "text": "朋友到店核销之后，奖励券会发给转赠它的那位老顾客。",
+          "words": [
+            {
+              "confidence": 0.88456106,
+              "endTime": 8.045083,
+              "startTime": 7.845083,
+              "word": "朋"
+            },
+            {
+              "confidence": 0.5327747,
+              "endTime": 8.125083,
+              "startTime": 8.045083,
+              "word": "友"
+            },
+            {
+              "confidence": 0.908633,
+              "endTime": 8.285083,
+              "startTime": 8.125083,
+              "word": "到"
+            },
+            {
+              "confidence": 0.87831646,
+              "endTime": 8.465083,
+              "startTime": 8.285083,
+              "word": "店"
+            },
+            {
+              "confidence": 0.96308565,
+              "endTime": 8.605083,
+              "startTime": 8.465083,
+              "word": "核"
+            },
+            {
+              "confidence": 0.9706619,
+              "endTime": 8.785083,
+              "startTime": 8.605083,
+              "word": "销"
+            },
+            {
+              "confidence": 0.9633754,
+              "endTime": 8.935083,
+              "startTime": 8.785083,
+              "word": "之"
+            },
+            {
+              "confidence": 0.97506845,
+              "endTime": 9.245083,
+              "startTime": 8.935083,
+              "word": "后，"
+            },
+            {
+              "confidence": 0.9292942,
+              "endTime": 9.555083,
+              "startTime": 9.375083,
+              "word": "奖"
+            },
+            {
+              "confidence": 0.93127155,
+              "endTime": 9.705083,
+              "startTime": 9.555083,
+              "word": "励"
+            },
+            {
+              "confidence": 0.919187,
+              "endTime": 9.945084,
+              "startTime": 9.705083,
+              "word": "券"
+            },
+            {
+              "confidence": 0.9732473,
+              "endTime": 10.095083,
+              "startTime": 9.945084,
+              "word": "会"
+            },
+            {
+              "confidence": 0.9794163,
+              "endTime": 10.305083,
+              "startTime": 10.095083,
+              "word": "发"
+            },
+            {
+              "confidence": 0.9644144,
+              "endTime": 10.495083,
+              "startTime": 10.305083,
+              "word": "给"
+            },
+            {
+              "confidence": 0.96794987,
+              "endTime": 10.725083,
+              "startTime": 10.495083,
+              "word": "转"
+            },
+            {
+              "confidence": 0.9256039,
+              "endTime": 10.925083,
+              "startTime": 10.725083,
+              "word": "赠"
+            },
+            {
+              "confidence": 0.96360236,
+              "endTime": 11.105083,
+              "startTime": 10.925083,
+              "word": "它"
+            },
+            {
+              "confidence": 0.9079573,
+              "endTime": 11.205083,
+              "startTime": 11.105083,
+              "word": "的"
+            },
+            {
+              "confidence": 0.8550235,
+              "endTime": 11.345083,
+              "startTime": 11.205083,
+              "word": "那"
+            },
+            {
+              "confidence": 0.9202172,
+              "endTime": 11.435083,
+              "startTime": 11.345083,
+              "word": "位"
+            },
+            {
+              "confidence": 0.23070014,
+              "endTime": 11.495083,
+              "startTime": 11.435083,
+              "word": "老"
+            },
+            {
+              "confidence": 0.120874405,
+              "endTime": 11.555083,
+              "startTime": 11.495083,
+              "word": "顾"
+            },
+            {
+              "confidence": 0.2080633,
+              "endTime": 11.615084,
+              "startTime": 11.555083,
+              "word": "客。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "confidence": 0.9300033,
+      "endTime": 0.495,
+      "startTime": 0.295,
+      "word": "做"
+    },
+    {
+      "confidence": 0.9203712,
+      "endTime": 0.655,
+      "startTime": 0.495,
+      "word": "起"
+    },
+    {
+      "confidence": 0.9715992,
+      "endTime": 0.785,
+      "startTime": 0.655,
+      "word": "来"
+    },
+    {
+      "confidence": 0.9788571,
+      "endTime": 0.905,
+      "startTime": 0.785,
+      "word": "就"
+    },
+    {
+      "confidence": 0.862597,
+      "endTime": 1.085,
+      "startTime": 0.905,
+      "word": "三"
+    },
+    {
+      "confidence": 0.14512582,
+      "endTime": 1.115,
+      "startTime": 1.085,
+      "word": "步："
+    },
+    {
+      "confidence": 0.9389842,
+      "endTime": 1.925,
+      "startTime": 1.695,
+      "word": "先"
+    },
+    {
+      "confidence": 0.95776415,
+      "endTime": 2.125,
+      "startTime": 1.925,
+      "word": "打"
+    },
+    {
+      "confidence": 0.8874161,
+      "endTime": 2.465,
+      "startTime": 2.125,
+      "word": "开"
+    },
+    {
+      "confidence": 0.772863,
+      "endTime": 2.615,
+      "startTime": 2.465,
+      "word": "允"
+    },
+    {
+      "confidence": 0.85282516,
+      "endTime": 2.765,
+      "startTime": 2.615,
+      "word": "许"
+    },
+    {
+      "confidence": 0.97510624,
+      "endTime": 2.975,
+      "startTime": 2.765,
+      "word": "转"
+    },
+    {
+      "confidence": 0.85352945,
+      "endTime": 3.215,
+      "startTime": 2.975,
+      "word": "赠，"
+    },
+    {
+      "confidence": 0.38781515,
+      "endTime": 3.8150418,
+      "startTime": 3.7400417,
+      "word": "再"
+    },
+    {
+      "confidence": 0.65003127,
+      "endTime": 3.9150417,
+      "startTime": 3.8150418,
+      "word": "开"
+    },
+    {
+      "confidence": 0.8086301,
+      "endTime": 4.2350416,
+      "startTime": 3.9150417,
+      "word": "启"
+    },
+    {
+      "confidence": 0.92126876,
+      "endTime": 4.435042,
+      "startTime": 4.2350416,
+      "word": "转"
+    },
+    {
+      "confidence": 0.8936435,
+      "endTime": 4.6050415,
+      "startTime": 4.435042,
+      "word": "赠"
+    },
+    {
+      "confidence": 0.8816414,
+      "endTime": 4.805042,
+      "startTime": 4.6050415,
+      "word": "奖"
+    },
+    {
+      "confidence": 0.97480994,
+      "endTime": 5.0450416,
+      "startTime": 4.805042,
+      "word": "励，"
+    },
+    {
+      "confidence": 0.95452017,
+      "endTime": 5.5950418,
+      "startTime": 5.415042,
+      "word": "奖"
+    },
+    {
+      "confidence": 0.93744177,
+      "endTime": 5.745042,
+      "startTime": 5.5950418,
+      "word": "励"
+    },
+    {
+      "confidence": 0.9305872,
+      "endTime": 6.005042,
+      "startTime": 5.745042,
+      "word": "券"
+    },
+    {
+      "confidence": 0.88353217,
+      "endTime": 6.2150416,
+      "startTime": 6.005042,
+      "word": "挑"
+    },
+    {
+      "confidence": 0.9443509,
+      "endTime": 6.3150415,
+      "startTime": 6.2150416,
+      "word": "一"
+    },
+    {
+      "confidence": 0.95927227,
+      "endTime": 6.535042,
+      "startTime": 6.3150415,
+      "word": "张"
+    },
+    {
+      "confidence": 0.8695758,
+      "endTime": 6.755042,
+      "startTime": 6.535042,
+      "word": "私"
+    },
+    {
+      "confidence": 0.950454,
+      "endTime": 6.8850417,
+      "startTime": 6.755042,
+      "word": "密"
+    },
+    {
+      "confidence": 0.8988109,
+      "endTime": 7.045042,
+      "startTime": 6.8850417,
+      "word": "发"
+    },
+    {
+      "confidence": 0.9752866,
+      "endTime": 7.265042,
+      "startTime": 7.045042,
+      "word": "放"
+    },
+    {
+      "confidence": 0.9566363,
+      "endTime": 7.455042,
+      "startTime": 7.265042,
+      "word": "的。"
+    },
+    {
+      "confidence": 0.88456106,
+      "endTime": 8.045083,
+      "startTime": 7.845083,
+      "word": "朋"
+    },
+    {
+      "confidence": 0.5327747,
+      "endTime": 8.125083,
+      "startTime": 8.045083,
+      "word": "友"
+    },
+    {
+      "confidence": 0.908633,
+      "endTime": 8.285083,
+      "startTime": 8.125083,
+      "word": "到"
+    },
+    {
+      "confidence": 0.87831646,
+      "endTime": 8.465083,
+      "startTime": 8.285083,
+      "word": "店"
+    },
+    {
+      "confidence": 0.96308565,
+      "endTime": 8.605083,
+      "startTime": 8.465083,
+      "word": "核"
+    },
+    {
+      "confidence": 0.9706619,
+      "endTime": 8.785083,
+      "startTime": 8.605083,
+      "word": "销"
+    },
+    {
+      "confidence": 0.9633754,
+      "endTime": 8.935083,
+      "startTime": 8.785083,
+      "word": "之"
+    },
+    {
+      "confidence": 0.97506845,
+      "endTime": 9.245083,
+      "startTime": 8.935083,
+      "word": "后，"
+    },
+    {
+      "confidence": 0.9292942,
+      "endTime": 9.555083,
+      "startTime": 9.375083,
+      "word": "奖"
+    },
+    {
+      "confidence": 0.93127155,
+      "endTime": 9.705083,
+      "startTime": 9.555083,
+      "word": "励"
+    },
+    {
+      "confidence": 0.919187,
+      "endTime": 9.945084,
+      "startTime": 9.705083,
+      "word": "券"
+    },
+    {
+      "confidence": 0.9732473,
+      "endTime": 10.095083,
+      "startTime": 9.945084,
+      "word": "会"
+    },
+    {
+      "confidence": 0.9794163,
+      "endTime": 10.305083,
+      "startTime": 10.095083,
+      "word": "发"
+    },
+    {
+      "confidence": 0.9644144,
+      "endTime": 10.495083,
+      "startTime": 10.305083,
+      "word": "给"
+    },
+    {
+      "confidence": 0.96794987,
+      "endTime": 10.725083,
+      "startTime": 10.495083,
+      "word": "转"
+    },
+    {
+      "confidence": 0.9256039,
+      "endTime": 10.925083,
+      "startTime": 10.725083,
+      "word": "赠"
+    },
+    {
+      "confidence": 0.96360236,
+      "endTime": 11.105083,
+      "startTime": 10.925083,
+      "word": "它"
+    },
+    {
+      "confidence": 0.9079573,
+      "endTime": 11.205083,
+      "startTime": 11.105083,
+      "word": "的"
+    },
+    {
+      "confidence": 0.8550235,
+      "endTime": 11.345083,
+      "startTime": 11.205083,
+      "word": "那"
+    },
+    {
+      "confidence": 0.9202172,
+      "endTime": 11.435083,
+      "startTime": 11.345083,
+      "word": "位"
+    },
+    {
+      "confidence": 0.23070014,
+      "endTime": 11.495083,
+      "startTime": 11.435083,
+      "word": "老"
+    },
+    {
+      "confidence": 0.120874405,
+      "endTime": 11.555083,
+      "startTime": 11.495083,
+      "word": "顾"
+    },
+    {
+      "confidence": 0.2080633,
+      "endTime": 11.615084,
+      "startTime": 11.555083,
+      "word": "客。"
+    }
+  ]
+}

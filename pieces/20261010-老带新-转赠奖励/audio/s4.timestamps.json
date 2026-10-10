@@ -1,0 +1,754 @@
+{
+  "duration": 11.805916666666667,
+  "wordTimelineUnit": "seconds",
+  "segments": [
+    {
+      "segment": 1,
+      "kind": "normal",
+      "speech_rate": 0,
+      "start": 0.0,
+      "end": 11.805916666666667,
+      "text": "奖励发回给转赠的老顾客：谁把人带进来，奖励给谁。朋友不来核销，奖励就不会发出去。它不保证人人都来，但能让每一份奖励都对上一次真到店。"
+    }
+  ],
+  "providerSentencesRaw": [
+    {
+      "segment": 1,
+      "data": [
+        {
+          "phonemes": [],
+          "text": "奖励发回给转赠的老顾客：谁把人带进来，奖励给谁。",
+          "words": [
+            {
+              "confidence": 0.9642525,
+              "endTime": 0.475,
+              "startTime": 0.275,
+              "word": "奖"
+            },
+            {
+              "confidence": 0.9629708,
+              "endTime": 0.645,
+              "startTime": 0.475,
+              "word": "励"
+            },
+            {
+              "confidence": 0.94421774,
+              "endTime": 0.835,
+              "startTime": 0.645,
+              "word": "发"
+            },
+            {
+              "confidence": 0.97487354,
+              "endTime": 1.005,
+              "startTime": 0.835,
+              "word": "回"
+            },
+            {
+              "confidence": 0.9715401,
+              "endTime": 1.205,
+              "startTime": 1.005,
+              "word": "给"
+            },
+            {
+              "confidence": 0.9714069,
+              "endTime": 1.415,
+              "startTime": 1.205,
+              "word": "转"
+            },
+            {
+              "confidence": 0.8172277,
+              "endTime": 1.585,
+              "startTime": 1.415,
+              "word": "赠"
+            },
+            {
+              "confidence": 0.90593624,
+              "endTime": 1.685,
+              "startTime": 1.585,
+              "word": "的"
+            },
+            {
+              "confidence": 0.97708297,
+              "endTime": 1.835,
+              "startTime": 1.685,
+              "word": "老"
+            },
+            {
+              "confidence": 0.858639,
+              "endTime": 1.995,
+              "startTime": 1.835,
+              "word": "顾"
+            },
+            {
+              "confidence": 0.12726659,
+              "endTime": 2.025,
+              "startTime": 1.995,
+              "word": "客："
+            },
+            {
+              "confidence": 0.9756827,
+              "endTime": 2.755,
+              "startTime": 2.545,
+              "word": "谁"
+            },
+            {
+              "confidence": 0.9556807,
+              "endTime": 2.915,
+              "startTime": 2.755,
+              "word": "把"
+            },
+            {
+              "confidence": 0.9305289,
+              "endTime": 3.055,
+              "startTime": 2.915,
+              "word": "人"
+            },
+            {
+              "confidence": 0.94662684,
+              "endTime": 3.235,
+              "startTime": 3.055,
+              "word": "带"
+            },
+            {
+              "confidence": 0.7576894,
+              "endTime": 3.365,
+              "startTime": 3.235,
+              "word": "进"
+            },
+            {
+              "confidence": 0.9619723,
+              "endTime": 3.595,
+              "startTime": 3.365,
+              "word": "来，"
+            },
+            {
+              "confidence": 0.8870684,
+              "endTime": 3.835,
+              "startTime": 3.625,
+              "word": "奖"
+            },
+            {
+              "confidence": 0.8547494,
+              "endTime": 3.965,
+              "startTime": 3.835,
+              "word": "励"
+            },
+            {
+              "confidence": 0.9626859,
+              "endTime": 4.105,
+              "startTime": 3.965,
+              "word": "给"
+            },
+            {
+              "confidence": 0.9348948,
+              "endTime": 4.385,
+              "startTime": 4.105,
+              "word": "谁。"
+            }
+          ]
+        },
+        {
+          "phonemes": [],
+          "text": "朋友不来核销，奖励就不会发出去。",
+          "words": [
+            {
+              "confidence": 0.87821275,
+              "endTime": 4.7550416,
+              "startTime": 4.5900416,
+              "word": "朋"
+            },
+            {
+              "confidence": 0.5142536,
+              "endTime": 4.8350415,
+              "startTime": 4.7550416,
+              "word": "友"
+            },
+            {
+              "confidence": 0.9071774,
+              "endTime": 4.9650416,
+              "startTime": 4.8350415,
+              "word": "不"
+            },
+            {
+              "confidence": 0.9613275,
+              "endTime": 5.0950418,
+              "startTime": 4.9650416,
+              "word": "来"
+            },
+            {
+              "confidence": 0.96445704,
+              "endTime": 5.2550416,
+              "startTime": 5.0950418,
+              "word": "核"
+            },
+            {
+              "confidence": 0.89426196,
+              "endTime": 5.495042,
+              "startTime": 5.2550416,
+              "word": "销，"
+            },
+            {
+              "confidence": 0.9620976,
+              "endTime": 5.8450418,
+              "startTime": 5.6450415,
+              "word": "奖"
+            },
+            {
+              "confidence": 0.9680654,
+              "endTime": 6.0050416,
+              "startTime": 5.8450418,
+              "word": "励"
+            },
+            {
+              "confidence": 0.9679166,
+              "endTime": 6.1250415,
+              "startTime": 6.0050416,
+              "word": "就"
+            },
+            {
+              "confidence": 0.84260523,
+              "endTime": 6.245042,
+              "startTime": 6.1250415,
+              "word": "不"
+            },
+            {
+              "confidence": 0.9734568,
+              "endTime": 6.3950415,
+              "startTime": 6.245042,
+              "word": "会"
+            },
+            {
+              "confidence": 0.9833149,
+              "endTime": 6.5650415,
+              "startTime": 6.3950415,
+              "word": "发"
+            },
+            {
+              "confidence": 0.98781073,
+              "endTime": 6.705042,
+              "startTime": 6.5650415,
+              "word": "出"
+            },
+            {
+              "confidence": 0.95721006,
+              "endTime": 6.955042,
+              "startTime": 6.705042,
+              "word": "去。"
+            }
+          ]
+        },
+        {
+          "phonemes": [],
+          "text": "奖励发回给转赠的老顾客：谁把人带进来，奖励给谁。朋友不来核销，奖励就不会发出去。它不保证人人都来，但能让每一份奖励都对上一次真到店。",
+          "words": []
+        },
+        {
+          "phonemes": [],
+          "text": "它不保证人人都来，但能让每一份奖励都对上一次真到店。",
+          "words": [
+            {
+              "confidence": 0.9811422,
+              "endTime": 7.475083,
+              "startTime": 7.335083,
+              "word": "它"
+            },
+            {
+              "confidence": 0.93638486,
+              "endTime": 7.585083,
+              "startTime": 7.475083,
+              "word": "不"
+            },
+            {
+              "confidence": 0.9726658,
+              "endTime": 7.765083,
+              "startTime": 7.585083,
+              "word": "保"
+            },
+            {
+              "confidence": 0.95122254,
+              "endTime": 7.985083,
+              "startTime": 7.765083,
+              "word": "证"
+            },
+            {
+              "confidence": 0.84840757,
+              "endTime": 8.115083,
+              "startTime": 7.985083,
+              "word": "人"
+            },
+            {
+              "confidence": 0.9503244,
+              "endTime": 8.275084,
+              "startTime": 8.115083,
+              "word": "人"
+            },
+            {
+              "confidence": 0.92432326,
+              "endTime": 8.445083,
+              "startTime": 8.275084,
+              "word": "都"
+            },
+            {
+              "confidence": 0.9464927,
+              "endTime": 8.725083,
+              "startTime": 8.445083,
+              "word": "来，"
+            },
+            {
+              "confidence": 0.914764,
+              "endTime": 8.975083,
+              "startTime": 8.845083,
+              "word": "但"
+            },
+            {
+              "confidence": 0.95492613,
+              "endTime": 9.105083,
+              "startTime": 8.975083,
+              "word": "能"
+            },
+            {
+              "confidence": 0.9776876,
+              "endTime": 9.285083,
+              "startTime": 9.105083,
+              "word": "让"
+            },
+            {
+              "confidence": 0.9233104,
+              "endTime": 9.435083,
+              "startTime": 9.285083,
+              "word": "每"
+            },
+            {
+              "confidence": 0.9081845,
+              "endTime": 9.515083,
+              "startTime": 9.435083,
+              "word": "一"
+            },
+            {
+              "confidence": 0.92578435,
+              "endTime": 9.685083,
+              "startTime": 9.515083,
+              "word": "份"
+            },
+            {
+              "confidence": 0.8275039,
+              "endTime": 9.895082,
+              "startTime": 9.685083,
+              "word": "奖"
+            },
+            {
+              "confidence": 0.9110082,
+              "endTime": 10.085083,
+              "startTime": 9.895082,
+              "word": "励"
+            },
+            {
+              "confidence": 0.92734474,
+              "endTime": 10.245083,
+              "startTime": 10.085083,
+              "word": "都"
+            },
+            {
+              "confidence": 0.96625197,
+              "endTime": 10.375083,
+              "startTime": 10.245083,
+              "word": "对"
+            },
+            {
+              "confidence": 0.9613271,
+              "endTime": 10.605083,
+              "startTime": 10.375083,
+              "word": "上"
+            },
+            {
+              "confidence": 0.7851454,
+              "endTime": 10.705083,
+              "startTime": 10.605083,
+              "word": "一"
+            },
+            {
+              "confidence": 0.9483114,
+              "endTime": 10.905083,
+              "startTime": 10.705083,
+              "word": "次"
+            },
+            {
+              "confidence": 0.21724592,
+              "endTime": 10.965083,
+              "startTime": 10.905083,
+              "word": "真"
+            },
+            {
+              "confidence": 0.06514597,
+              "endTime": 11.025084,
+              "startTime": 10.965083,
+              "word": "到"
+            },
+            {
+              "confidence": 0.14663018,
+              "endTime": 11.085083,
+              "startTime": 11.025084,
+              "word": "店。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "confidence": 0.9642525,
+      "endTime": 0.475,
+      "startTime": 0.275,
+      "word": "奖"
+    },
+    {
+      "confidence": 0.9629708,
+      "endTime": 0.645,
+      "startTime": 0.475,
+      "word": "励"
+    },
+    {
+      "confidence": 0.94421774,
+      "endTime": 0.835,
+      "startTime": 0.645,
+      "word": "发"
+    },
+    {
+      "confidence": 0.97487354,
+      "endTime": 1.005,
+      "startTime": 0.835,
+      "word": "回"
+    },
+    {
+      "confidence": 0.9715401,
+      "endTime": 1.205,
+      "startTime": 1.005,
+      "word": "给"
+    },
+    {
+      "confidence": 0.9714069,
+      "endTime": 1.415,
+      "startTime": 1.205,
+      "word": "转"
+    },
+    {
+      "confidence": 0.8172277,
+      "endTime": 1.585,
+      "startTime": 1.415,
+      "word": "赠"
+    },
+    {
+      "confidence": 0.90593624,
+      "endTime": 1.685,
+      "startTime": 1.585,
+      "word": "的"
+    },
+    {
+      "confidence": 0.97708297,
+      "endTime": 1.835,
+      "startTime": 1.685,
+      "word": "老"
+    },
+    {
+      "confidence": 0.858639,
+      "endTime": 1.995,
+      "startTime": 1.835,
+      "word": "顾"
+    },
+    {
+      "confidence": 0.12726659,
+      "endTime": 2.025,
+      "startTime": 1.995,
+      "word": "客："
+    },
+    {
+      "confidence": 0.9756827,
+      "endTime": 2.755,
+      "startTime": 2.545,
+      "word": "谁"
+    },
+    {
+      "confidence": 0.9556807,
+      "endTime": 2.915,
+      "startTime": 2.755,
+      "word": "把"
+    },
+    {
+      "confidence": 0.9305289,
+      "endTime": 3.055,
+      "startTime": 2.915,
+      "word": "人"
+    },
+    {
+      "confidence": 0.94662684,
+      "endTime": 3.235,
+      "startTime": 3.055,
+      "word": "带"
+    },
+    {
+      "confidence": 0.7576894,
+      "endTime": 3.365,
+      "startTime": 3.235,
+      "word": "进"
+    },
+    {
+      "confidence": 0.9619723,
+      "endTime": 3.595,
+      "startTime": 3.365,
+      "word": "来，"
+    },
+    {
+      "confidence": 0.8870684,
+      "endTime": 3.835,
+      "startTime": 3.625,
+      "word": "奖"
+    },
+    {
+      "confidence": 0.8547494,
+      "endTime": 3.965,
+      "startTime": 3.835,
+      "word": "励"
+    },
+    {
+      "confidence": 0.9626859,
+      "endTime": 4.105,
+      "startTime": 3.965,
+      "word": "给"
+    },
+    {
+      "confidence": 0.9348948,
+      "endTime": 4.385,
+      "startTime": 4.105,
+      "word": "谁。"
+    },
+    {
+      "confidence": 0.87821275,
+      "endTime": 4.7550416,
+      "startTime": 4.5900416,
+      "word": "朋"
+    },
+    {
+      "confidence": 0.5142536,
+      "endTime": 4.8350415,
+      "startTime": 4.7550416,
+      "word": "友"
+    },
+    {
+      "confidence": 0.9071774,
+      "endTime": 4.9650416,
+      "startTime": 4.8350415,
+      "word": "不"
+    },
+    {
+      "confidence": 0.9613275,
+      "endTime": 5.0950418,
+      "startTime": 4.9650416,
+      "word": "来"
+    },
+    {
+      "confidence": 0.96445704,
+      "endTime": 5.2550416,
+      "startTime": 5.0950418,
+      "word": "核"
+    },
+    {
+      "confidence": 0.89426196,
+      "endTime": 5.495042,
+      "startTime": 5.2550416,
+      "word": "销，"
+    },
+    {
+      "confidence": 0.9620976,
+      "endTime": 5.8450418,
+      "startTime": 5.6450415,
+      "word": "奖"
+    },
+    {
+      "confidence": 0.9680654,
+      "endTime": 6.0050416,
+      "startTime": 5.8450418,
+      "word": "励"
+    },
+    {
+      "confidence": 0.9679166,
+      "endTime": 6.1250415,
+      "startTime": 6.0050416,
+      "word": "就"
+    },
+    {
+      "confidence": 0.84260523,
+      "endTime": 6.245042,
+      "startTime": 6.1250415,
+      "word": "不"
+    },
+    {
+      "confidence": 0.9734568,
+      "endTime": 6.3950415,
+      "startTime": 6.245042,
+      "word": "会"
+    },
+    {
+      "confidence": 0.9833149,
+      "endTime": 6.5650415,
+      "startTime": 6.3950415,
+      "word": "发"
+    },
+    {
+      "confidence": 0.98781073,
+      "endTime": 6.705042,
+      "startTime": 6.5650415,
+      "word": "出"
+    },
+    {
+      "confidence": 0.95721006,
+      "endTime": 6.955042,
+      "startTime": 6.705042,
+      "word": "去。"
+    },
+    {
+      "confidence": 0.9811422,
+      "endTime": 7.475083,
+      "startTime": 7.335083,
+      "word": "它"
+    },
+    {
+      "confidence": 0.93638486,
+      "endTime": 7.585083,
+      "startTime": 7.475083,
+      "word": "不"
+    },
+    {
+      "confidence": 0.9726658,
+      "endTime": 7.765083,
+      "startTime": 7.585083,
+      "word": "保"
+    },
+    {
+      "confidence": 0.95122254,
+      "endTime": 7.985083,
+      "startTime": 7.765083,
+      "word": "证"
+    },
+    {
+      "confidence": 0.84840757,
+      "endTime": 8.115083,
+      "startTime": 7.985083,
+      "word": "人"
+    },
+    {
+      "confidence": 0.9503244,
+      "endTime": 8.275084,
+      "startTime": 8.115083,
+      "word": "人"
+    },
+    {
+      "confidence": 0.92432326,
+      "endTime": 8.445083,
+      "startTime": 8.275084,
+      "word": "都"
+    },
+    {
+      "confidence": 0.9464927,
+      "endTime": 8.725083,
+      "startTime": 8.445083,
+      "word": "来，"
+    },
+    {
+      "confidence": 0.914764,
+      "endTime": 8.975083,
+      "startTime": 8.845083,
+      "word": "但"
+    },
+    {
+      "confidence": 0.95492613,
+      "endTime": 9.105083,
+      "startTime": 8.975083,
+      "word": "能"
+    },
+    {
+      "confidence": 0.9776876,
+      "endTime": 9.285083,
+      "startTime": 9.105083,
+      "word": "让"
+    },
+    {
+      "confidence": 0.9233104,
+      "endTime": 9.435083,
+      "startTime": 9.285083,
+      "word": "每"
+    },
+    {
+      "confidence": 0.9081845,
+      "endTime": 9.515083,
+      "startTime": 9.435083,
+      "word": "一"
+    },
+    {
+      "confidence": 0.92578435,
+      "endTime": 9.685083,
+      "startTime": 9.515083,
+      "word": "份"
+    },
+    {
+      "confidence": 0.8275039,
+      "endTime": 9.895082,
+      "startTime": 9.685083,
+      "word": "奖"
+    },
+    {
+      "confidence": 0.9110082,
+      "endTime": 10.085083,
+      "startTime": 9.895082,
+      "word": "励"
+    },
+    {
+      "confidence": 0.92734474,
+      "endTime": 10.245083,
+      "startTime": 10.085083,
+      "word": "都"
+    },
+    {
+      "confidence": 0.96625197,
+      "endTime": 10.375083,
+      "startTime": 10.245083,
+      "word": "对"
+    },
+    {
+      "confidence": 0.9613271,
+      "endTime": 10.605083,
+      "startTime": 10.375083,
+      "word": "上"
+    },
+    {
+      "confidence": 0.7851454,
+      "endTime": 10.705083,
+      "startTime": 10.605083,
+      "word": "一"
+    },
+    {
+      "confidence": 0.9483114,
+      "endTime": 10.905083,
+      "startTime": 10.705083,
+      "word": "次"
+    },
+    {
+      "confidence": 0.21724592,
+      "endTime": 10.965083,
+      "startTime": 10.905083,
+      "word": "真"
+    },
+    {
+      "confidence": 0.06514597,
+      "endTime": 11.025084,
+      "startTime": 10.965083,
+      "word": "到"
+    },
+    {
+      "confidence": 0.14663018,
+      "endTime": 11.085083,
+      "startTime": 11.025084,
+      "word": "店。"
+    }
+  ]
+}
