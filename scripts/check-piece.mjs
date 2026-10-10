@@ -32,27 +32,38 @@ const REVIEW = red.outputsReview?.tokens || [];
 const MERGED = [...new Set([...CODE, ...VOICE])];   // voiceBanned.note 规定的合并口径
 
 function scanImagePromptRows(markdown, tokens) {
+  const lines = String(markdown || '').split(/\r?\n/u);
   const out = [];
-  markdown.split('\n').forEach((line, index) => {
-    if (!/^\|\s*f\d+-\d+\s*\|/u.test(line)) return;
-    const found = [...new Set(tokens.filter((token) => token && line.includes(token)))];
-    if (found.length) out.push({ line: index + 1, tokens: found, text: line.trim().slice(0, 180) });
-  });
+  const heading = /^###\s+【AI画面提示词(\d+)】/u;
+  for (let i = 0; i < lines.length; i++) {
+    const match = lines[i].match(heading);
+    if (!match) continue;
+    let end = i + 1;
+    while (end < lines.length && !/^#{1,6}\s/u.test(lines[end])) end++;
+    const body = lines.slice(i + 1, end).join('\n');
+    const found = [...new Set(tokens.filter((token) => token && body.includes(token)))];
+    if (found.length) out.push({line:i+1,image:Number(match[1]),tokens:found,text:(lines[i]+'\n'+body).trim().slice(0,180)});
+    i = end - 1;
+  }
   return out;
 }
 
 if (argv.includes('--self-test')) {
   const sample = [
-    '| f1-1 | 画面限制：不要出现微信、小程序码；仅作负面约束提醒 |',
-    '| f1-2 | 顾客在柜台与店员交谈，手里拿着普通优惠券 |',
-    '普通说明文字含微信，但不是图号画面描述行。',
+    '### 【AI画面提示词1】',
+    '画面限制：不要出现微信、小程序码；仅作负面约束提醒',
+    '### 【AI画面提示词2】',
+    '顾客在柜台与店员交谈，手里拿着普通优惠券',
+    '## 普通说明',
+    '普通说明文字含微信，但不是图片提示词正文。',
   ].join('\n');
   const hits = scanImagePromptRows(sample, MERGED);
-  const pass = hits.length === 1 && hits[0].line === 1 &&
-    hits[0].tokens.includes('微信') && hits[0].tokens.includes('小程序码');
-  console.log(pass
-    ? '自检通过：图号画面描述中的禁词进入提示层；普通文字不扫描、提示层命中不会直接判硬红。'
-    : '自检失败：画面描述提示层扫描结果不符合预期。');
+  const actionHits = scanImagePromptRows(sample, ['小程序码']);
+  const pass = hits.length === 1 && hits[0].image === 1 &&
+    hits[0].tokens.includes('微信') && hits[0].tokens.includes('小程序码') &&
+    actionHits.length === 1 &&
+    scanImagePromptRows(sample.replace('不要出现微信、小程序码；', ''), ['小程序码']).length === 0;
+  console.log(pass ? '自检通过：正式 AI 画面提示词章节会进入提示层；普通说明文字不误扫。' : '自检失败：正式 AI 画面提示词章节扫描不符合预期。');
   process.exit(pass ? 0 : 1);
 }
 
@@ -114,20 +125,13 @@ scan(REVIEW, 'REVIEW', onScreen.concat(external));
 // 只盯「动作」词，不盯机制词——「核销」进口播完全正常，不是画面禁项。
 // 只看描述图的行（导演稿里的 `| f1-1 |` 表格行与【画面内容】段），不扫口播行。
 const VISUAL_TRIGGERS = ['对准', '扫码', '扫一扫', '二维码', '立牌', '码图'];
-const IMAGE_LINE = /^\|\s*f\d+-\d+\s*\|/u;
-const guide = [];
 const gp = path.join(DIR, '导演稿.md');
 let directorDraft = '';
-if (fs.existsSync(gp)) {
-  directorDraft = fs.readFileSync(gp, 'utf8');
-  directorDraft.split('\n').forEach((line, i) => {
-    if (!IMAGE_LINE.test(line)) return;
-    const hit = VISUAL_TRIGGERS.filter((w) => line.includes(w));
-    if (hit.length) guide.push({ line: i + 1, words: hit, text: line.trim().slice(0, 120) });
-  });
-}
-// 命中只进 ② 提示层，不进入硬禁 H：导演稿允许用否定式禁词描述“不许画什么”。
-const promptGuide = scanImagePromptRows(directorDraft, MERGED);
+if (fs.existsSync(gp)) directorDraft = fs.readFileSync(gp, 'utf8');
+// 正式输出格式是「【AI画面提示词N】」标题与其正文；这里只派人工复核，不以词面命中直接定违规。
+const guide = scanImagePromptRows(directorDraft, VISUAL_TRIGGERS)
+  .map((x) => ({ line:x.line, image:x.image, words:x.tokens, text:x.text }));
+const promptGuide = scanImagePromptRows(directorDraft, MERGED);const promptGuide = scanImagePromptRows(directorDraft, MERGED);
 
 // ---- 功能越界提示：从本线 spec/功能真值.json 的 mustNotClaim 抽触发词 ----
 const claims = [];
@@ -180,7 +184,7 @@ brandProblems.forEach((x) => console.log(`   [品牌口径] ${x}`));
 if (!H.length && !titleProblems.length && !brandProblems.length) console.log('   无');
 console.log();
 
-console.log(`── ② 需人工确认（${R.length + promptGuide.length}）＝只提示，不进硬红`);
+console.log(`── ② 图片提示词／文案需人工确认（${R.length + promptGuide.length}）＝只提示，不进硬红`);
 R.forEach((x) => console.log(`   [文案复核：${x.tok}] ${x.where}`));
 promptGuide.forEach((x) => console.log(`   [提示层：${x.tokens.join('、')}] 导演稿.md:${x.line}  ${x.text}`));
 if (!R.length && !promptGuide.length) console.log('   无');
@@ -191,7 +195,7 @@ C.forEach((x) => console.log(`   [${x.word}] ${x.where}  ← 禁令：${x.ban}`)
 if (!C.length) console.log('   无');
 console.log();
 
-console.log(`── ④ 画面人判派单（${guide.length} 处）＝机检抓不到，必须逐帧看`);
+console.log(`── ④ 图片提示词中的视觉风险派单（${guide.length} 处）＝需结合实际画面判断`);
 console.log('   判据：不得演示「扫码动作」（手机对准码／点扫码按钮／扫码成功动效），与码是否可辨识无关；');
 console.log('        码图形只能不可辨识地当场景物料，且要在验收记录写明为何不可扫。');
 guide.forEach((g) => console.log(`   导演稿.md:${g.line}  触发词[${g.words.join('、')}]  ${g.text}`));
@@ -203,5 +207,13 @@ if (H.length || titleProblems.length || brandProblems.length) {
   process.exit(1);
 }
 const manualTasks = R.length + promptGuide.length + guide.length;
-if (manualTasks) console.log(`结论：词面无硬禁；仍有 ${manualTasks} 项人工复核任务（含提示层禁词线索和画面派单），未判完不算过。`);
-else console.log('结论：词面无硬禁，无提示层待审项，无画面待判项。');
+const manualReviewConfirmed = argv.includes('--confirm-manual-review');
+if (manualTasks && !manualReviewConfirmed) {
+  console.log(`结论：硬性机检未发现拦截项，但仍有 ${manualTasks} 项人工复核任务；退出码 2 表示待人工确认，不可直接发布。`);
+  console.log('逐图完成人工检查并将结论写入本片导演稿验收记录后，才可带 --confirm-manual-review 重新运行。');
+  process.exit(2);
+}
+if (manualTasks && manualReviewConfirmed) {
+  console.log(`人工复核由操作者显式确认（${manualTasks} 项）；请确认逐图结论已写入本片导演稿验收记录。`);
+}
+console.log(manualTasks ? '结论：硬性机检通过，人工复核已由操作者确认。' : '结论：词面无硬禁，无提示层待审项，无画面待判项。');
