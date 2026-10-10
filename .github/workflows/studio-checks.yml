@@ -1,0 +1,63 @@
+name: Studio workflow checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'AGENTS.md'
+      - 'README.md'
+      - 'mac-director/**'
+      - 'quandao-video/**'
+      - 'scripts/**'
+      - 'spec/**'
+      - 'video/src/**'
+      - 'video/package.json'
+      - 'video/package-lock.json'
+      - 'pieces/**'
+      - '.github/workflows/studio-checks.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'AGENTS.md'
+      - 'README.md'
+      - 'mac-director/**'
+      - 'quandao-video/**'
+      - 'scripts/**'
+      - 'spec/**'
+      - 'video/src/**'
+      - 'video/package.json'
+      - 'video/package-lock.json'
+      - 'pieces/**'
+      - '.github/workflows/studio-checks.yml'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: video/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check documentation invariants
+        run: |
+          node scripts/check-docs.mjs --self-test
+          node scripts/check-docs.mjs
+      - name: Check prompt, reuse, preflight and TTS helpers
+        run: |
+          node scripts/check-piece.mjs --self-test
+          node scripts/check-reuse.mjs --self-test
+          node quandao-video/scripts/preflight.mjs --self-test
+          python3 quandao-video/scripts/voiceover_utils.py --self-test
+      - name: Install video dependencies
+        run: npm ci --prefix video
+      - name: Rebuild runtime assets from a committed piece
+        run: node scripts/use-piece.mjs 20261009-宠物洗护-体验券接次卡
+      - name: Validate actual piece assets and image ratios
+        run: node quandao-video/scripts/preflight.mjs
+      - name: Type-check Remotion project
+        run: npm run tsc --prefix video
